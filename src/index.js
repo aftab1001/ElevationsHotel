@@ -18,6 +18,7 @@ import Reservation from './components/reservation';
 import About from './components/about';
 import ScrollToTop from 'react-router-scroll-top'
 import ApartmentList from './components/apartment-list';
+import ApartmentDetails from './components/apartment-details';
 
 class Root extends Component {
     render() {
@@ -32,6 +33,7 @@ class Root extends Component {
 											<Route path="/apartment-list" component={ApartmentList} />
 	                    <Route path="/room-grid" component={RoomGrid} />
 	                    <Route path="/room-details" component={RoomDetails} />
+											<Route path="/apartment-details" component={ApartmentDetails} />
 	                    <Route path="/service" component={Service} />
 	                    <Route path="/blog-grid" component={BlogGrid} />
 	                    <Route path="/blog-list" component={BlogList} />

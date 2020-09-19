@@ -26,10 +26,10 @@ class ApartmentList extends Component {
 										<div className="room-cat">
 											<p>Guest House</p>
 										</div>
-										<h4><Link to="/room-details">Modern Guest Rooms</Link></h4>
+										<h4><Link to="/room-details">02 Bed Apartments</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
+											<li><i className="far fa-bed" />2 Bed</li>
+											<li><i className="far fa-bath" />1 Baths</li>
 											<li><i className="far fa-ruler-triangle" />72 m</li>
 										</ul>
 										<div className="room-price">
@@ -44,7 +44,7 @@ class ApartmentList extends Component {
 							<div className="row align-items-center no-gutters">
 								<div className="col-lg-6">
 									<div className="room-thumb">
-										<img src={publicUrl + "assets/img/rooms/11.jpg"} alt="Room" />
+										<img src={publicUrl + "assets/img/apartment/02.jpg"} alt="Room" />
 									</div>
 								</div>
 								<div className="col-lg-6">
@@ -56,10 +56,10 @@ class ApartmentList extends Component {
 										<ul className="room-info list-inline">
 											<li><i className="far fa-bed" />3 Bed</li>
 											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />72 m</li>
+											<li><i className="far fa-ruler-triangle" />99 m</li>
 										</ul>
 										<div className="room-price">
-											<p>$180.00</p>
+											<p>$220.00</p>
 										</div>
 									</div>
 								</div>
@@ -70,7 +70,7 @@ class ApartmentList extends Component {
 							<div className="row align-items-center no-gutters">
 								<div className="col-lg-6">
 									<div className="room-thumb">
-										<img src={publicUrl + "assets/img/rooms/12.jpg"} alt="Room" />
+										<img src={publicUrl + "assets/img/apartment/15.jpg"} alt="Room" />
 									</div>
 								</div>
 								<div className="col-lg-6">
@@ -78,14 +78,14 @@ class ApartmentList extends Component {
 										<div className="room-cat">
 											<p>Guest House</p>
 										</div>
-										<h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+										<h4><Link to="/room-details">Three Bed / Premier Suite</Link></h4>
 										<ul className="room-info list-inline">
 											<li><i className="far fa-bed" />3 Bed</li>
 											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />72 m</li>
+											<li><i className="far fa-ruler-triangle" />110 m</li>
 										</ul>
 										<div className="room-price">
-											<p>$180.00</p>
+											<p>$240.00</p>
 										</div>
 									</div>
 								</div>
@@ -96,7 +96,7 @@ class ApartmentList extends Component {
 							<div className="row align-items-center no-gutters">
 								<div className="col-lg-6">
 									<div className="room-thumb">
-										<img src={publicUrl + "assets/img/rooms/13.jpg"} alt="Room" />
+										<img src={publicUrl + "assets/img/apartment/19.jpg"} alt="Room" />
 									</div>
 								</div>
 								<div className="col-lg-6">
@@ -104,11 +104,11 @@ class ApartmentList extends Component {
 										<div className="room-cat">
 											<p>Meeting Room</p>
 										</div>
-										<h4><Link to="/room-details">Conference Room</Link></h4>
+										<h4><Link to="/room-details">Two Duplex / Royal Suite</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
+											<li><i className="far fa-bed" />2 Bed</li>
 											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />72 m</li>
+											<li><i className="far fa-ruler-triangle" />80 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$180.00</p>
@@ -122,7 +122,7 @@ class ApartmentList extends Component {
 							<div className="row align-items-center no-gutters">
 								<div className="col-lg-6">
 									<div className="room-thumb">
-										<img src={publicUrl + "assets/img/rooms/14.jpg"} alt="Room" />
+										<img src={publicUrl + "assets/img/apartment/22.jpg"} alt="Room" />
 									</div>
 								</div>
 								<div className="col-lg-6">
@@ -130,14 +130,14 @@ class ApartmentList extends Component {
 										<div className="room-cat">
 											<p>Guest House</p>
 										</div>
-										<h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+										<h4><Link to="/room-details">Studio Apartment</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />72 m</li>
+											<li><i className="far fa-bed" />1 Double Bed</li>
+											<li><i className="far fa-bath" />1 Baths</li>
+											<li><i className="far fa-ruler-triangle" />60 m</li>
 										</ul>
 										<div className="room-price">
-											<p>$180.00</p>
+											<p>$150.00</p>
 										</div>
 									</div>
 								</div>
@@ -163,7 +163,7 @@ class ApartmentList extends Component {
 									</div>
 									<div className="input-wrap">
 										<select name="rooms" id="rooms" defaultValue={'DEFAULT'}>
-											<option disabled value="DEFAULT">Rooms</option>
+											<option disabled value="DEFAULT">Apartments</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
 											<option value="3">3</option>
@@ -172,9 +172,11 @@ class ApartmentList extends Component {
 									<div className="input-wrap">
 										<select name="adults" id="adults" defaultValue={'DEFAULT'}>
 											<option value="default" disabled value="DEFAULT">Adults</option>
+											<option value="default" disabled value="DEFAULT">Others</option>
 											<option value={1}>1</option>
 											<option value={2}>2</option>
 											<option value={3}>3</option>
+											<option value={3}>4</option>
 										</select>
 									</div>
 									<div className="input-wrap">
@@ -183,6 +185,7 @@ class ApartmentList extends Component {
 											<option value={1}>1</option>
 											<option value={2}>2</option>
 											<option value={3}>3</option>
+											<option value={3}>4</option>
 										</select>
 									</div>
 									<div className="input-wrap">
@@ -199,11 +202,15 @@ class ApartmentList extends Component {
 										<div className="checkboxes">
 											<p>
 												<input type="checkbox" defaultValue="guest-room" id="guest-room" />
-												<label htmlFor="guest-room">Guest Room</label>
+												<label htmlFor="guest-room">One-Bedroom Apartment</label>
 											</p>
 											<p>
 												<input type="checkbox" defaultValue="meeting-room" id="meeting-room" />
-												<label htmlFor="meeting-room">Meeting Room </label>
+												<label htmlFor="meeting-room">Two-Bedroom Apartment</label>
+											</p>
+											<p>
+												<input type="checkbox" defaultValue="meeting-room" id="meeting-room" />
+												<label htmlFor="meeting-room">Three-Bedroom Apartment</label>
 											</p>
 											<p>
 												<input type="checkbox" defaultValue="wifi" id="wifi" />
