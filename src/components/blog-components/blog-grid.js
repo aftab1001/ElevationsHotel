@@ -16,11 +16,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 June
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">CSS Grid Challenge Build A Template, Win Some
-		                  Smashing Prizes!</Link></h3>
+		              <h3><Link to="/blog-details">Shanghai Marriott Hotel expanded its portfolio of hotels in China.</Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -32,11 +31,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />25 June
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">We're Touring Through Southeast Asia: Join The
-		                  Mozilla Develop Road</Link></h3>
+		              <h3><Link to="/blog-details">Accor has opened the first internationally branded hotel in Khao Yai, Thailand.</Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -48,11 +46,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />01 July
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">Why Switched To Sketch For UI Design (And Never
-		                  Looked Back) </Link></h3>
+		              <h3><Link to="/blog-details">Evolution Of Business Travel: Adjusting Your Corporate Travel Strategy For Recovery </Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -64,11 +61,11 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />05 Aug
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">CSS Grid Challenge Build A Template, Win Some
-		                  Smashing Prizes!</Link></h3>
+		              <h3><Link to="/blog-details">The Westin Maldives Miriandhoo Resort
+Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -80,11 +77,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />08 Aug
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">We're Touring Through Southeast Asia: Join The
-		                  Mozilla Develop Road</Link></h3>
+		              <h3><Link to="/blog-details">Occupancy Rates for China’s Hotels Show First Year-Over-Year Growth Since Pandemic’s Start</Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -96,11 +92,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />10 Aug
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">Why Switched To Sketch For UI Design (And Never
-		                  Looked Back) </Link></h3>
+		              <h3><Link to="/blog-details">Reopening Costa Rica: Hotel Recovery in the New Normal Supported by a WTTC Safe Travel Stamp. </Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -112,11 +107,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />22 Aug
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">CSS Grid Challenge Build A Template, Win Some
-		                  Smashing Prizes!</Link></h3>
+		              <h3><Link to="/blog-details">Parsing Hotel ‘Hygiene Theater’ From Truly Effective Health Protocols</Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -128,11 +122,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />30 Aug
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">We're Touring Through Southeast Asia: Join The
-		                  Mozilla Develop Road</Link></h3>
+		              <h3><Link to="/blog-details">California Boutique Hotelier Deploys Big-Brand Tactics to Seize Growth Opportunities.</Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
@@ -144,11 +137,10 @@ class BlogGrid extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
+		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />10 Sep
 		                    2020</Link></li>
 		              </ul>
-		              <h3><Link to="/blog-details">Why Switched To Sketch For UI Design (And Never
-		                  Looked Back) </Link></h3>
+		              <h3><Link to="/blog-details">Accor Just Restructured the Company in the Middle of a Pandemic: Why Now? </Link></h3>
 		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
 		            </div>
 		          </div>
