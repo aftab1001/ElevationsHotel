@@ -81,7 +81,7 @@ class Footer_v1 extends Component {
 			      <div className="row">
 			        <div className="col-md-6 Elevations-go-top">
 			          <ul className="footer-nav">
-			            <li><Link to="/home-v2">Home</Link></li>
+			            <li><Link to="/">Home</Link></li>
 			            <li><Link to="/about">About</Link></li>
 			            <li><Link to="/service">Services</Link></li>
 			            <li><Link to="/our-staff">Team</Link></li>

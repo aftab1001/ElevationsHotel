@@ -16,18 +16,20 @@ import OurStaff from './components/our-staff';
 import Resturent from './components/resturent';
 import Reservation from './components/reservation';
 import About from './components/about';
-
-
+import ScrollToTop from 'react-router-scroll-top'
+import ApartmentList from './components/apartment-list';
 
 class Root extends Component {
     render() {
         return(
                 <HashRouter basename="/">
 	                <div>
+									<ScrollToTop>
 	                <Switch>
 	                    <Route exact path="/" component={HomeV1} />
-	                    <Route path="/home-v2" component={HomeV2} />
+	                    <Route path="/home-v2" component={HomeV1} />
 	                    <Route path="/room-list" component={RoomList} />
+											<Route path="/apartment-list" component={ApartmentList} />
 	                    <Route path="/room-grid" component={RoomGrid} />
 	                    <Route path="/room-details" component={RoomDetails} />
 	                    <Route path="/service" component={Service} />
@@ -41,6 +43,7 @@ class Root extends Component {
 	                    <Route path="/reservation" component={Reservation} />
 	                    <Route path="/about" component={About} />
 	                </Switch>
+									</ScrollToTop>
 	                </div>
                 </HashRouter>
         )

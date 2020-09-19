@@ -121,7 +121,7 @@ class Navbar extends Component {
                           </li>
                           <li>
                             {" "}
-                            <Link to="/room-grid">Apartments</Link>
+                            <Link to="/apartment-list">Apartments</Link>
                           </li>
                           <li>
                             {" "}
