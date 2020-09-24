@@ -33,7 +33,7 @@ class Navbar extends Component {
                     </li>
                     <li>
                       {" "}
-                      <Link to="/service"> Services </Link>
+                      <Link to="/contact"> Contact Us </Link>
                     </li>
                     <li>
                       {" "}
@@ -121,16 +121,8 @@ class Navbar extends Component {
                           </li>
                           <li>
                             {" "}
-                            <Link to="/apartment-list">Apartments</Link>
-                          </li>
-                          <li>
-                            {" "}
                             <Link to="/room-details"> Room Details </Link>
                           </li>
-                          <li>
-                                {" "}
-                                <Link to="/apartment-details">Apartment Details </Link>
-                              </li>
                               <li>
                                 {" "}
                                 <Link to="/room-details">Resaturent</Link>
@@ -144,6 +136,15 @@ class Navbar extends Component {
                                 <Link to="/room-details">Our Staff</Link>
                               </li>
                             
+                        </ul>{" "}
+                      </li>{" "}
+                      <li className="have-submenu">
+                        <Link to="/apartment-list"> Apartments </Link>{" "}
+                        <ul className="submenu">
+                          <li>
+                                {" "}
+                                <Link to="/apartment-details">Apartment Details </Link>
+                              </li>
                         </ul>{" "}
                       </li>{" "}
                       <li>
@@ -162,10 +163,6 @@ class Navbar extends Component {
                       <li>
                         {" "}
                         <Link to="/Foundation"> Foundation </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link to="/contact"> Contact </Link>
                       </li>
                     </ul>{" "}
                   </nav>{" "}

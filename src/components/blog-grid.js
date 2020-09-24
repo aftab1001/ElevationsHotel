@@ -8,7 +8,7 @@ import Footer from './global-components/footer';
 const BlogGridPage = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Blog Gird" subheader="Blogs" Img="blog/blog-breadcrumb.jpg" />
+        <PageHeader headertitle="News" subheader="News" Img="blog/blog-breadcrumb.jpg" />
         <BlogGrid />
         <Brand Customclass="primary-bg"/>
         <Footer />
