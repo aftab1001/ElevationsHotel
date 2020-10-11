@@ -4987,3 +4987,78 @@ footer .footer-bottom ul.social-icons {
 /* End Footer area
 ============================================================================================ */
 /*# sourceMappingURL=style.css.map */
+
+.clsSliderStyles
+{
+  height: 660px;
+
+}
+.donationPageLogo{
+  width: 24%;
+} .banner_content {
+  opacity: 0.999;
+  color: #fff;
+  vertical-align: middle;
+  align-self: center;
+ }
+  .banner_content .upper_text {
+    margin-top:3%;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fdbb00;
+  }
+  .upper_text {
+    margin-top:3%;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fdbb00;
+  }
+  .banner_content h2 {
+    margin-top:3%;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+} .banner_content p {
+  margin-top:3%;
+  color: #f9f9ff;
+  max-width: 680px;;
+  margin: 0px auto 45px;
+}
+.primary_btn {
+  display: inline-block;
+  background: #60bc0f;
+  padding: 0px 50px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 48px;
+  border: 1px solid #60bc0f;
+  border-radius: 0px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 300ms linear 0s;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.primary_btn.yellow_btn {
+  margin-top:3%;
+  background: #fdbb00 !important;
+  border: 1px solid #fdbb00 !important;
+  color: #000000;
+}
+.mainAppLogo
+{
+  height: 86px;
+  margin-top: 0%;
+  margin-left: -24%;
+  width: 150px;
+}

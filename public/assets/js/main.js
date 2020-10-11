@@ -2,12 +2,14 @@ $(function() {
 	'use strict';
 	// Preloader
 	$(window).on('load', function(event) {
+		
 		$('#preLoader')
 			.delay(500)
 			.fadeOut(500);
 	});
 	//Sticky Menu
 	$(window).on('scroll', function(event) {
+	
 		var scroll = $(window).scrollTop();
 		if (scroll < 250) {
 			$('.header-menu-area').removeClass('sticky');

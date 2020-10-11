@@ -2,6 +2,7 @@ $(function() {
 	'use strict';
 	// Preloader
 	$(window).on('load', function(event) {
+		debugger
 		$('#preLoader')
 			.delay(500)
 			.fadeOut(500);

@@ -20,10 +20,13 @@ import ScrollToTop from 'react-router-scroll-top'
 import ApartmentList from './components/apartment-list';
 import ApartmentDetails from './components/apartment-details';
 
+import FoundationList from './components/foundation-list';
+
 class Root extends Component {
     render() {
         return(
                 <HashRouter basename="/">
+									
 	                <div>
 									<ScrollToTop>
 	                <Switch>
@@ -44,6 +47,7 @@ class Root extends Component {
 	                    <Route path="/resturent" component={Resturent} />
 	                    <Route path="/reservation" component={Reservation} />
 	                    <Route path="/about" component={About} />
+											<Route path="/foundation" component={FoundationList} />
 	                </Switch>
 									</ScrollToTop>
 	                </div>

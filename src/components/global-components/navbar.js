@@ -79,11 +79,11 @@ class Navbar extends Component {
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3 col-md-4 col-7">
-                <div className="logo">
+                <div >
                   <Link to="/">
                     {" "}
-                    <img
-                      src={publicUrl + "assets/img/logo.png"}
+                    <img 
+                      src={publicUrl + "assets/img/logo.png"} className="mainAppLogo"
                       alt="Elevations"
                     />{" "}
                   </Link>{" "}
@@ -162,7 +162,7 @@ class Navbar extends Component {
                       </li>
                       <li>
                         {" "}
-                        <Link to="/Foundation"> Foundation </Link>
+                        <Link target="_blank" to="/foundation"> Foundation </Link>
                       </li>
                     </ul>{" "}
                   </nav>{" "}
