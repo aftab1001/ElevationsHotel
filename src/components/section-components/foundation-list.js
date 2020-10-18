@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
+
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+ 
+
+  
+
 const initialState = {
   slideActive: 0,
   nextSlide: 1,
@@ -67,12 +74,77 @@ class FoundationList extends Component {
 						
 						</ul>
 						<ul className="navbar-nav col-md-6 col-lg-6">
-					<h2 className="banner_content upper_text">
+					<h2 className="banner_content upper_text banner-heading">
 						Contribute to the World
 					</h2>
 						</ul>
 						<ul className="col-md-3 col-lg-3">
-						<a className="primary_btn yellow_btn text-white" href="#">Donate Now</a>
+						<Popup
+    trigger={<a className="primary_btn yellow_btn text-white">Donate Now</a>}
+    modal
+    nested
+  >
+    {close => (
+      <div className="modal">
+        <button className="close" onClick={close}>
+          &times;
+        </button>
+        <div className="header"> Modal Title </div>
+        <div className="content">
+          {' '}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+          Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+          delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
+          commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
+          explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+        </div>
+        <div className="actions">
+          <Popup
+            trigger={<button className="button"> Trigger </button>}
+            position="top center"
+            nested
+          >
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              magni omnis delectus nemo, maxime molestiae dolorem numquam
+              mollitia, voluptate ea, accusamus excepturi deleniti ratione
+              sapiente! Laudantium, aperiam doloribus. Odit, aut.
+            </span>
+          </Popup>
+          <button
+            className="button"
+            onClick={() => {
+              console.log('modal closed ');
+              close();
+            }}
+          >
+            close modal
+          </button>
+        </div>
+      </div>
+    )}
+  </Popup>
+);
+							
+						{/* <Popup trigger={<a className="primary_btn yellow_btn text-white">Donate Now</a>} position="center">
+    <div>
+	<div class="greennature-payment-lightbox-inner">
+	<form class="payment-form" id="payment-form">
+	<h3 class="greennature-payment-lightbox-title">
+				<span class="greennature-head">You are donating to :</span>
+				<span class="greennature-tail">Greennature Foundation</span>
+			</h3>
+			<div class="greennature-payment-amount">
+			<div class="greennature-payment-amount-head">How much would you like to donate?</div>
+			</div>
+		</form>
+	Popup content here !!
+		</div>
+		</div>
+  </Popup> */}
+						
 						</ul>
 					</div>
 				</nav>
@@ -88,9 +160,9 @@ class FoundationList extends Component {
           <div data-src="assets/images/slider-1.jpg">
 
 					<div className="banner_content">
-<p className="upper_text">Give a hand</p>
-<h2>to make the better world</h2>
-<p>
+<p className="upper_text slider-upper-text-1">Give a hand</p>
+<h2 className="slider-heading-2">to make the better world</h2>
+<p className="slider-1-text">
 That don't lights. Blessed land spirit creature divide our made two
 itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
 </p>
@@ -107,7 +179,7 @@ itself upon you'll dominion waters man second good you they're divided upon wing
 </div>
 				</div>
 				<div data-src="assets/images/slider-3.jpg" >
-				<div class="banner_content">
+				<div className="banner_content">
 <p className="upper_text">Give a hand</p>
 <h2>to make the better world</h2>
 <p>
@@ -117,8 +189,8 @@ itself upon you'll dominion waters man second good you they're divided upon wing
 </div>
 				</div>
 				<div data-src="assets/images/slider-4.jpg" >
-				<div class="banner_content">
-<p class="upper_text">Give a hand</p>
+				<div className="banner_content">
+<p className="upper_text">Give a hand</p>
 <h2>to make the better world</h2>
 <p>
 That don't lights. Blessed land spirit creature divide our made two
