@@ -3,22 +3,19 @@ import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
+import { Button, Modal } from 'react-bootstrap'
+import { MDBInput } from 'mdbreact';
 
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
- 
-
-  
 
 const initialState = {
-  slideActive: 0,
-  nextSlide: 1,
-  interval: 5000,
-  totalSlides: 3
+	slideActive: 0,
+	nextSlide: 1,
+	interval: 5000,
+	totalSlides: 3
 };
 
 const startupScreen = (
-  <div className="test"></div>
+	<div className="test"></div>
 );
 class FoundationList extends Component {
 	componentDidMount() {
@@ -30,27 +27,29 @@ class FoundationList extends Component {
 		document.body.appendChild(minscript);
 	}
 	state = { ...initialState }
-  timeout
+	timeout
 
-  constructor(props) {
-    super(props)
-    this.timer = this.timer.bind(this)
-  }
+	constructor(props) {
+		super(props)
+		this.timer = this.timer.bind(this)
+	}
+	handleModalShowHide() {
+		this.setState({ showHide: !this.state.showHide })
+	}
+	timer(e) {
+		clearTimeout(this.timeout)
+		if (e.currentIndex !== null) {
+			this.setState({ slideActive: e.currentIndex })
+			this.setState({ nextSlide: e.currentIndex + 1 })
+		}
 
-  timer(e) {
-    clearTimeout(this.timeout)  
-    if(e.currentIndex !== null) {
-      this.setState({ slideActive: e.currentIndex })
-      this.setState({ nextSlide: e.currentIndex + 1 })
-    }
-
-    this.timeout = setTimeout(() => {
-      const slideActive = this.state.slideActive + 1
-      const nextSlide = this.state.nextSlide + 1
-      slideActive <= this.state.totalSlides - 1 ? this.setState({ slideActive }) : this.setState({ slideActive: 0 })     
-      nextSlide <= this.state.totalSlides - 1 ? this.setState({ nextSlide }) : this.setState({ nextSlide: 0 })      
-    }, this.state.interval)
-  }
+		this.timeout = setTimeout(() => {
+			const slideActive = this.state.slideActive + 1
+			const nextSlide = this.state.nextSlide + 1
+			slideActive <= this.state.totalSlides - 1 ? this.setState({ slideActive }) : this.setState({ slideActive: 0 })
+			nextSlide <= this.state.totalSlides - 1 ? this.setState({ nextSlide }) : this.setState({ nextSlide: 0 })
+		}, this.state.interval)
+	}
 	render() {
 
 		let publicUrl = process.env.PUBLIC_URL + '/'
@@ -66,142 +65,180 @@ class FoundationList extends Component {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav mr-auto col-md-3 col-lg-3">
 							<li className="nav-item active">
-								<a className="nav-link" href="#"><img  className="donationPageLogo" src="assets/images/logo.png" />
-								
+								<a className="nav-link" href="#"><img className="donationPageLogo" src="assets/images/logo.png" />
+
 								</a>
-					
+
 							</li>
-						
+
 						</ul>
 						<ul className="navbar-nav col-md-6 col-lg-6">
-					<h2 className="banner_content upper_text banner-heading">
-						Contribute to the World
+							<h2 className="banner_content upper_text banner-heading">
+								Contribute to the World
 					</h2>
 						</ul>
 						<ul className="col-md-3 col-lg-3">
-						<Popup
-    trigger={<a className="primary_btn yellow_btn text-white">Donate Now</a>}
-    modal
-    nested
-  >
-    {close => (
-      <div className="modal">
-        <button className="close" onClick={close}>
-          &times;
-        </button>
-        <div className="header"> Modal Title </div>
-        <div className="content">
-          {' '}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-          Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-          delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-          commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-          explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
-        </div>
-        <div className="actions">
-          <Popup
-            trigger={<button className="button"> Trigger </button>}
-            position="top center"
-            nested
-          >
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              magni omnis delectus nemo, maxime molestiae dolorem numquam
-              mollitia, voluptate ea, accusamus excepturi deleniti ratione
-              sapiente! Laudantium, aperiam doloribus. Odit, aut.
-            </span>
-          </Popup>
-          <button
-            className="button"
-            onClick={() => {
-              console.log('modal closed ');
-              close();
-            }}
-          >
-            close modal
-          </button>
-        </div>
-      </div>
-    )}
-  </Popup>
-);
-							
-						{/* <Popup trigger={<a className="primary_btn yellow_btn text-white">Donate Now</a>} position="center">
-    <div>
-	<div class="greennature-payment-lightbox-inner">
-	<form class="payment-form" id="payment-form">
-	<h3 class="greennature-payment-lightbox-title">
-				<span class="greennature-head">You are donating to :</span>
-				<span class="greennature-tail">Greennature Foundation</span>
-			</h3>
-			<div class="greennature-payment-amount">
-			<div class="greennature-payment-amount-head">How much would you like to donate?</div>
+							<a onClick={() => this.handleModalShowHide()} className="primary_btn yellow_btn text-white">Donate Now</a>
+							<Modal show={this.state.showHide} size="lg">
+								<Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
+									<Modal.Title>You are donating to : Greennature Foundation</Modal.Title>
+								</Modal.Header>
+								<Modal.Body>
+									<div className="greennature-payment-amount">
+										<div className="greennature-payment-amount-head">How much would you like to donate?</div>
+										<a className="greennature-payment-price-preset" data-val="10">$10</a>
+										<a className="greennature-payment-price-preset" data-val="20">$20</a>
+										<a className="greennature-payment-price-preset greennature-active" data-val="30">$30</a>
+										
+										<a className="greennature-payment-price-preset greennature-active" data-val="30">$50</a>
+										
+										<a className="greennature-payment-price-preset greennature-active" data-val="30">$100</a>
+										
+										<a className="greennature-payment-price-preset greennature-active" data-val="30">$500</a>
+										<MDBInput type="number" />
+										<input className="greennature-payment-price-fill" type="text" placeholder="Or Your Amount(USD)" />
+										<input className="greennature-payment-price" type="hidden" name="amount" value="30" />
+
+										<input className="greennature-payment-price" type="hidden" name="a3" value="30" />
+									</div>
+									<div className="greennature-paypal-attribute">
+				<span className="greennature-head">Would you like to make regular donations?</span>
+				<span className="greennature-subhead">I would like to make donation(s)</span>
+				<select name="t3" className="greennature-recurring-option">
+					<option value="0">one time</option>
+					<option value="W">weekly</option>
+					<option value="M">monthly</option>
+					<option value="Y">yearly</option>
+				</select>
+				<input type="hidden" name="p3" value="1" />
+				<div className="greennature-recurring-time-wrapper">
+					<span className="greennature-subhead">How many times would you like this to recur? (including this payment) *</span>
+					<select name="srt" className="greennature-recurring-option">
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div className="greennature-form-fields">
+				<div className="six columns">
+					<div className="columns-wrap greennature-left">
+						<span className="greennature-head">Name *</span>
+						<input className="greennature-require" type="text" name="name" />
+					</div>
+				</div>
+				<div className="six columns">
+					<div className="columns-wrap greennature-right">
+						<span className="greennature-head">Last Name *</span>
+						<input className="greennature-require" type="text" name="last-name" />
+					</div>
+				</div>
+				<div className="clear"></div>
+				<div className="six columns">
+					<div className="columns-wrap greennature-left">
+						<span className="greennature-head">Email *</span>
+						<input className="greennature-require greennature-email" type="text" name="email" />
+					</div>
+				</div>
+				<div className="six columns">
+					<div className="columns-wrap greennature-right">
+						<span className="greennature-head">Phone</span>
+						<input type="text" name="phone" />
+					</div>
+				</div>		
+				<div className="clear"></div>
+				<div className="six columns">
+					<div className="columns-wrap greennature-left">
+						<span className="greennature-head">Address</span>
+						<textarea name="address"></textarea>
+					</div>
+				</div>
+				<div className="six columns">
+					<div className="columns-wrap greennature-right">
+						<span className="greennature-head">Additional Note</span>
+						<textarea name="additional-note"></textarea>
+					</div>
+				</div>		
+				<div className="clear"></div>
 			</div>
-		</form>
-	Popup content here !!
-		</div>
-		</div>
-  </Popup> */}
-						
+			</div>
+								</Modal.Body>
+								<Modal.Footer>
+									<Button variant="secondary" onClick={() => this.handleModalShowHide()}>
+										Close
+                    </Button>
+									<Button variant="primary" onClick={() => this.handleModalShowHide()}>
+										Save Changes
+                    </Button>
+								</Modal.Footer>
+							</Modal>
+
+
+
 						</ul>
 					</div>
 				</nav>
-			</div>	
-			
+			</div>
 
-	<div id="slider-container">
-        <AwesomeSlider  className="clsSliderStyles"
-          organicArrows={false}
-          startupScreen={startupScreen}
-          selected={this.state.slideActive}
-          onTransitionEnd={(e) => this.timer(e)}>
-          <div data-src="assets/images/slider-1.jpg">
 
-					<div className="banner_content">
-<p className="upper_text slider-upper-text-1">Give a hand</p>
-<h2 className="slider-heading-2">to make the better world</h2>
-<p className="slider-1-text">
-That don't lights. Blessed land spirit creature divide our made two
-itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
+			<div id="slider-container">
+				<AwesomeSlider className="clsSliderStyles"
+					organicArrows={false}
+					startupScreen={startupScreen}
+					selected={this.state.slideActive}
+					onTransitionEnd={(e) => this.timer(e)}>
+					<div data-src="assets/images/slider-1.jpg">
+
+						<div className="banner_content">
+							<p className="upper_text slider-upper-text-1">Give a hand</p>
+							<h2 className="slider-heading-2">to make the better world</h2>
+							<p className="slider-1-text">
+								That don't lights. Blessed land spirit creature divide our made two
+								itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
 </p>
-</div>
+						</div>
 					</div>
-				<div data-src="assets/images/slider-2.jpg" >
-				<div className="banner_content">
-<p className="upper_text">Give a hand</p>
-<h2>to make the better world</h2>
-<p>
-That don't lights. Blessed land spirit creature divide our made two
-itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
+					<div data-src="assets/images/slider-2.jpg" >
+						<div className="banner_content">
+							<p className="upper_text">Give a hand</p>
+							<h2>to make the better world</h2>
+							<p>
+								That don't lights. Blessed land spirit creature divide our made two
+								itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
 </p>
-</div>
-				</div>
-				<div data-src="assets/images/slider-3.jpg" >
-				<div className="banner_content">
-<p className="upper_text">Give a hand</p>
-<h2>to make the better world</h2>
-<p>
-That don't lights. Blessed land spirit creature divide our made two
-itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
+						</div>
+					</div>
+					<div data-src="assets/images/slider-3.jpg" >
+						<div className="banner_content">
+							<p className="upper_text">Give a hand</p>
+							<h2>to make the better world</h2>
+							<p>
+								That don't lights. Blessed land spirit creature divide our made two
+								itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
 </p>
-</div>
-				</div>
-				<div data-src="assets/images/slider-4.jpg" >
-				<div className="banner_content">
-<p className="upper_text">Give a hand</p>
-<h2>to make the better world</h2>
-<p>
-That don't lights. Blessed land spirit creature divide our made two
-itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
+						</div>
+					</div>
+					<div data-src="assets/images/slider-4.jpg" >
+						<div className="banner_content">
+							<p className="upper_text">Give a hand</p>
+							<h2>to make the better world</h2>
+							<p>
+								That don't lights. Blessed land spirit creature divide our made two
+								itself upon you'll dominion waters man second good you they're divided upon winged were replenish night
 </p>
-</div>
-				</div>
-        </AwesomeSlider>
-      </div>
-			
-	
+						</div>
+					</div>
+				</AwesomeSlider>
+			</div>
+
+
 			<div className="bg-separter" />
 			<div className="container-section-bg">
 				<div className="container-section">
