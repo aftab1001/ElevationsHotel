@@ -81,11 +81,14 @@ class FoundationList extends Component {
 							<a onClick={() => this.handleModalShowHide()} className="primary_btn yellow_btn text-white">Donate Now</a>
 							<Modal show={this.state.showHide} size="lg">
 								<Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
-									<Modal.Title>You are donating to : Greennature Foundation</Modal.Title>
+									<Modal.Title>You are donating to : <b>Greennature Foundation</b></Modal.Title>
 								</Modal.Header>
 								<Modal.Body>
-									<div className="greennature-payment-amount">
+									
+										<div className="greennature-payment-amount">
 										<div className="greennature-payment-amount-head">How much would you like to donate?</div>
+										<div className="row">
+										<div className="col-md-8">
 										<a className="greennature-payment-price-preset" data-val="10">$10</a>
 										<a className="greennature-payment-price-preset" data-val="20">$20</a>
 										<a className="greennature-payment-price-preset greennature-active" data-val="30">$30</a>
@@ -95,12 +98,17 @@ class FoundationList extends Component {
 										<a className="greennature-payment-price-preset greennature-active" data-val="30">$100</a>
 										
 										<a className="greennature-payment-price-preset greennature-active" data-val="30">$500</a>
-										<MDBInput type="number" />
-										<input className="greennature-payment-price-fill" type="text" placeholder="Or Your Amount(USD)" />
-										<input className="greennature-payment-price" type="hidden" name="amount" value="30" />
-
-										<input className="greennature-payment-price" type="hidden" name="a3" value="30" />
+																			</div>
+																			<div className="col-md-4">
+    <input type="text" class="greennature-payment-price-preset payment-other-amount" placeholder="Or Your Amount(USD)" id="amount" />
+  
+										</div>
+										</div>
+										
 									</div>
+									
+									
+									
 									<div className="greennature-paypal-attribute">
 				<span className="greennature-head">Would you like to make regular donations?</span>
 				<span className="greennature-subhead">I would like to make donation(s)</span>
@@ -110,73 +118,46 @@ class FoundationList extends Component {
 					<option value="M">monthly</option>
 					<option value="Y">yearly</option>
 				</select>
-				<input type="hidden" name="p3" value="1" />
-				<div className="greennature-recurring-time-wrapper">
-					<span className="greennature-subhead">How many times would you like this to recur? (including this payment) *</span>
-					<select name="srt" className="greennature-recurring-option">
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-					</select>
-				</div>
-				<div className="greennature-form-fields">
-				<div className="six columns">
-					<div className="columns-wrap greennature-left">
-						<span className="greennature-head">Name *</span>
-						<input className="greennature-require" type="text" name="name" />
+				<div className="row">
+					<div className="col-md-6">
+					<div class="form-group">
+    <label for="firstName">First Name *</label>
+    <input type="text" class="form-control" placeholder="" id="firstName" />
+  </div>
+  <div class="form-group">
+    <label for="email">Email *</label>
+    <input type="email" class="form-control" placeholder="" id="email" />
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+	<textarea class="form-control" id="Textarea1" rows="3" spellcheck="false"></textarea>
+  </div>
+					</div>
+					<div className="col-md-6">
+					<div class="form-group">
+    <label for="lastName">Last Name *</label>
+    <input type="text" class="form-control" placeholder="" id="lastName" />
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" placeholder="" id="phone" />
+  </div>
+  <div class="form-group">
+    <label for="addadditionalNote">Additional Note</label>
+	<textarea class="form-control" id="Textarea1" rows="3" ></textarea>
+  </div>
 					</div>
 				</div>
-				<div className="six columns">
-					<div className="columns-wrap greennature-right">
-						<span className="greennature-head">Last Name *</span>
-						<input className="greennature-require" type="text" name="last-name" />
-					</div>
-				</div>
-				<div className="clear"></div>
-				<div className="six columns">
-					<div className="columns-wrap greennature-left">
-						<span className="greennature-head">Email *</span>
-						<input className="greennature-require greennature-email" type="text" name="email" />
-					</div>
-				</div>
-				<div className="six columns">
-					<div className="columns-wrap greennature-right">
-						<span className="greennature-head">Phone</span>
-						<input type="text" name="phone" />
-					</div>
-				</div>		
-				<div className="clear"></div>
-				<div className="six columns">
-					<div className="columns-wrap greennature-left">
-						<span className="greennature-head">Address</span>
-						<textarea name="address"></textarea>
-					</div>
-				</div>
-				<div className="six columns">
-					<div className="columns-wrap greennature-right">
-						<span className="greennature-head">Additional Note</span>
-						<textarea name="additional-note"></textarea>
-					</div>
-				</div>		
-				<div className="clear"></div>
+
 			</div>
-			</div>
+			<div class="greennature-payment-method">
+                        <img class="" src="assets/images/paypal.png" alt="paypal" /><img src="assets/images/stripe.png" alt="stripe" class="greennature-active" />
+                        <input type="hidden" name="payment-method" value="stripe" /> </div>
+
 								</Modal.Body>
 								<Modal.Footer>
-									<Button variant="secondary" onClick={() => this.handleModalShowHide()}>
-										Close
-                    </Button>
-									<Button variant="primary" onClick={() => this.handleModalShowHide()}>
-										Save Changes
-                    </Button>
+								<button type="button" class="btn btn-success btn-sm btn-block btnDonate">DONATE NOW</button>
+
 								</Modal.Footer>
 							</Modal>
 
@@ -361,7 +342,6 @@ class FoundationList extends Component {
 				<div className="col-md-6 section-4-side-2">
 					<br />
 					<div className="section-4-items">
-						<br /><br />
 						<div className="list-with-icon">
 							<div className="list-with-icon-image"><img src="assets/images/icon-1.png" alt="" width={46} height={46} /></div>
 							<div className="list-with-icon-title">Mollis Mattis</div>

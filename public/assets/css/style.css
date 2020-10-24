@@ -5099,3 +5099,34 @@ footer .footer-bottom ul.social-icons {
   font-weight: bold;
   margin-bottom: 15px;
 } */
+
+.payment-other-amount
+{
+  background-color: #ffffff !important;
+  font-family: lato;
+  display: inline-block;
+  height: 43px;
+  font-weight: bold;
+  vertical-align: bottom;
+  padding: 0px 17px;
+}
+.greennature-paypal-attribute {
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+.greennature-paypal-attribute .greennature-head {
+  display: block;
+  margin-bottom: 8px;
+}
+.greennature-paypal-attribute .greennature-subhead {
+  margin-right: 10px;
+}
+.greennature-paypal-attribute select.greennature-recurring-option {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Lato";
+}
+.greennature-paypal-attribute .greennature-subhead {
+  margin-right: 10px;
+}
