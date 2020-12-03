@@ -65,25 +65,28 @@ class FoundationList extends Component {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav mr-auto col-md-3 col-lg-3">
 							<li className="nav-item active">
-								<a className="nav-link" href="#"><img className="donationPageLogo" src="assets/images/logo.png" />
+								<a className="nav-link" href="#"><img src={publicUrl + "assets/img/logo.jpg"} 
+								className="mainAppLogo" alt="Elevations"                   />
 
 								</a>
-
 							</li>
-
 						</ul>
+
 						<ul className="navbar-nav col-md-6 col-lg-6">
 							<h2 className="banner_content upper_text banner-heading">
 								Contribute to the World
-					</h2>
+							</h2>
 						</ul>
+
 						<ul className="col-md-3 col-lg-3">
 							<a onClick={() => this.handleModalShowHide()} className="primary_btn yellow_btn text-white">Donate Now</a>
-							<Modal show={this.state.showHide} size="lg">
+							<Modal show={this.state.showHide} size="lg" scrollable> 
 								<Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
 									<Modal.Title>You are donating to : <b>Greennature Foundation</b></Modal.Title>
 								</Modal.Header>
-								<Modal.Body>
+
+								
+								<Modal.Body >
 									
 										<div className="greennature-payment-amount">
 										<div className="greennature-payment-amount-head">How much would you like to donate?</div>
@@ -98,9 +101,9 @@ class FoundationList extends Component {
 										<a className="greennature-payment-price-preset greennature-active" data-val="30">$100</a>
 										
 										<a className="greennature-payment-price-preset greennature-active" data-val="30">$500</a>
-																			</div>
-																			<div className="col-md-4">
-    <input type="text" class="greennature-payment-price-preset payment-other-amount" placeholder="Or Your Amount(USD)" id="amount" />
+										</div>
+										<div className="col-md-4">
+    										<input type="text" class="greennature-payment-price-preset payment-other-amount" placeholder="Or Your Amount(USD)" id="amount" />
   
 										</div>
 										</div>
