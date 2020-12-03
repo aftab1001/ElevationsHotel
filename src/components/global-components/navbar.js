@@ -83,7 +83,7 @@ class Navbar extends Component {
                   <Link to="/">
                     {" "}
                     <img 
-                      src={publicUrl + "assets/img/logo.png"} className="mainAppLogo"
+                      src={publicUrl + "assets/img/logo.jpg"} className="mainAppLogo"
                       alt="Elevations"
                     />{" "}
                   </Link>{" "}

@@ -25,7 +25,7 @@ class Footer_v1 extends Component {
 			        <div className="col-lg-4 col-md-6">
 			          <div className="widget footer-widget">
 			            <div className="footer-logo">
-			              <img src={publicUrl+"assets/img/logo.png"} alt="Logo" />
+			              <img style= {{height:'200px'}} src={publicUrl+"assets/img/logo.jpg"} alt="Logo" />
 			            </div>
 			            <p>Avoids pleasure itself, because pleasure, but because those who do not</p>
 			            <ul className="social-icons">
