@@ -5,6 +5,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import { Button, Modal } from 'react-bootstrap'
 import { MDBInput } from 'mdbreact';
+import FoundationDonate from './foundationDonate'
 
 
 const initialState = {
@@ -33,9 +34,11 @@ class FoundationList extends Component {
 		super(props)
 		this.timer = this.timer.bind(this)
 	}
+
 	handleModalShowHide() {
 		this.setState({ showHide: !this.state.showHide })
 	}
+	
 	timer(e) {
 		clearTimeout(this.timeout)
 		if (e.currentIndex !== null) {
@@ -58,115 +61,28 @@ class FoundationList extends Component {
 		return <div>
 
 			<div className="g-nature-navbar">
-				<nav className="navbar navbar-expand-md navbar-light" >
+				<nav className="navbar-nav navbar-expand-md navbar-light " >
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 						<span className="navbar-toggler-icon" />
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNav">
-						<ul className="navbar-nav mr-auto col-md-3 col-lg-3">
-							<li className="nav-item active">
-								<a className="nav-link" href="#"><img src={publicUrl + "assets/img/logo.jpg"} 
-								className="mainAppLogo" alt="Elevations"                   />
-
+						<ul className="navbar-nav mr-auto col-md-auto col-lg-auto">
+							
+								<a 	className="nav-link" href="#">
+									<img src={publicUrl + "assets/img/logo.jpg"} 
+									className="mainAppLogo" alt="Elevations" />
 								</a>
-							</li>
+							
 						</ul>
 
 						<ul className="navbar-nav col-md-6 col-lg-6">
-							<h2 className="banner_content upper_text banner-heading">
+							<h1 className="banner_content upper_text banner-heading">
 								Contribute to the World
-							</h2>
+							</h1>
 						</ul>
-
-						<ul className="col-md-3 col-lg-3">
-							<a onClick={() => this.handleModalShowHide()} className="primary_btn yellow_btn text-white">Donate Now</a>
-							<Modal show={this.state.showHide} size="lg" scrollable> 
-								<Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
-									<Modal.Title>You are donating to : <b>Greennature Foundation</b></Modal.Title>
-								</Modal.Header>
-
-								
-								<Modal.Body >
-									
-										<div className="greennature-payment-amount">
-										<div className="greennature-payment-amount-head">How much would you like to donate?</div>
-										<div className="row">
-										<div className="col-md-8">
-										<a className="greennature-payment-price-preset" data-val="10">$10</a>
-										<a className="greennature-payment-price-preset" data-val="20">$20</a>
-										<a className="greennature-payment-price-preset greennature-active" data-val="30">$30</a>
-										
-										<a className="greennature-payment-price-preset greennature-active" data-val="30">$50</a>
-										
-										<a className="greennature-payment-price-preset greennature-active" data-val="30">$100</a>
-										
-										<a className="greennature-payment-price-preset greennature-active" data-val="30">$500</a>
-										</div>
-										<div className="col-md-4">
-    										<input type="text" class="greennature-payment-price-preset payment-other-amount" placeholder="Or Your Amount(USD)" id="amount" />
-  
-										</div>
-										</div>
-										
-									</div>
-									
-									
-									
-									<div className="greennature-paypal-attribute">
-				<span className="greennature-head">Would you like to make regular donations?</span>
-				<span className="greennature-subhead">I would like to make donation(s)</span>
-				<select name="t3" className="greennature-recurring-option">
-					<option value="0">one time</option>
-					<option value="W">weekly</option>
-					<option value="M">monthly</option>
-					<option value="Y">yearly</option>
-				</select>
-				<div className="row">
-					<div className="col-md-6">
-					<div class="form-group">
-    <label for="firstName">First Name *</label>
-    <input type="text" class="form-control" placeholder="" id="firstName" />
-  </div>
-  <div class="form-group">
-    <label for="email">Email *</label>
-    <input type="email" class="form-control" placeholder="" id="email" />
-  </div>
-  <div class="form-group">
-    <label for="address">Address</label>
-	<textarea class="form-control" id="Textarea1" rows="3" spellcheck="false"></textarea>
-  </div>
-					</div>
-					<div className="col-md-6">
-					<div class="form-group">
-    <label for="lastName">Last Name *</label>
-    <input type="text" class="form-control" placeholder="" id="lastName" />
-  </div>
-  <div class="form-group">
-    <label for="phone">Phone</label>
-    <input type="text" class="form-control" placeholder="" id="phone" />
-  </div>
-  <div class="form-group">
-    <label for="addadditionalNote">Additional Note</label>
-	<textarea class="form-control" id="Textarea1" rows="3" ></textarea>
-  </div>
-					</div>
-				</div>
-
-			</div>
-			<div class="greennature-payment-method">
-                        <img class="" src="assets/images/paypal.png" alt="paypal" /><img src="assets/images/stripe.png" alt="stripe" class="greennature-active" />
-                        <input type="hidden" name="payment-method" value="stripe" /> </div>
-
-								</Modal.Body>
-								<Modal.Footer>
-								<button type="button" class="btn btn-success btn-sm btn-block btnDonate">DONATE NOW</button>
-
-								</Modal.Footer>
-							</Modal>
-
-
-
-						</ul>
+						 
+					<FoundationDonate/>
+						
 					</div>
 				</nav>
 			</div>
@@ -225,6 +141,7 @@ class FoundationList extends Component {
 
 			<div className="bg-separter" />
 			<div className="container-section-bg">
+				
 				<div className="container-section">
 					<div className="section-1">
 						<div className="row">
@@ -262,6 +179,7 @@ class FoundationList extends Component {
 					</div>
 				</div>
 			</div>
+
 			<div className="container-section-2">
 				<div className="container-section">
 					<div className="row">
@@ -272,6 +190,7 @@ class FoundationList extends Component {
 							<div className="action-ads-content">
 								<p>We are a larhge froup of people who powered movement fighting for a green and peaceful future for your land, forest, ocenas, foods, climate and pass the green earth to our children. Each one of us can make small changes in our lives, but together we can change the world.</p>
 								<a className="action-ads-button" href="#" style={{ backgroundColor: '#fec428' }}>Donate Now</a>
+								
 							</div>
 						</div>
 						<div className="col-md-6 action-ads-item-2">
@@ -288,6 +207,7 @@ class FoundationList extends Component {
 				</div>
 				<br /><br />
 			</div>
+
 			<div className="container-section-3">
 				<div className="container-section">
 					<br />
