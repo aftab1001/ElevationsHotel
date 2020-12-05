@@ -47,7 +47,7 @@ class FoundationDonate extends Component {
                                                 </div>
                                                 <div className="col-md-4">
                                         
-                                                <input type="text" class="greennature-payment-price-preset payment-other-amount" placeholder="Or Your Amount(USD)" id="amount" />
+                                                <input type="text" class="payment-other-amount" placeholder="Or Your Amount(USD)" id="amount" />
 
                                                 </div>
                                             </div>

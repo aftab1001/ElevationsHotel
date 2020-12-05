@@ -123,17 +123,14 @@ class Navbar extends Component {
                             {" "}
                             <Link to="/room-details"> Room Details </Link>
                           </li>
+                             
                               <li>
                                 {" "}
-                                <Link to="/room-details">Resaturent</Link>
+                                <Link to="/reservation">Reservation</Link>
                               </li>
                               <li>
                                 {" "}
-                                <Link to="/room-details">Reservation</Link>
-                              </li>
-                              <li>
-                                {" "}
-                                <Link to="/room-details">Our Staff</Link>
+                                <Link to="/our-staff">Our Staff</Link>
                               </li>
                             
                         </ul>{" "}
@@ -147,6 +144,10 @@ class Navbar extends Component {
                               </li>
                         </ul>{" "}
                       </li>{" "}
+                      <li>
+                        {" "}
+                        <Link to="/reservation"> Restaurant </Link>
+                      </li>
                       <li>
                         {" "}
                         <Link to="/service"> Services </Link>

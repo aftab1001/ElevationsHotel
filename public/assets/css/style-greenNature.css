@@ -395,16 +395,12 @@ input[type="text"].greennature-payment-price-fill {
   margin-bottom: 8px;
 }
 .greennature-paypal-attribute .greennature-subhead {
-  margin-right: 10px;
+  margin-right: 5%;
 }
 .greennature-paypal-attribute select.greennature-recurring-option {
-  margin-right: 10px;
-  font-size: 12px;
-  display: inline-block;
-  vertical-align: top;
   font-family: "Lato";
   width: 20%;
-  margin-top: 5px;
+  height: 40px;
 }
 .greennature-paypal-attribute .greennature-subhead {
   margin-right: 10px;
@@ -448,4 +444,9 @@ select {
 .btnDonate {
   height: 40px;
   background-color: #2ca411;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #666565;
+  opacity: 1; /* Firefox */
 }
