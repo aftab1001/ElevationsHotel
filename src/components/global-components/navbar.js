@@ -102,7 +102,7 @@ class Navbar extends Component {
                       <select>
                         <option value="English"> English </option>{" "}
                         <option value="Spanis"> Spanis </option>{" "}
-                        <option value="Creol"> Creol </option>{" "}
+                        <option value="Creol"> Spanish </option>{" "}
                       </select>{" "}
                     </div>{" "}
                   </div>{" "}
