@@ -108,7 +108,7 @@ class Navbar extends Component {
                   </div>{" "}
                   <nav className="main-menu">
                     <ul className="list-inline">
-                      <li className="active-page">
+                      <li >
                         <Link to="/"> Home </Link>{" "}
                        
                       </li>{" "}
