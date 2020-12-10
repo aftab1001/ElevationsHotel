@@ -422,12 +422,21 @@ class RoomDetails extends Component {
 		              <Link to="room-details">Hotel Views</Link>
 		            </div>
 		          </div>
-		          <div className="widget banner-widget Elevations-go-top" style={{backgroundImage: 'url(assets/img/blog/sidebar-banner.jpg)'}}>
-		            <h2>Booking Your Latest apartment</h2>
-		            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
+		          
+				
+
+				  
+			        <div className="widget banner-widget Elevations-go-top">
+			          <h2>Booking Your Latest apartment</h2>
+			          <p>BLorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 		              incididunt ut labore </p>
-		            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
-		          </div>
+			          <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
+			        </div>
+			    
+
+
+
+
 		        </div>
 		      </div>
 		    </div>
