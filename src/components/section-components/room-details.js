@@ -404,7 +404,7 @@ class RoomDetails extends Component {
 		                </select>
 		              </div>
 		              <div className="input-wrap">
-		                <button type="submit" className="btn filled-btn btn-block">
+		                <button type="submit" className="btn filled-btn btn-block btnBookNow">
 		                  book now <i className="far fa-long-arrow-right" />
 		                </button>
 		              </div>
@@ -426,7 +426,7 @@ class RoomDetails extends Component {
 		            <h2>Booking Your Latest apartment</h2>
 		            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 		              incididunt ut labore </p>
-		            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
+		            <Link to="/room-details" className="btn filled-btn btn-block btnBookNow">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
 		          </div>
 		        </div>
 		      </div>
