@@ -13,7 +13,7 @@ import Contact from './section-components/contact';
 import Brand from './section-components/brand';
 import Footer from './global-components/footer';
 
-const Home_V1 = () => {
+const Home = () => {
     return <div>
         <Navbar />
         <Slider />
@@ -31,5 +31,5 @@ const Home_V1 = () => {
     </div>
 }
 
-export default Home_V1
+export default Home
 

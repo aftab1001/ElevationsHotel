@@ -32,7 +32,7 @@ class Gallery extends Component {
 		      </div>
 		      <div className="col-lg-6">
 		        <div className="row">
-		          <div className="col-lg-8 col-md-6">
+		          <div className="col-lg-6 col-md-6">
 		            {/* SingleBox */}
 		            <div className="gallery-box bg-img-center semi-big wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="400ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/02.jpg)'}}>
 		              <div className="gallery-box-content">
@@ -44,7 +44,7 @@ class Gallery extends Component {
 		              </div>
 		            </div>
 		          </div>
-		          <div className="col-lg-4 col-md-6">
+		          <div className="col-lg-6 col-md-6">
 		            {/* SingleBox */}
 		            <div className="gallery-box bg-img-center small wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="800ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/03.jpg)'}}>
 		              <div className="gallery-box-content">

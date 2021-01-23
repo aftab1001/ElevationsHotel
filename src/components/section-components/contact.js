@@ -14,7 +14,11 @@ class Contact extends Component {
 		    <div className="row align-items-center no-gutters">
 		      <div className="col-lg-6">
 		        <div className="mapouter">
-			 		 <div style={{overflow: 'hidden', width: '585px', position: 'relative'}}><iframe width={585} height={580} src="https://maps.google.com/maps?width=1920&height=670&hl=en&q=London%2C%20United%20Kingdom+(Title)&ie=UTF8&t=&z=10&iwloc=B&output=embed" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} /><div style={{position: 'absolute', width: '80%', bottom: '10px', left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto', color: '#000', textAlign: 'center'}}><small style={{lineHeight: '1.8', fontSize: '2px', background: '#fff'}}>Powered by <a href="https://embedgooglemaps.com/es/">Embedgooglemaps ES</a> &amp; <a href="https://www.jubler.org/">increase website traffic</a></small></div><style dangerouslySetInnerHTML={{__html: "#gmap_canvas img{max-width:none!important;background:none!important}" }} /></div><br />
+			 		 <div style={{overflow: 'hidden', width: '585px', position: 'relative'}}>
+						  <iframe width={585} height={580} src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d374425.34544202645!2d-75.45263854868469!3d42.8475519683258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s205%20Main%20Road%2C%20New%20York!5e0!3m2!1sen!2s!4v1611408672124!5m2!1sen!2s" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} /><div style={{position: 'absolute', width: '80%', bottom: '10px', left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto', color: '#000', textAlign: 'center'}}><small style={{lineHeight: '1.8', fontSize: '2px', background: '#fff'}}>Powered by <a href="https://embedgooglemaps.com/es/">Embedgooglemaps ES</a> &amp; <a href="https://www.jubler.org/">increase website traffic</a></small></div><style dangerouslySetInnerHTML={{__html: "#gmap_canvas img{max-width:none!important;background:none!important}" }} />
+						  
+					  </div>
+					  <br />
 		        </div>
 
 		      </div>

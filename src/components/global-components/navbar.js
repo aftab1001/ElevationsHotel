@@ -78,7 +78,7 @@ class Navbar extends Component {
         <div className="header-menu-area">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-xl-3 col-lg-3 col-md-4 col-7">
+              <div className="col-xl-2 col-lg-2 col-md-3 col-7">
                 <div >
                   <Link to="/">
                     {" "}
@@ -89,7 +89,7 @@ class Navbar extends Component {
                   </Link>{" "}
                 </div>{" "}
               </div>{" "}
-              <div className="col-xl-9 col-lg-9 col-md-8 col-5">
+              <div className="col-xl-10 col-lg-10 col-md-9 col-5">
                 <div className="menu-right-area text-right">
                   <div className="lag-select">
                     <div className="lag-img">
@@ -135,14 +135,8 @@ class Navbar extends Component {
                             
                         </ul>{" "}
                       </li>{" "}
-                      <li className="have-submenu">
-                        <Link to="/apartment-list"> Apartments </Link>{" "}
-                        <ul className="submenu">
-                          <li>
-                                {" "}
-                                <Link to="/apartment-details">Apartment Details </Link>
-                              </li>
-                        </ul>{" "}
+                      <li>
+                        <Link to="/apartment-list"> Apartments </Link>{" "}                        
                       </li>{" "}
                       <li>
                         {" "}
@@ -167,23 +161,7 @@ class Navbar extends Component {
                       </li>
                     </ul>{" "}
                   </nav>{" "}
-                  <div className="search-wrap">
-                    <a className="search-icon">
-                      {" "}
-                      <i className="far fa-search" />{" "}
-                    </a>{" "}
-                    <a className="search-icon icon-close">
-                      <i className="far fa-times" />
-                    </a>{" "}
-                    <div className="search-form">
-                      <form>
-                        <input
-                          type="search"
-                          placeholder="TYPE AND PRESS ENTER....."
-                        />
-                      </form>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                 
                   <div className="quote-btn">
                     <Link to="/contact" className="btn filled-btn">
                       {" "}
