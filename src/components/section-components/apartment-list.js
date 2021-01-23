@@ -12,7 +12,7 @@ class ApartmentList extends Component {
 		return <section className="rooms-warp list-view section-bg section-padding ">
 			<div className="container">
 				<div className="row">
-					<div className="col-lg-8">
+					<div className="col-lg-12">
 						{/* Single Room */}
 						<div className="single-room list-style Elevations-go-top">
 							<div className="row align-items-center no-gutters">
@@ -144,7 +144,7 @@ class ApartmentList extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-4">
+					<div className="col-lg-4 d-none">
 						<div className="sidebar-wrap">
 							<div className="widget fillter-widget">
 								<h4 className="widget-title">Your Reservation</h4>

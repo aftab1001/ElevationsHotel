@@ -100,9 +100,8 @@ class Navbar extends Component {
                     </div>{" "}
                     <div className="lag-option">
                       <select>
-                        <option value="English"> English </option>{" "}
-                        <option value="Spanis"> Spanis </option>{" "}
-                        <option value="Creol"> Spanish </option>{" "}
+                        <option value="English"> English </option>{" "}                      
+                        <option value="Spanish"> Spanish </option>{" "}
                       </select>{" "}
                     </div>{" "}
                   </div>{" "}
