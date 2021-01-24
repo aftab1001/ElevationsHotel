@@ -23,7 +23,7 @@ class NavbarV2 extends Component {
                 </div>{" "}
                 <p className="phone-num">
                   {" "}
-                  <i className="far fa-phone" /> +89(456) 789 999{" "}
+                  <i className="fas fa-phone" /> +89(456) 789 999{" "}
                 </p>{" "}
               </div>{" "}
             </div>{" "}
@@ -166,7 +166,7 @@ class NavbarV2 extends Component {
                 <div className="search-wrap">
                   <a href="#" className="search-icon">
                     {" "}
-                    <i className="far fa-search" />{" "}
+                    <i className="fas fa-search" />{" "}
                   </a>{" "}
                   <a href="#" className="search-icon icon-close">
                     <i className="far fa-times" />

@@ -31,9 +31,9 @@ class RoomGrid extends Component {
 			                  to pursue pleasure rationally encounter
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$180.00</p>
@@ -58,9 +58,9 @@ class RoomGrid extends Component {
 			                  dislikes avoids pleasure because
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$205.00</p>
@@ -85,9 +85,9 @@ class RoomGrid extends Component {
 			                  dolorum fuga. Et harum quidem
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$199.00</p>
@@ -112,9 +112,9 @@ class RoomGrid extends Component {
 			                  to pursue pleasure rationally encounter
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$180.00</p>
@@ -139,9 +139,9 @@ class RoomGrid extends Component {
 			                  dislikes avoids pleasure because
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$205.00</p>
@@ -166,9 +166,9 @@ class RoomGrid extends Component {
 			                  dolorum fuga. Et harum quidem
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$199.00</p>
@@ -185,7 +185,7 @@ class RoomGrid extends Component {
 			            <form>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Location" id="location" />
-			                <i className="far fa-search" />
+			                <i className="fas fa-search" />
 			              </div>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Arrive Date" id="arrive-date" />

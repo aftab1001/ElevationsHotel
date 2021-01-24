@@ -105,7 +105,7 @@ class BlogDetails extends Component {
 	              <div className="col-12">
 	                <div className="input-wrap text-area">
 	                  <textarea placeholder="Write Message" defaultValue={""} />
-	                  <i className="far fa-pencil" />
+	                  <i className="fas fa-pencil-alt" />
 	                </div>
 	              </div>
 	              <div className="col-12">

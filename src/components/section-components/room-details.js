@@ -68,9 +68,9 @@ class RoomDetails extends Component {
 		            </div>
 		            <h2 className="entry-title">Modern Guest Rooms</h2>
 		            <ul className="entry-meta list-inline">
-		              <li><i className="far fa-bed" />3 Bed</li>
-		              <li><i className="far fa-bath" />2 Baths</li>
-		              <li><i className="far fa-ruler-triangle" />72 m</li>
+		              <li><i className="fas fa-bed" />3 Bed</li>
+		              <li><i className="fas fa-bath" />2 Baths</li>
+		              <li><i className="fas fa-ruler-combined" />72 m</li>
 		            </ul>
 		          </div>
 		          <div className="room-details-tab">
@@ -356,7 +356,7 @@ class RoomDetails extends Component {
 		                      <form>
 		                        <div className="input-wrap text-area">
 		                          <textarea placeholder="Write Review" defaultValue={""} />
-		                          <i className="far fa-pencil" />
+		                          <i className="fas fa-pencil-alt" />
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Name" id="name" />
@@ -386,7 +386,7 @@ class RoomDetails extends Component {
 		            <form>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Location" id="f-location" />
-		                <i className="far fa-search" />
+		                <i className="fas fa-search" />
 		              </div>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Arrive Date" id="arrive-date" />

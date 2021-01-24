@@ -37,7 +37,7 @@ class BookTable extends Component {
 			              <label htmlFor="name">Your Full Name</label>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Your Full Name" name="name" id="name" />
-			                <i className="far fa-user-alt" />
+			                <i className="fas fa-user-alt" />
 			              </div>
 			              <label htmlFor="email">Your Email Address</label>
 			              <div className="input-wrap">
@@ -47,9 +47,9 @@ class BookTable extends Component {
 			              <label htmlFor="msg">Write Message</label>
 			              <div className="input-wrap text-area">
 			                <textarea placeholder="Write Message" id="msg"  name="msg" defaultValue={""} />
-			                <i className="far fa-pencil" />
+			                <i className="fas fa-pencil-alt" />
 			              </div>
-			              <button type="submit" className="btn filled-btn">Book Now <i className="far fa-long-arrow-right" /></button>
+			              <button type="submit" className="btn filled-btn">Book Now <i className="fas fa-long-arrow-alt-right" /></button>
 			            </form>
 			          </div>
 			        </div>

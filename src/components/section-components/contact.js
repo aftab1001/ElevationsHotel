@@ -32,13 +32,13 @@ class Contact extends Component {
 		        </div>
 		        <div className="contact-box wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="400ms">
 		          <ul>
-		            <li><i className="far fa-map-marker-alt" />205 Main Road, New York</li>
+		            <li><i className="fas fa-map-marker-alt" />205 Main Road, New York</li>
 		            <li>
 		              <a >
 		                <i className="far fa-envelope-open" />supportinfo@gmail.com
 		              </a>
 		            </li>
-		            <li><a ><i className="far fa-phone" />+89 (456) 999 999</a>
+		            <li><a ><i className="fas fa-phone" />+89 (456) 999 999</a>
 		            </li>
 		          </ul>
 		        </div>

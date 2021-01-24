@@ -28,9 +28,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">02 Bed Apartments</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />2 Bed</li>
-											<li><i className="far fa-bath" />1 Baths</li>
-											<li><i className="far fa-ruler-triangle" />72 m</li>
+											<li><i className="fas fa-bed" />2 Bed</li>
+											<li><i className="fas fa-bath" />1 Baths</li>
+											<li><i className="fas fa-ruler-combined" />72 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$180.00</p>
@@ -54,9 +54,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Conference Room</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />99 m</li>
+											<li><i className="fas fa-bed" />3 Bed</li>
+											<li><i className="fas fa-bath" />2 Baths</li>
+											<li><i className="fas fa-ruler-combined" />99 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$220.00</p>
@@ -80,9 +80,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Three Bed / Premier Suite</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />110 m</li>
+											<li><i className="fas fa-bed" />3 Bed</li>
+											<li><i className="fas fa-bath" />2 Baths</li>
+											<li><i className="fas fa-ruler-combined" />110 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$240.00</p>
@@ -106,9 +106,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Two Duplex / Royal Suite</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />2 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />80 m</li>
+											<li><i className="fas fa-bed" />2 Bed</li>
+											<li><i className="fas fa-bath" />2 Baths</li>
+											<li><i className="fas fa-ruler-combined" />80 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$180.00</p>
@@ -132,9 +132,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Studio Apartment</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />1 Double Bed</li>
-											<li><i className="far fa-bath" />1 Baths</li>
-											<li><i className="far fa-ruler-triangle" />60 m</li>
+											<li><i className="fas fa-bed" />1 Double Bed</li>
+											<li><i className="fas fa-bath" />1 Baths</li>
+											<li><i className="fas fa-ruler-combined" />60 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$150.00</p>
@@ -151,7 +151,7 @@ class ApartmentList extends Component {
 								<form>
 									<div className="input-wrap">
 										<input type="text" placeholder="Location" id="location" />
-										<i className="far fa-search" />
+										<i className="fas fa-search" />
 									</div>
 									<div className="input-wrap">
 										<input type="text" placeholder="Arrive Date" id="arrive-date" />
@@ -252,11 +252,11 @@ class ApartmentList extends Component {
 					<div className="col-12">
 						<div className="pagination-wrap">
 							<ul className="list-inline">
-								<li><a href=""><i className="far fa-angle-left" /></a></li>
+								<li><a href=""><i className="fas fa-angle-left" /></a></li>
 								<li className="active"><a href="">01</a></li>
 								<li><a href="">02</a></li>
 								<li><a href="">03</a></li>
-								<li><a href=""><i className="far fa-angle-right" /></a></li>
+								<li><a href=""><i className="fas fa-angle-right" /></a></li>
 							</ul>
 						</div>
 					</div>

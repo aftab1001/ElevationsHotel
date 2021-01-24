@@ -17,7 +17,7 @@ class BookingForm extends Component {
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
 		              <input type="text" name="location" placeholder="Location" id="location" />
-		              <i className="far fa-search" />
+		              <i className="fas fa-search" />
 		            </div>
 		          </div>
 		          <div className="col-lg-4 col-md-6">

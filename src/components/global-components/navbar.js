@@ -15,12 +15,12 @@ class Navbar extends Component {
                 <ul className="top-contact-info list-inline">
                   <li>
                     {" "}
-                    <i className="far fa-map-marker-alt" /> 205 Main Rood, New
+                    <i className="fas fa-map-marker-alt" /> 205 Main Rood, New
                     York{" "}
                   </li>{" "}
                   <li>
                     {" "}
-                    <i className="far fa-phone" /> +89(456) 789 999{" "}
+                    <i className="fas fa-phone" /> +89(456) 789 999{" "}
                   </li>{" "}
                 </ul>{" "}
               </div>{" "}

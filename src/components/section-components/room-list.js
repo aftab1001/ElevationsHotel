@@ -28,9 +28,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Modern Guest Rooms</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -54,9 +54,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Conference Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -80,9 +80,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -106,9 +106,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Conference Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -132,9 +132,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -151,7 +151,7 @@ class RoomList extends Component {
 		            <form>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Location" id="location" />
-		                <i className="far fa-search" />
+		                <i className="fas fa-search" />
 		              </div>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Arrive Date" id="arrive-date" />

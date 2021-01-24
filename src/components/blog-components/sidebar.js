@@ -16,7 +16,7 @@ class Sidebar extends Component {
 	            <h4 className="widget-title">Search Here</h4>
 	            <form>
 	              <input type="text" placeholder="Seacrh Keywords" />
-	              <button><i className="far fa-search" /></button>
+	              <button><i className="fas fa-search" /></button>
 	            </form>
 	          </div>
 	          <div className="widget recent-news Elevations-go-top">
