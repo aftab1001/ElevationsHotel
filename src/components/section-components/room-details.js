@@ -132,7 +132,7 @@ class RoomDetails extends Component {
 		                    </div>
 		                    <div className="room-specification">
 		                      <div className="row">
-		                        <div className="col-lg-4 col-md-12">
+		                        <div className="col-lg-6 col-md-12">
 		                          <div className="pricing-plan">
 		                            <h4 className="specific-title"> Pricing Plan </h4>
 		                            <table>
@@ -173,7 +173,7 @@ class RoomDetails extends Component {
 		                            </table>
 		                          </div>
 		                        </div>
-		                        <div className="col-lg-4 col-6">
+		                        <div className="col-lg-6 col-6">
 		                          <div className="feature">
 		                            <h4 className="specific-title"> Features </h4>
 		                            <ul>
@@ -192,24 +192,9 @@ class RoomDetails extends Component {
 		                              <li>Security</li>
 		                            </ul>
 		                          </div>
+								  
 		                        </div>
-		                        <div className="col-lg-4 col-6">
-		                          <div className="accomodation">
-		                            <h4 className="specific-title"> Features </h4>
-		                            <ul>
-		                              <li>Master Room</li>
-		                              <li>1 King Size</li>
-		                              <li>2 Guests</li>
-		                            </ul>
-		                          </div>
-		                          <div className="bedrooms">
-		                            <h4 className="specific-title"> Bedrooms </h4>
-		                            <ul>
-		                              <li>1 Queen Size</li>
-		                              <li>2 Guests</li>
-		                            </ul>
-		                          </div>
-		                        </div>
+		                        
 		                      </div>
 		                    </div>
 		                  </div>
@@ -295,7 +280,7 @@ class RoomDetails extends Component {
 		                              of denouncing pleasure
 		                              and praising pain was born and I will give you a
 		                              complete account</p>
-		                            <a href="#" className="reply-comment">Reply <i className="far fa-long-arrow-right" /></a>
+		                            <a href="#" className="reply-comment">Reply <i className="fas fa-long-arrow-alt-right" /></a>
 		                            <div className="autor-rating">
 		                              <i className="fa fa-star" />
 		                              <i className="fa fa-star" />
@@ -360,7 +345,7 @@ class RoomDetails extends Component {
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Name" id="name" />
-		                          <i className="far fa-user-alt" />
+		                          <i className="fas fa-user-alt" />
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Your Email" id="email" />
@@ -405,7 +390,7 @@ class RoomDetails extends Component {
 		              </div>
 		              <div className="input-wrap">
 		                <button type="submit" className="btn filled-btn btn-block">
-		                  book now <i className="far fa-long-arrow-right" />
+		                  book now <i className="fas fa-long-arrow-alt-right" />
 		                </button>
 		              </div>
 		            </form>
@@ -430,7 +415,7 @@ class RoomDetails extends Component {
 			          <h2>Booking Your Latest apartment</h2>
 			          <p>BLorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 		              incididunt ut labore </p>
-			          <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
+			          <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
 			        </div>
 			    
 

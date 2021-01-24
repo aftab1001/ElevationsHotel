@@ -90,7 +90,7 @@ class FoodMenu extends Component {
 		          </div>
 		        </div>
 		        <div className="col-12 text-center">
-		          <a href="#" className="btn filled-btn">View More Food <i className="far fa-long-arrow-right" /></a>
+		          <a href="#" className="btn filled-btn">View More Food <i className="fas fa-long-arrow-alt-right" /></a>
 		        </div>
 		      </div>
 		    </div>

@@ -49,7 +49,7 @@ class BookingFormV2 extends Component {
 		              <div>
 		                <div className="input-wrap">
 		                  <button type="submit" className="btn filled-btn btn-block btn-black">
-		                    check now <i className="far fa-long-arrow-right" />
+		                    check now <i className="fas fa-long-arrow-alt-right" />
 		                  </button>
 		                </div>
 		              </div>

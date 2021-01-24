@@ -24,7 +24,7 @@ class Mission extends Component {
 			            <p>Sedut perspiciatis unde omnis iste natu error
 			              sit voluptatem accusantium doloremque laudti
 			              um totam rem aperiam eaque quae</p>
-			            <Link to="/service" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+			            <Link to="/service" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 			          </div>
 			        </div>
 			      </div>
@@ -36,7 +36,7 @@ class Mission extends Component {
 			            <p>Sedut perspiciatis unde omnis iste natu error
 			              sit voluptatem accusantium doloremque laudti
 			              um totam rem aperiam eaque quae</p>
-			            <Link to="/service" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+			            <Link to="/service" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 			          </div>
 			        </div>
 			      </div>
@@ -48,7 +48,7 @@ class Mission extends Component {
 			            <p>Sedut perspiciatis unde omnis iste natu error
 			              sit voluptatem accusantium doloremque laudti
 			              um totam rem aperiam eaque quae</p>
-			            <Link to="/service" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+			            <Link to="/service" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 			          </div>
 			        </div>
 			      </div>

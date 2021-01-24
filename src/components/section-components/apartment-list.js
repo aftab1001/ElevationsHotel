@@ -240,7 +240,7 @@ class ApartmentList extends Component {
 									</div>
 									<div className="input-wrap">
 										<button type="submit" className="btn filled-btn btn-block">
-											Filter Results <i className="far fa-long-arrow-right" />
+											Filter Results <i className="fas fa-long-arrow-alt-right" />
 										</button>
 									</div>
 								</form>

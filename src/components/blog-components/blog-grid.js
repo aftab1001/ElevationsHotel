@@ -20,7 +20,7 @@ class BlogGrid extends Component {
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Shanghai Marriott Hotel expanded its portfolio of hotels in China.</Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -35,7 +35,7 @@ class BlogGrid extends Component {
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Accor has opened the first internationally branded hotel in Khao Yai, Thailand.</Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -50,7 +50,7 @@ class BlogGrid extends Component {
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Evolution Of Business Travel: Adjusting Your Corporate Travel Strategy For Recovery </Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -66,7 +66,7 @@ class BlogGrid extends Component {
 		              </ul>
 		              <h3><Link to="/blog-details">The Westin Maldives Miriandhoo Resort
 Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -81,7 +81,7 @@ Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Occupancy Rates for China’s Hotels Show First Year-Over-Year Growth Since Pandemic’s Start</Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -96,7 +96,7 @@ Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Reopening Costa Rica: Hotel Recovery in the New Normal Supported by a WTTC Safe Travel Stamp. </Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -111,7 +111,7 @@ Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Parsing Hotel ‘Hygiene Theater’ From Truly Effective Health Protocols</Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -126,7 +126,7 @@ Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">California Boutique Hotelier Deploys Big-Brand Tactics to Seize Growth Opportunities.</Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -141,7 +141,7 @@ Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Accor Just Restructured the Company in the Middle of a Pandemic: Why Now? </Link></h3>
-		              <Link to="/blog-details" className="read-more">Read More <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="read-more">Read More <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -150,11 +150,11 @@ Beautifully situated on the UNESCO Biosphere Reserve in Baa Atoll.</Link></h3>
 		    {/* Pagination Wrap */}
 		    <div className="pagination-wrap">
 		      <ul className="list-inline">
-		        <li><a href="#"><i className="far fa-angle-left" /></a></li>
+		        <li><a href="#"><i className="fas fa-angle-left" /></a></li>
 		        <li className="active"><a href="#">01</a></li>
 		        <li><a href="#">02</a></li>
 		        <li><a href="#">03</a></li>
-		        <li><a href="#"><i className="far fa-angle-right" /></a></li>
+		        <li><a href="#"><i className="fas fa-angle-right" /></a></li>
 		      </ul>
 		    </div>
 		  </div>

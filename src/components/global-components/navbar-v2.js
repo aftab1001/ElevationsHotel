@@ -183,7 +183,7 @@ class NavbarV2 extends Component {
                 <div className="quote-btn">
                   <Link to="/contact" className="btn filled-btn">
                     {" "}
-                    get a quote <i className="far fa-long-arrow-right" />{" "}
+                    get a quote <i className="fas fa-long-arrow-alt-right" />{" "}
                   </Link>{" "}
                 </div>{" "}
               </div>{" "}

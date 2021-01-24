@@ -13,7 +13,7 @@ class FoodCta extends Component {
 		  <div className="container">
 		    <div className="food-cta-text">
 		      <h1>Special Offer <span>For Burgers</span></h1>
-		      <Link to="/service" className="btn filled-btn">SHOP NOW <i className="far fa-long-arrow-right" /></Link>
+		      <Link to="/service" className="btn filled-btn">SHOP NOW <i className="fas fa-long-arrow-alt-right" /></Link>
 		    </div>
 		  </div>
 		  <h1 className="big-text">

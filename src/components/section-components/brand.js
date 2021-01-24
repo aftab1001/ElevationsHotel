@@ -9,7 +9,7 @@ class Brand extends Component {
         let publicUrl = process.env.PUBLIC_URL+'/'
         let imagealt = 'image'
         let Customclass = this.props.Customclass ? this.props.Customclass : ''
-
+return(<div></div>);
     return <section className={"brands-section "+Customclass}>
 		  <div className="container">
 		    <div id="brandsSlideActive" className="row">

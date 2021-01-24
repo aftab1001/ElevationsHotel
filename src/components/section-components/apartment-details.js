@@ -269,7 +269,7 @@ class ApartmentDetail extends Component {
 		                            <h6>Alexzeder Alex <span className="comment-date"> 25 Feb
 		                                2020</span></h6>
 		                            <p>’ve tried my best to furnish my apartment with all the details one can expect. I hope it would make you feel like home away from home. You’ll surely enjoy your stay.</p>
-		                            <a href="#" className="reply-comment">Reply <i className="far fa-long-arrow-right" /></a>
+		                            <a href="#" className="reply-comment">Reply <i className="fas fa-long-arrow-alt-right" /></a>
 		                            <div className="autor-rating">
 		                              <i className="fa fa-star" />
 		                              <i className="fa fa-star" />
@@ -334,7 +334,7 @@ class ApartmentDetail extends Component {
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Name" id="name" />
-		                          <i className="far fa-user-alt" />
+		                          <i className="fas fa-user-alt" />
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Your Email" id="email" />
@@ -379,7 +379,7 @@ class ApartmentDetail extends Component {
 		              </div>
 		              <div className="input-wrap">
 		                <button type="submit" className="btn filled-btn btn-block">
-		                  book now <i className="far fa-long-arrow-right" />
+		                  book now <i className="fas fa-long-arrow-alt-right" />
 		                </button>
 		              </div>
 		            </form>
@@ -399,7 +399,7 @@ class ApartmentDetail extends Component {
 		          <div className="widget banner-widget Elevations-go-top" style={{backgroundImage: 'url(assets/img/apartment/27.jpg)'}}>
 		            <h2>Booking Your Latest apartment</h2>
 		            <p>Give us a chance and you will be happy with the Elevations hotel services. </p>
-		            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
+		            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
 		          </div>
 		        </div>
 		      </div>

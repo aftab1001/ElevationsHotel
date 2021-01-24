@@ -267,7 +267,7 @@ class RoomGrid extends Component {
 			              </div>
 			              <div className="input-wrap">
 			                <button type="submit" className="btn filled-btn btn-block">
-			                  Filter Results <i className="far fa-long-arrow-right" />
+			                  Filter Results <i className="fas fa-long-arrow-alt-right" />
 			                </button>
 			              </div>
 			            </form>
@@ -276,18 +276,18 @@ class RoomGrid extends Component {
 			            <h2>Booking Your Latest apartment</h2>
 			            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 			              incididunt ut labore </p>
-			            <a href="#" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></a>
+			            <a href="#" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></a>
 			          </div>
 			        </div>
 			      </div>
 			      <div className="col-12">
 			        <div className="pagination-wrap">
 			          <ul className="list-inline">
-			            <li><a href=""><i className="far fa-angle-left" /></a></li>
+			            <li><a href=""><i className="fas fa-angle-left" /></a></li>
 			            <li className="active"><a href="">01</a></li>
 			            <li><a href="">02</a></li>
 			            <li><a href="">03</a></li>
-			            <li><a href=""><i className="far fa-angle-right" /></a></li>
+			            <li><a href=""><i className="fas fa-angle-right" /></a></li>
 			          </ul>
 			        </div>
 			      </div>

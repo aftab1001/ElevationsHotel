@@ -59,7 +59,7 @@ class BookingForm extends Component {
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
 		              <button type="submit" className="btn filled-btn btn-block">
-		                book now <i className="far fa-long-arrow-right" />
+		                book now <i className="fas fa-long-arrow-alt-right" />
 		              </button>
 		            </div>
 		          </div>

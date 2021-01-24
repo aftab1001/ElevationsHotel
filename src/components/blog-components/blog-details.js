@@ -18,7 +18,7 @@ class BlogDetails extends Component {
 	              <img src={publicUrl+"assets/img/blog-details/01.jpg"} alt="Image" />
 	            </div>
 	            <ul className="entry-meta list-inline">
-	              <li><a href="single-blog.html"><i className="far fa-user-alt" />Somalia Alexz</a></li>
+	              <li><a href="single-blog.html"><i className="fas fa-user-alt" />Somalia Alexz</a></li>
 	              <li><a href="single-blog.html"><i className="far fa-calendar-alt" />20 jan 2020</a>
 	              </li>
 	            </ul>
@@ -93,7 +93,7 @@ class BlogDetails extends Component {
 	              <div className="col-md-6 col-12">
 	                <div className="input-wrap">
 	                  <input type="text" placeholder="Your Full Name" id="name" />
-	                  <i className="far fa-user-alt" />
+	                  <i className="fas fa-user-alt" />
 	                </div>
 	              </div>
 	              <div className="col-md-6 col-12">
@@ -109,7 +109,7 @@ class BlogDetails extends Component {
 	                </div>
 	              </div>
 	              <div className="col-12">
-	                <button type="submit" className="btn filled-btn">Send Message <i className="far fa-long-arrow-right" /></button>
+	                <button type="submit" className="btn filled-btn">Send Message <i className="fas fa-long-arrow-alt-right" /></button>
 	              </div>
 	            </div>
 	          </form>

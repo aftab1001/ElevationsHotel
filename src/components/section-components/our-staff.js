@@ -134,11 +134,11 @@ class OurStaff extends Component {
 			    </div>
 			    <div className="pagination-wrap">
 			      <ul className="list-inline">
-			        <li><a href="#"><i className="far fa-angle-left" /></a></li>
+			        <li><a href="#"><i className="fas fa-angle-left" /></a></li>
 			        <li className="active"><a href="#">01</a></li>
 			        <li><a href="#">02</a></li>
 			        <li><a href="#">03</a></li>
-			        <li><a href="#"><i className="far fa-angle-right" /></a></li>
+			        <li><a href="#"><i className="fas fa-angle-right" /></a></li>
 			      </ul>
 			    </div>
 			  </div>

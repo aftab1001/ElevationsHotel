@@ -23,7 +23,7 @@ class BookTable extends Component {
 			            actual teachings of the great explorer of the truth, the master-builder of human
 			            hapness. No one rejects dislikes or avoids pleasure itself
 			          </p>
-			          <a href="contact.html" className="read-more">Get Started <i className="far fa-long-arrow-right" /></a>
+			          <a href="contact.html" className="read-more">Get Started <i className="fas fa-long-arrow-alt-right" /></a>
 			          <div className="book-table-img">
 			            <img src={publicUrl+"assets/img/reservation/03.jpg"} alt="Image" />
 			          </div>

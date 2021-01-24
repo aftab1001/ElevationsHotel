@@ -1385,6 +1385,9 @@ span.counter-number,
 .single-room .room-thumb {
   overflow: hidden;
 }
+.single-room .room-thumb img{
+  min-height: 250px;
+}
 
 .single-room:hover .room-thumb img {
   -webkit-transform: scale(1.1);
@@ -4523,7 +4526,7 @@ figure {
 }
 
 .sidebar-wrap .widget.banner-widget .btn {
-  padding: 25px 50px;
+  padding: 20px 30px;
   border-radius: 5px;
   margin-top: 50px;
 }

@@ -19,7 +19,7 @@ class Comments extends Component {
 	                <h6>Alexzeder Alex <span className="comment-date"> 25 Feb 2020</span></h6>
 	                <p>But I must explain to you how all this mistaken idea of denouncing pleasure
 	                  and praising pain was born and I will give you a complete account</p>
-	                <a href="#" className="reply-comment">Reply Commets <i className="far fa-long-arrow-right" /></a>
+	                <a href="#" className="reply-comment">Reply Commets <i className="fas fa-long-arrow-alt-right" /></a>
 	              </div>
 	              <ul className="children">
 	                <li>
@@ -31,7 +31,7 @@ class Comments extends Component {
 	                    <p>But I must explain to you how all this mistaken idea of denouncing
 	                      pleasure and praising pain was born and I will give you a complete
 	                      account</p>
-	                    <a href="#" className="reply-comment">Reply Commets <i className="far fa-long-arrow-right" /></a>
+	                    <a href="#" className="reply-comment">Reply Commets <i className="fas fa-long-arrow-alt-right" /></a>
 	                  </div>
 	                </li>
 	              </ul>
@@ -44,7 +44,7 @@ class Comments extends Component {
 	                <h6>Alexzeder Alex <span className="comment-date"> 25 Feb 2020</span></h6>
 	                <p>But I must explain to you how all this mistaken idea of denouncing pleasure
 	                  and praising pain was born and I will give you a complete account</p>
-	                <a href="#" className="reply-comment">Reply Commets <i className="far fa-long-arrow-right" /></a>
+	                <a href="#" className="reply-comment">Reply Commets <i className="fas fa-long-arrow-alt-right" /></a>
 	              </div>
 	            </li>
 	          </ul>

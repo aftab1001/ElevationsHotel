@@ -81,7 +81,7 @@ class Sidebar extends Component {
 	            <h2>Booking Your Latest apartment</h2>
 	            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 	              incididunt ut labore </p>
-	            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
+	            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
 	          </div>
 	        </div>
 	      </div>
