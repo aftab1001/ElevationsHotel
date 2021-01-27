@@ -35,7 +35,7 @@ class ContactInfo extends Component {
 			        <div className="col-lg-4 col-md-6">
 			          <div className="contact-info-box">
 			            <div className="contact-icon">
-			              <i className="fas fa-map-marker-alt-alt" />
+			              <i className="fas fa-map-marker-alt" />
 			            </div>
 			            <h4>Address</h4>
 			            <p>GymVast, 18 East 50th Street,</p>
