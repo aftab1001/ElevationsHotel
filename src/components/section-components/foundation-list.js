@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
-import { Button, Modal } from 'react-bootstrap'
-import { MDBInput } from 'mdbreact';
 import FoundationDonate from './foundationDonate'
 
 

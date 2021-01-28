@@ -14,11 +14,11 @@ import Contact from "./section-components/contact";
 import Brand from "./section-components/brand";
 import Footer from "./global-components/footer";
 import HotelModal from "./global-components/HotelModal";
+import BookingFormHtml from "./form-components/BookingFormHtml";
 
 const Home = () => {
   const [showModel, setShowModel] = useState(false);
-  const handleClose = () => {
-    alert("close");
+  const handleClose = () => {    
     setShowModel(false);
   }
   const handleSave = (status) => {
@@ -30,7 +30,7 @@ const Home = () => {
       <Button variant="primary" onClick={() => setShowModel(true)}>
         Open Modal
       </Button>
-      <HotelModal showModal={showModel} handleClose={handleClose} handleSave={handleSave}/>
+      <HotelModal title="booking form" showModal={showModel} handleClose={handleClose} handleSave={handleSave}><BookingFormHtml/></HotelModal>
       <Navbar />
       <Slider />
       <BookingForm />

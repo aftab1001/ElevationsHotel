@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class Gallery extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
-
+      
     return <section className="ma-gallery-section section-padding Elevations-go-top">
 		  <div className="container">
 		    {/* Section Title */}

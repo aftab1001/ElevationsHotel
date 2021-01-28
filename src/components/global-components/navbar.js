@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";
-    let imgattr = "logo";
-    let anchor = "#";
+    let publicUrl = process.env.PUBLIC_URL + "/";  
     return (
       <header>
         <div className="header-top-area section-bg">

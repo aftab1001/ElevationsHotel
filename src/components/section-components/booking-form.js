@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-
 class BookingForm extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
-
+    
     return <section className="booking-section">
 		  <div className="container">
 		    <div className="booking-form-wrap bg-img-center section-bg">

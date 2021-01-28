@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class RoomList extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
+   
 
     return <section className="rooms-warp list-view section-bg section-padding ">
 		  <div className="container">
@@ -171,7 +170,7 @@ class RoomList extends Component {
 		              </div>
 		              <div className="input-wrap">
 		                <select name="adults" id="adults" defaultValue={'DEFAULT'}>
-		                  <option value="default"  disabled value="DEFAULT">Adults</option>
+		                  <option disabled value="DEFAULT">Adults</option>
 		                  <option value={1}>1</option>
 		                  <option value={2}>2</option>
 		                  <option value={3}>3</option>

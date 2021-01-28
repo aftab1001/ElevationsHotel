@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class Calltoacton extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return <section className="cta-section bg-img-center" style={{backgroundImage: 'url('+publicUrl+'assets/img/bg/cta-01.jpg)'}}>
 			  <div className="container">

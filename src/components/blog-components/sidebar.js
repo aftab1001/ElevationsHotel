@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
-
 class Sidebar extends Component {
-  render() {
-   let anchor = '#'
-   let imagealt = 'image'
+  render() {  
    let publicUrl = process.env.PUBLIC_URL+'/'
     return (
-      <div className="col-lg-4">
+      <div className="col-lg-4">a
 	        {/* Sidebars Area */}
 	        <div className="sidebar-wrap">
 	          <div className="widget search-widget">

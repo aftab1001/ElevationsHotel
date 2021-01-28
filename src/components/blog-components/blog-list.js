@@ -4,7 +4,6 @@ import Sidebar from './sidebar';
 class BlogList extends Component {
   render() {
     let publicUrl = process.env.PUBLIC_URL+'/'
-    let imagealt = 'image'
     return (
       <section className="blog-wrapper section-padding section-bg">
 		  <div className="container">

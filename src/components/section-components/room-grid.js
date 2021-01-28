@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class RoomGrid extends Component {
 
@@ -205,7 +204,7 @@ class RoomGrid extends Component {
 			              </div>
 			              <div className="input-wrap">
 			                <select name="adults" id="adults"  defaultValue={ "default" }>
-			                  <option value disabled value="default">Adults</option>
+			                  <option disabled value="default">Adults</option>
 			                  <option value={1}>1</option>
 			                  <option value={2}>2</option>
 			                  <option value={3}>3</option>

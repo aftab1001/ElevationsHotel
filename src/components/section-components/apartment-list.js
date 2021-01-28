@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class ApartmentList extends Component {
 
 	render() {
 
-		let publicUrl = process.env.PUBLIC_URL + '/'
-		let imagealt = 'image'
-
+		let publicUrl = process.env.PUBLIC_URL + '/'		
 		return <section className="rooms-warp list-view section-bg section-padding ">
 			<div className="container">
 				<div className="row">
@@ -171,8 +168,7 @@ class ApartmentList extends Component {
 									</div>
 									<div className="input-wrap">
 										<select name="adults" id="adults" defaultValue={'DEFAULT'}>
-											<option value="default" disabled value="DEFAULT">Adults</option>
-											<option value="default" disabled value="DEFAULT">Others</option>
+											<option value="default" disabled >Adults</option>											
 											<option value={1}>1</option>
 											<option value={2}>2</option>
 											<option value={3}>3</option>
