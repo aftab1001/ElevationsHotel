@@ -27,9 +27,9 @@ const Home = () => {
   }
   return (
     <div>
-      <Button variant="primary" onClick={() => setShowModel(true)}>
+      {/*<Button variant="primary" onClick={() => setShowModel(true)}>
         Open Modal
-      </Button>
+  </Button>*/}
       <HotelModal title="booking form" showModal={showModel} handleClose={handleClose} handleSave={handleSave}><BookingFormHtml/></HotelModal>
       <Navbar />
       <Slider />
