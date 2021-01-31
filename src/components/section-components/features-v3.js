@@ -26,7 +26,7 @@ class FeaturesV3 extends Component {
 		          <h4>Free Transportation</h4>
 		          <p>Has any right to find fault with man who chooses to enjoy a pleasure that has no annoying
 		            conseque</p>
-		          <Link to="/service" className="read-more">raed more <i className="far fa-long-arrow-right" /></Link>
+		          <Link to="/service" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 		        </div>
 		      </div>
 		      <div className="col-lg-4 col-md-6">
@@ -38,7 +38,7 @@ class FeaturesV3 extends Component {
 		          <h4>Food &amp; Drinks</h4>
 		          <p>Has any right to find fault with man who chooses to enjoy a pleasure that has no annoying
 		            conseque</p>
-		          <Link to="/service" className="read-more">raed more <i className="far fa-long-arrow-right" /></Link>
+		          <Link to="/service" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 		        </div>
 		      </div>
 		      <div className="col-lg-4 col-md-6 mx-auto">
@@ -50,7 +50,7 @@ class FeaturesV3 extends Component {
 		          <h4>Free Wi-fi Network</h4>
 		          <p>Has any right to find fault with man who chooses to enjoy a pleasure that has no annoying
 		            conseque</p>
-		          <Link to="/service" className="read-more">raed more <i className="far fa-long-arrow-right" /></Link>
+		          <Link to="/service" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 		        </div>
 		      </div>
 		    </div>

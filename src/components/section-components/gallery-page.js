@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class GalleryPage extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return <section className="gallery-warp section-padding">
 		  <div className="container">
@@ -28,7 +26,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/01.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -37,7 +35,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/02.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -46,7 +44,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/03.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -55,7 +53,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/04.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -64,7 +62,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/05.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -73,7 +71,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/06.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -82,7 +80,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/07.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -91,7 +89,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/08.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -100,7 +98,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/09.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -109,7 +107,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/10.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -118,7 +116,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/11.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -127,7 +125,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/12.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -136,7 +134,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/13.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -145,7 +143,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/14.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -154,7 +152,7 @@ class GalleryPage extends Component {
 		          <div className="gallery-item" style={{backgroundImage: 'url('+publicUrl+'assets/img/gallery/15.jpg)'}}>
 		            <div className="gallery-content">
 		              <h3><Link to="/room-details">Luxuey Hotel</Link></h3>
-		              <Link to="/room-details" className="view-gallery"><i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/room-details" className="view-gallery"><i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
@@ -162,11 +160,11 @@ class GalleryPage extends Component {
 		    </div>
 		    <div className="pagination-wrap">
 		      <ul className="list-inline">
-		        <li><a href="#"><i className="far fa-angle-left" /></a></li>
+		        <li><a href="#"><i className="fas fa-angle-left" /></a></li>
 		        <li className="active"><a href="#">01</a></li>
 		        <li><a href="#">02</a></li>
 		        <li><a href="#">03</a></li>
-		        <li><a href="#"><i className="far fa-angle-right" /></a></li>
+		        <li><a href="#"><i className="fas fa-angle-right" /></a></li>
 		      </ul>
 		    </div>
 		  </div>

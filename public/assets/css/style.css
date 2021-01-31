@@ -334,6 +334,7 @@ textarea {
 
 .slick-slide img {
   display: inline-block;
+  min-height: 250px;
 }
 
 .slick-slide:focus {
@@ -951,10 +952,10 @@ ul.list-inline li {
 }
 
 .single-hero-slide h1 {
-  font-size: 160px;
+  font-size: 130px;
   color: #fff;
   margin-bottom: 50px;
-  line-height: 170px;
+  line-height: 140px;
 }
 
 .single-hero-slide .btn.filled-btn {
@@ -1104,7 +1105,7 @@ h1.big-text {
 /* Booking Form
 ============================================================================================ */
 .booking-section {
-  margin-top: -70px;
+  margin-top: 20px;
   z-index: 2;
   position: relative;
 }
@@ -1288,7 +1289,7 @@ span.counter-number,
   position: absolute;
   background-color: #0f172b;
   left: 0;
-  width: 37.5%;
+  width: 32%;
   top: 0;
   content: "";
   height: 100%;
@@ -1383,6 +1384,9 @@ span.counter-number,
 
 .single-room .room-thumb {
   overflow: hidden;
+}
+.single-room .room-thumb img{
+  min-height: 250px;
 }
 
 .single-room:hover .room-thumb img {
@@ -2479,7 +2483,7 @@ a.read-more:hover {
 .feedback-section .feadback-slide .single-feedback-box::after {
   position: absolute;
   right: 50px;
-  bottom: 0;
+  bottom: 20px;
   width: 77px;
   height: 55px;
   content: "";
@@ -2494,7 +2498,7 @@ a.read-more:hover {
 }
 
 .feedback-section .feadback-slide .single-feedback-box:hover::after {
-  bottom: 10px;
+  bottom: 30px;
 }
 
 .feedback-section .feadback-slide .single-feedback-box .feedback-author {
@@ -2745,7 +2749,7 @@ a.read-more:hover {
 .contact-box {
   border: 5px solid #fea116;
   margin-top: 50px;
-  padding: 40px 80px;
+  padding: 40px 45px;
   font-size: 24px;
 }
 
@@ -4522,7 +4526,7 @@ figure {
 }
 
 .sidebar-wrap .widget.banner-widget .btn {
-  padding: 25px 50px;
+  padding: 20px 30px;
   border-radius: 5px;
   margin-top: 50px;
 }
@@ -5229,7 +5233,17 @@ footer .footer-bottom ul.social-icons {
 .greennature-paypal-attribute .greennature-subhead {
   margin-right: 10px;
 }
-.btnBookNow
-{
-  height: 72px;
+
+nav.main-menu{
+  margin-right:20px;
+}
+
+.btn.btn-secondary{
+  padding: .25rem .5rem;
+  border-color: #fea116;
+  border-radius:.2rem;
+}
+.btn.btn-secondary:hover,.btn.btn-secondary:active,.btn.btn-secondary:focus{
+  background-color: #0f172b;
+    color: #fff;
 }

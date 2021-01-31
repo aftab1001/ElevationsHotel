@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";
-    let imgattr = "logo";
-    let anchor = "#";
+    let publicUrl = process.env.PUBLIC_URL + "/";  
     return (
       <header>
         <div className="header-top-area section-bg">
@@ -15,12 +13,12 @@ class Navbar extends Component {
                 <ul className="top-contact-info list-inline">
                   <li>
                     {" "}
-                    <i className="far fa-map-marker-alt" /> 205 Main Rood, New
+                    <i className="fas fa-map-marker-alt" /> 205 Main Rood, New
                     York{" "}
                   </li>{" "}
                   <li>
                     {" "}
-                    <i className="far fa-phone" /> +89(456) 789 999{" "}
+                    <i className="fas fa-phone" /> +89(456) 789 999{" "}
                   </li>{" "}
                 </ul>{" "}
               </div>{" "}
@@ -78,18 +76,18 @@ class Navbar extends Component {
         <div className="header-menu-area">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-xl-3 col-lg-3 col-md-4 col-7">
+              <div className="col-xl-2 col-lg-2 col-md-3 col-7">
                 <div >
                   <Link to="/">
                     {" "}
                     <img 
-                      src={publicUrl + "assets/img/logo.jpg"} className="mainAppLogo"
+                      src={publicUrl + "assets/img/logo.svg"} className="mainAppLogo"
                       alt="Elevations"
                     />{" "}
                   </Link>{" "}
                 </div>{" "}
               </div>{" "}
-              <div className="col-xl-9 col-lg-9 col-md-8 col-5">
+              <div className="col-xl-10 col-lg-10 col-md-9 col-5">
                 <div className="menu-right-area text-right">
                   <div className="lag-select">
                     <div className="lag-img">
@@ -100,15 +98,14 @@ class Navbar extends Component {
                     </div>{" "}
                     <div className="lag-option">
                       <select>
-                        <option value="English"> English </option>{" "}
-                        <option value="Spanis"> Spanis </option>{" "}
-                        <option value="Creol"> Spanish </option>{" "}
+                        <option value="English"> English </option>{" "}                      
+                        <option value="Spanish"> Spanish </option>{" "}
                       </select>{" "}
                     </div>{" "}
                   </div>{" "}
                   <nav className="main-menu">
                     <ul className="list-inline">
-                      <li className="active-page">
+                      <li >
                         <Link to="/"> Home </Link>{" "}
                        
                       </li>{" "}
@@ -135,14 +132,8 @@ class Navbar extends Component {
                             
                         </ul>{" "}
                       </li>{" "}
-                      <li className="have-submenu">
-                        <Link to="/apartment-list"> Apartments </Link>{" "}
-                        <ul className="submenu">
-                          <li>
-                                {" "}
-                                <Link to="/apartment-details">Apartment Details </Link>
-                              </li>
-                        </ul>{" "}
+                      <li>
+                        <Link to="/apartment-list"> Apartments </Link>{" "}                        
                       </li>{" "}
                       <li>
                         {" "}
@@ -167,27 +158,11 @@ class Navbar extends Component {
                       </li>
                     </ul>{" "}
                   </nav>{" "}
-                  <div className="search-wrap">
-                    <a className="search-icon">
-                      {" "}
-                      <i className="far fa-search" />{" "}
-                    </a>{" "}
-                    <a className="search-icon icon-close">
-                      <i className="far fa-times" />
-                    </a>{" "}
-                    <div className="search-form">
-                      <form>
-                        <input
-                          type="search"
-                          placeholder="TYPE AND PRESS ENTER....."
-                        />
-                      </form>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                 
                   <div className="quote-btn">
                     <Link to="/contact" className="btn filled-btn">
                       {" "}
-                      get a quote <i className="far fa-long-arrow-right" />{" "}
+                      get a quote <i className="fas fa-long-arrow-alt-right" />{" "}
                     </Link>{" "}
                   </div>{" "}
                 </div>{" "}

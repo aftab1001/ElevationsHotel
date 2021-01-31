@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-
-
 class Sidebar extends Component {
-  render() {
-   let anchor = '#'
-   let imagealt = 'image'
+  render() {  
    let publicUrl = process.env.PUBLIC_URL+'/'
     return (
-      <div className="col-lg-4">
+      <div className="col-lg-4">a
 	        {/* Sidebars Area */}
 	        <div className="sidebar-wrap">
 	          <div className="widget search-widget">
 	            <h4 className="widget-title">Search Here</h4>
 	            <form>
 	              <input type="text" placeholder="Seacrh Keywords" />
-	              <button><i className="far fa-search" /></button>
+	              <button><i className="fas fa-search" /></button>
 	            </form>
 	          </div>
 	          <div className="widget recent-news Elevations-go-top">
@@ -81,7 +77,7 @@ class Sidebar extends Component {
 	            <h2>Booking Your Latest apartment</h2>
 	            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 	              incididunt ut labore </p>
-	            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
+	            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
 	          </div>
 	        </div>
 	      </div>

@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class BookTable extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return <section className="reserv-form-section section-padding">
 			  <div className="container">
@@ -23,7 +20,7 @@ class BookTable extends Component {
 			            actual teachings of the great explorer of the truth, the master-builder of human
 			            hapness. No one rejects dislikes or avoids pleasure itself
 			          </p>
-			          <a href="contact.html" className="read-more">Get Started <i className="far fa-long-arrow-right" /></a>
+			          <a href="contact.html" className="read-more">Get Started <i className="fas fa-long-arrow-alt-right" /></a>
 			          <div className="book-table-img">
 			            <img src={publicUrl+"assets/img/reservation/03.jpg"} alt="Image" />
 			          </div>
@@ -37,7 +34,7 @@ class BookTable extends Component {
 			              <label htmlFor="name">Your Full Name</label>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Your Full Name" name="name" id="name" />
-			                <i className="far fa-user-alt" />
+			                <i className="fas fa-user-alt" />
 			              </div>
 			              <label htmlFor="email">Your Email Address</label>
 			              <div className="input-wrap">
@@ -47,9 +44,9 @@ class BookTable extends Component {
 			              <label htmlFor="msg">Write Message</label>
 			              <div className="input-wrap text-area">
 			                <textarea placeholder="Write Message" id="msg"  name="msg" defaultValue={""} />
-			                <i className="far fa-pencil" />
+			                <i className="fas fa-pencil-alt" />
 			              </div>
-			              <button type="submit" className="btn filled-btn">Book Now <i className="far fa-long-arrow-right" /></button>
+			              <button type="submit" className="btn filled-btn">Book Now <i className="fas fa-long-arrow-alt-right" /></button>
 			            </form>
 			          </div>
 			        </div>

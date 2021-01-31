@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-
 class BookingForm extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
-
+    
     return <section className="booking-section">
 		  <div className="container">
 		    <div className="booking-form-wrap bg-img-center section-bg">
@@ -17,7 +13,7 @@ class BookingForm extends Component {
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
 		              <input type="text" name="location" placeholder="Location" id="location" />
-		              <i className="far fa-search" />
+		              <i className="fas fa-search" />
 		            </div>
 		          </div>
 		          <div className="col-lg-4 col-md-6">
@@ -59,7 +55,7 @@ class BookingForm extends Component {
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
 		              <button type="submit" className="btn filled-btn btn-block">
-		                book now <i className="far fa-long-arrow-right" />
+		                book now <i className="fas fa-long-arrow-alt-right" />
 		              </button>
 		            </div>
 		          </div>

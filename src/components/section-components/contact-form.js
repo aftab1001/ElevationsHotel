@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class ContactForm extends Component {
 
     render() {
-
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return <section className="contact-form">
 		  <div className="container ">
@@ -18,7 +13,7 @@ class ContactForm extends Component {
 		          <div className="col-md-4 col-12">
 		            <div className="input-wrap">
 		              <input type="text" placeholder="Your Full Name" id="name" name="name" />
-		              <i className="far fa-user-alt" />
+		              <i className="fas fa-user-alt" />
 		            </div>
 		          </div>
 		          <div className="col-md-4 col-12">
@@ -36,11 +31,11 @@ class ContactForm extends Component {
 		          <div className="col-12">
 		            <div className="input-wrap text-area">
 		              <textarea placeholder="Write Message" name="msg" defaultValue={""} />
-		              <i className="far fa-pencil" />
+		              <i className="fas fa-pencil-alt" />
 		            </div>
 		          </div>
 		          <div className="col-12 text-center">
-		            <button type="submit" className="btn filled-btn">Send Message <i className="far fa-long-arrow-right" /></button>
+		            <button type="submit" className="btn filled-btn">Send Message <i className="fas fa-long-arrow-alt-right" /></button>
 		          </div>
 		        </div>
 		      </form>

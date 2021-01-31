@@ -4,7 +4,6 @@ import Sidebar from './sidebar';
 class BlogList extends Component {
   render() {
     let publicUrl = process.env.PUBLIC_URL+'/'
-    let imagealt = 'image'
     return (
       <section className="blog-wrapper section-padding section-bg">
 		  <div className="container">
@@ -18,14 +17,14 @@ class BlogList extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-user-alt" />Somalia Alexz</Link>
+		                <li><Link to="/blog-details"><i className="fas fa-user-alt" />Somalia Alexz</Link>
 		                </li>
 		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">CSS Grid Challenge Build A Template, Win Some
 		                  Smashing Prizes!</Link></h3>
-		              <Link to="/blog-details" className="btn filled-btn">View post <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="btn filled-btn">View post <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		          <div className="single-blog-wrap video-post">
@@ -35,14 +34,14 @@ class BlogList extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-user-alt" />Somalia Alexz</Link>
+		                <li><Link to="/blog-details"><i className="fas fa-user-alt" />Somalia Alexz</Link>
 		                </li>
 		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Building Pattern Libraries With Shadow Dom in
 		                  Markdown</Link></h3>
-		              <Link to="/blog-details" className="btn filled-btn">View post <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="btn filled-btn">View post <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		          <div className="single-blog-wrap quote-post">
@@ -58,14 +57,14 @@ class BlogList extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-user-alt" />Somalia Alexz</Link>
+		                <li><Link to="/blog-details"><i className="fas fa-user-alt" />Somalia Alexz</Link>
 		                </li>
 		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Challenge Yourself More Often By Creating Artwork
 		                  Every Day Shadow Markdown</Link></h3>
-		              <Link to="/blog-details" className="btn filled-btn">View post <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="btn filled-btn">View post <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		          <div className="single-blog-wrap">
@@ -74,25 +73,25 @@ class BlogList extends Component {
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
-		                <li><Link to="/blog-details"><i className="far fa-user-alt" />Somalia Alexz</Link>
+		                <li><Link to="/blog-details"><i className="fas fa-user-alt" />Somalia Alexz</Link>
 		                </li>
 		                <li><Link to="/blog-details"><i className="far fa-calendar-alt" />20 jan
 		                    2020</Link></li>
 		              </ul>
 		              <h3><Link to="/blog-details">Things To Keep In Mind When Designing Transportation
 		                  Map Weather</Link></h3>
-		              <Link to="/blog-details" className="btn filled-btn">View post <i className="far fa-long-arrow-right" /></Link>
+		              <Link to="/blog-details" className="btn filled-btn">View post <i className="fas fa-long-arrow-alt-right" /></Link>
 		            </div>
 		          </div>
 		        </div>
 		        {/* Pagination Wrap */}
 		        <div className="pagination-wrap">
 		          <ul className="list-inline">
-		            <li><a href="#"><i className="far fa-angle-left" /></a></li>
+		            <li><a href="#"><i className="fas fa-angle-left" /></a></li>
 		            <li className="active"><a href="#">01</a></li>
 		            <li><a href="#">02</a></li>
 		            <li><a href="#">03</a></li>
-		            <li><a href="#"><i className="far fa-angle-right" /></a></li>
+		            <li><a href="#"><i className="fas fa-angle-right" /></a></li>
 		          </ul>
 		        </div>
 		      </div>

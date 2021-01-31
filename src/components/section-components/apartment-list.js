@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class ApartmentList extends Component {
 
 	render() {
 
-		let publicUrl = process.env.PUBLIC_URL + '/'
-		let imagealt = 'image'
-
+		let publicUrl = process.env.PUBLIC_URL + '/'		
 		return <section className="rooms-warp list-view section-bg section-padding ">
 			<div className="container">
 				<div className="row">
-					<div className="col-lg-8">
+					<div className="col-lg-12">
 						{/* Single Room */}
 						<div className="single-room list-style Elevations-go-top">
 							<div className="row align-items-center no-gutters">
@@ -28,9 +25,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">02 Bed Apartments</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />2 Bed</li>
-											<li><i className="far fa-bath" />1 Baths</li>
-											<li><i className="far fa-ruler-triangle" />72 m</li>
+											<li><i className="fas fa-bed" />2 Bed</li>
+											<li><i className="fas fa-bath" />1 Baths</li>
+											<li><i className="fas fa-ruler-combined" />72 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$180.00</p>
@@ -54,9 +51,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Conference Room</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />99 m</li>
+											<li><i className="fas fa-bed" />3 Bed</li>
+											<li><i className="fas fa-bath" />2 Baths</li>
+											<li><i className="fas fa-ruler-combined" />99 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$220.00</p>
@@ -80,9 +77,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Three Bed / Premier Suite</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />3 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />110 m</li>
+											<li><i className="fas fa-bed" />3 Bed</li>
+											<li><i className="fas fa-bath" />2 Baths</li>
+											<li><i className="fas fa-ruler-combined" />110 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$240.00</p>
@@ -106,9 +103,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Two Duplex / Royal Suite</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />2 Bed</li>
-											<li><i className="far fa-bath" />2 Baths</li>
-											<li><i className="far fa-ruler-triangle" />80 m</li>
+											<li><i className="fas fa-bed" />2 Bed</li>
+											<li><i className="fas fa-bath" />2 Baths</li>
+											<li><i className="fas fa-ruler-combined" />80 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$180.00</p>
@@ -132,9 +129,9 @@ class ApartmentList extends Component {
 										</div>
 										<h4><Link to="/room-details">Studio Apartment</Link></h4>
 										<ul className="room-info list-inline">
-											<li><i className="far fa-bed" />1 Double Bed</li>
-											<li><i className="far fa-bath" />1 Baths</li>
-											<li><i className="far fa-ruler-triangle" />60 m</li>
+											<li><i className="fas fa-bed" />1 Double Bed</li>
+											<li><i className="fas fa-bath" />1 Baths</li>
+											<li><i className="fas fa-ruler-combined" />60 m</li>
 										</ul>
 										<div className="room-price">
 											<p>$150.00</p>
@@ -144,14 +141,14 @@ class ApartmentList extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-4">
+					<div className="col-lg-4 d-none">
 						<div className="sidebar-wrap">
 							<div className="widget fillter-widget">
 								<h4 className="widget-title">Your Reservation</h4>
 								<form>
 									<div className="input-wrap">
 										<input type="text" placeholder="Location" id="location" />
-										<i className="far fa-search" />
+										<i className="fas fa-search" />
 									</div>
 									<div className="input-wrap">
 										<input type="text" placeholder="Arrive Date" id="arrive-date" />
@@ -171,8 +168,7 @@ class ApartmentList extends Component {
 									</div>
 									<div className="input-wrap">
 										<select name="adults" id="adults" defaultValue={'DEFAULT'}>
-											<option value="default" disabled value="DEFAULT">Adults</option>
-											<option value="default" disabled value="DEFAULT">Others</option>
+											<option value="default" disabled >Adults</option>											
 											<option value={1}>1</option>
 											<option value={2}>2</option>
 											<option value={3}>3</option>
@@ -240,7 +236,7 @@ class ApartmentList extends Component {
 									</div>
 									<div className="input-wrap">
 										<button type="submit" className="btn filled-btn btn-block">
-											Filter Results <i className="far fa-long-arrow-right" />
+											Filter Results <i className="fas fa-long-arrow-alt-right" />
 										</button>
 									</div>
 								</form>
@@ -252,11 +248,11 @@ class ApartmentList extends Component {
 					<div className="col-12">
 						<div className="pagination-wrap">
 							<ul className="list-inline">
-								<li><a href=""><i className="far fa-angle-left" /></a></li>
+								<li><a href=""><i className="fas fa-angle-left" /></a></li>
 								<li className="active"><a href="">01</a></li>
 								<li><a href="">02</a></li>
 								<li><a href="">03</a></li>
-								<li><a href=""><i className="far fa-angle-right" /></a></li>
+								<li><a href=""><i className="fas fa-angle-right" /></a></li>
 							</ul>
 						</div>
 					</div>

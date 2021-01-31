@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class RoomList extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
+   
 
     return <section className="rooms-warp list-view section-bg section-padding ">
 		  <div className="container">
@@ -28,9 +27,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Modern Guest Rooms</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -54,9 +53,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Conference Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -80,9 +79,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -106,9 +105,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Conference Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -132,9 +131,9 @@ class RoomList extends Component {
 		                </div>
 		                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
 		                <ul className="room-info list-inline">
-		                  <li><i className="far fa-bed" />3 Bed</li>
-		                  <li><i className="far fa-bath" />2 Baths</li>
-		                  <li><i className="far fa-ruler-triangle" />72 m</li>
+		                  <li><i className="fas fa-bed" />3 Bed</li>
+		                  <li><i className="fas fa-bath" />2 Baths</li>
+		                  <li><i className="fas fa-ruler-combined" />72 m</li>
 		                </ul>
 		                <div className="room-price">
 		                  <p>$180.00</p>
@@ -151,7 +150,7 @@ class RoomList extends Component {
 		            <form>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Location" id="location" />
-		                <i className="far fa-search" />
+		                <i className="fas fa-search" />
 		              </div>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Arrive Date" id="arrive-date" />
@@ -171,7 +170,7 @@ class RoomList extends Component {
 		              </div>
 		              <div className="input-wrap">
 		                <select name="adults" id="adults" defaultValue={'DEFAULT'}>
-		                  <option value="default"  disabled value="DEFAULT">Adults</option>
+		                  <option disabled value="DEFAULT">Adults</option>
 		                  <option value={1}>1</option>
 		                  <option value={2}>2</option>
 		                  <option value={3}>3</option>
@@ -233,7 +232,7 @@ class RoomList extends Component {
 		              </div>
 		              <div className="input-wrap">
 		                <button type="submit" className="btn filled-btn btn-block">
-		                  Filter Results <i className="far fa-long-arrow-right" />
+		                  Filter Results <i className="fas fa-long-arrow-alt-right" />
 		                </button>
 		              </div>
 		            </form>
@@ -245,11 +244,11 @@ class RoomList extends Component {
 		      <div className="col-12">
 		        <div className="pagination-wrap">
 		          <ul className="list-inline">
-		            <li><a href=""><i className="far fa-angle-left" /></a></li>
+		            <li><a href=""><i className="fas fa-angle-left" /></a></li>
 		            <li className="active"><a href="">01</a></li>
 		            <li><a href="">02</a></li>
 		            <li><a href="">03</a></li>
-		            <li><a href=""><i className="far fa-angle-right" /></a></li>
+		            <li><a href=""><i className="fas fa-angle-right" /></a></li>
 		          </ul>
 		        </div>
 		      </div>

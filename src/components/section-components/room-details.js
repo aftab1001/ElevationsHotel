@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class RoomDetails extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
+        
 
     return <section className="room-details-wrapper section-padding">
 		  <div className="container">
@@ -68,9 +67,9 @@ class RoomDetails extends Component {
 		            </div>
 		            <h2 className="entry-title">Modern Guest Rooms</h2>
 		            <ul className="entry-meta list-inline">
-		              <li><i className="far fa-bed" />3 Bed</li>
-		              <li><i className="far fa-bath" />2 Baths</li>
-		              <li><i className="far fa-ruler-triangle" />72 m</li>
+		              <li><i className="fas fa-bed" />3 Bed</li>
+		              <li><i className="fas fa-bath" />2 Baths</li>
+		              <li><i className="fas fa-ruler-combined" />72 m</li>
 		            </ul>
 		          </div>
 		          <div className="room-details-tab">
@@ -132,7 +131,7 @@ class RoomDetails extends Component {
 		                    </div>
 		                    <div className="room-specification">
 		                      <div className="row">
-		                        <div className="col-lg-4 col-md-12">
+		                        <div className="col-lg-6 col-md-12">
 		                          <div className="pricing-plan">
 		                            <h4 className="specific-title"> Pricing Plan </h4>
 		                            <table>
@@ -173,7 +172,7 @@ class RoomDetails extends Component {
 		                            </table>
 		                          </div>
 		                        </div>
-		                        <div className="col-lg-4 col-6">
+		                        <div className="col-lg-6 col-6">
 		                          <div className="feature">
 		                            <h4 className="specific-title"> Features </h4>
 		                            <ul>
@@ -192,24 +191,9 @@ class RoomDetails extends Component {
 		                              <li>Security</li>
 		                            </ul>
 		                          </div>
+								  
 		                        </div>
-		                        <div className="col-lg-4 col-6">
-		                          <div className="accomodation">
-		                            <h4 className="specific-title"> Features </h4>
-		                            <ul>
-		                              <li>Master Room</li>
-		                              <li>1 King Size</li>
-		                              <li>2 Guests</li>
-		                            </ul>
-		                          </div>
-		                          <div className="bedrooms">
-		                            <h4 className="specific-title"> Bedrooms </h4>
-		                            <ul>
-		                              <li>1 Queen Size</li>
-		                              <li>2 Guests</li>
-		                            </ul>
-		                          </div>
-		                        </div>
+		                        
 		                      </div>
 		                    </div>
 		                  </div>
@@ -295,7 +279,7 @@ class RoomDetails extends Component {
 		                              of denouncing pleasure
 		                              and praising pain was born and I will give you a
 		                              complete account</p>
-		                            <a href="#" className="reply-comment">Reply <i className="far fa-long-arrow-right" /></a>
+		                            <a href="#" className="reply-comment">Reply <i className="fas fa-long-arrow-alt-right" /></a>
 		                            <div className="autor-rating">
 		                              <i className="fa fa-star" />
 		                              <i className="fa fa-star" />
@@ -356,11 +340,11 @@ class RoomDetails extends Component {
 		                      <form>
 		                        <div className="input-wrap text-area">
 		                          <textarea placeholder="Write Review" defaultValue={""} />
-		                          <i className="far fa-pencil" />
+		                          <i className="fas fa-pencil-alt" />
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Name" id="name" />
-		                          <i className="far fa-user-alt" />
+		                          <i className="fas fa-user-alt" />
 		                        </div>
 		                        <div className="input-wrap">
 		                          <input type="text" placeholder="Your Email" id="email" />
@@ -386,7 +370,7 @@ class RoomDetails extends Component {
 		            <form>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Location" id="f-location" />
-		                <i className="far fa-search" />
+		                <i className="fas fa-search" />
 		              </div>
 		              <div className="input-wrap">
 		                <input type="text" placeholder="Arrive Date" id="arrive-date" />
@@ -404,8 +388,8 @@ class RoomDetails extends Component {
 		                </select>
 		              </div>
 		              <div className="input-wrap">
-		                <button type="submit" className="btn filled-btn btn-block btnBookNow">
-		                  book now <i className="far fa-long-arrow-right" />
+		                <button type="submit" className="btn filled-btn btn-block">
+		                  book now <i className="fas fa-long-arrow-alt-right" />
 		                </button>
 		              </div>
 		            </form>
@@ -422,12 +406,21 @@ class RoomDetails extends Component {
 		              <Link to="room-details">Hotel Views</Link>
 		            </div>
 		          </div>
-		          <div className="widget banner-widget Elevations-go-top" style={{backgroundImage: 'url(assets/img/blog/sidebar-banner.jpg)'}}>
-		            <h2>Booking Your Latest apartment</h2>
-		            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
+		          
+				
+
+				  
+			        <div className="widget banner-widget Elevations-go-top">
+			          <h2>Booking Your Latest apartment</h2>
+			          <p>BLorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 		              incididunt ut labore </p>
-		            <Link to="/room-details" className="btn filled-btn btn-block btnBookNow">BOOK NOW <i className="far fa-long-arrow-right" /></Link>
-		          </div>
+			          <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
+			        </div>
+			    
+
+
+
+
 		        </div>
 		      </div>
 		    </div>

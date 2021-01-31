@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class RoomGrid extends Component {
 
@@ -31,9 +30,9 @@ class RoomGrid extends Component {
 			                  to pursue pleasure rationally encounter
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$180.00</p>
@@ -58,9 +57,9 @@ class RoomGrid extends Component {
 			                  dislikes avoids pleasure because
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$205.00</p>
@@ -85,9 +84,9 @@ class RoomGrid extends Component {
 			                  dolorum fuga. Et harum quidem
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$199.00</p>
@@ -112,9 +111,9 @@ class RoomGrid extends Component {
 			                  to pursue pleasure rationally encounter
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$180.00</p>
@@ -139,9 +138,9 @@ class RoomGrid extends Component {
 			                  dislikes avoids pleasure because
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$205.00</p>
@@ -166,9 +165,9 @@ class RoomGrid extends Component {
 			                  dolorum fuga. Et harum quidem
 			                </p>
 			                <ul className="room-info list-inline">
-			                  <li><i className="far fa-bed" />3 Bed</li>
-			                  <li><i className="far fa-bath" />2 Baths</li>
-			                  <li><i className="far fa-ruler-triangle" />72 m</li>
+			                  <li><i className="fas fa-bed" />3 Bed</li>
+			                  <li><i className="fas fa-bath" />2 Baths</li>
+			                  <li><i className="fas fa-ruler-combined" />72 m</li>
 			                </ul>
 			                <div className="room-price">
 			                  <p>$199.00</p>
@@ -185,7 +184,7 @@ class RoomGrid extends Component {
 			            <form>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Location" id="location" />
-			                <i className="far fa-search" />
+			                <i className="fas fa-search" />
 			              </div>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Arrive Date" id="arrive-date" />
@@ -205,7 +204,7 @@ class RoomGrid extends Component {
 			              </div>
 			              <div className="input-wrap">
 			                <select name="adults" id="adults"  defaultValue={ "default" }>
-			                  <option value disabled value="default">Adults</option>
+			                  <option disabled value="default">Adults</option>
 			                  <option value={1}>1</option>
 			                  <option value={2}>2</option>
 			                  <option value={3}>3</option>
@@ -267,7 +266,7 @@ class RoomGrid extends Component {
 			              </div>
 			              <div className="input-wrap">
 			                <button type="submit" className="btn filled-btn btn-block">
-			                  Filter Results <i className="far fa-long-arrow-right" />
+			                  Filter Results <i className="fas fa-long-arrow-alt-right" />
 			                </button>
 			              </div>
 			            </form>
@@ -276,18 +275,18 @@ class RoomGrid extends Component {
 			            <h2>Booking Your Latest apartment</h2>
 			            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 			              incididunt ut labore </p>
-			            <a href="#" className="btn filled-btn">BOOK NOW <i className="far fa-long-arrow-right" /></a>
+			            <a href="#" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></a>
 			          </div>
 			        </div>
 			      </div>
 			      <div className="col-12">
 			        <div className="pagination-wrap">
 			          <ul className="list-inline">
-			            <li><a href=""><i className="far fa-angle-left" /></a></li>
+			            <li><a href=""><i className="fas fa-angle-left" /></a></li>
 			            <li className="active"><a href="">01</a></li>
 			            <li><a href="">02</a></li>
 			            <li><a href="">03</a></li>
-			            <li><a href=""><i className="far fa-angle-right" /></a></li>
+			            <li><a href=""><i className="fas fa-angle-right" /></a></li>
 			          </ul>
 			        </div>
 			      </div>

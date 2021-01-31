@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-
 class AboutPage extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return	<section className="about-site section-padding">
 			  <div className="container">
@@ -43,7 +39,7 @@ class AboutPage extends Component {
 			            of the system, and expound the actual teachin reatexp
 			            lorer of the truth, theter-builder human happine one
 			            rejdislikes, or avoids pleasure itself</p>
-			          <a href="#" className="btn filled-btn">Get Started <i className="far fa-long-arrow-right" /></a>
+			          <a href="#" className="btn filled-btn">Get Started <i className="fas fa-long-arrow-alt-right" /></a>
 			        </div>
 			      </div>
 			      <div className="offset-lg-1 col-lg-5 col-md-6">

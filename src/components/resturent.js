@@ -8,7 +8,7 @@ import Brand from './section-components/brand';
 import Footer from './global-components/footer';
 
 const ResturentPage = () => {
-    return <div>
+    return <div className="resturant">
         <Navbar />
         <PageHeader headertitle="Our Resturent" subheader="Resturent" />
         <LatestFood />

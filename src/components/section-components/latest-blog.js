@@ -27,7 +27,7 @@ class LatestBlog extends Component {
 			            <span className="post-date"><i className="far fa-calendar-alt" />20 Jan 2020</span>
 			            <h6><Link to="/blog-details">CSS Grid Challenge Build A Template, Win Some Smashing
 			                Prizes!</Link></h6>
-			            <Link to="/blog-details" className="read-more">raed more <i className="far fa-long-arrow-right" /></Link>
+			            <Link to="/blog-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 			          </div>
 			        </div>
 			      </div>
@@ -40,7 +40,7 @@ class LatestBlog extends Component {
 			            <span className="post-date"><i className="far fa-calendar-alt" />20 Jan 2020</span>
 			            <h6><Link to="/blog-details">Goodbye Summer Autumn! Inspiring Wallpaper Start September
 			                Right Introduction Gravit Desig Designing A Weather App (Part 2)</Link></h6>
-			            <Link to="/blog-details" className="read-more">raed more <i className="far fa-long-arrow-right" /></Link>
+			            <Link to="/blog-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 			          </div>
 			        </div>
 			      </div>
@@ -53,7 +53,7 @@ class LatestBlog extends Component {
 			            <span className="post-date"><i className="far fa-calendar-alt" />20 Jan 2020</span>
 			            <h6><Link to="/blog-details">Meet Respond Test Tool Let’s Make Building Respo Nsive
 			                Website Simpler</Link></h6>
-			            <Link to="/blog-details" className="read-more">raed more <i className="far fa-long-arrow-right" /></Link>
+			            <Link to="/blog-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 			          </div>
 			        </div>
 			      </div>

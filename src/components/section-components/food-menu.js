@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class FoodMenu extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return <section className="food-section section-padding">
 		  <div className="container">
@@ -90,7 +87,7 @@ class FoodMenu extends Component {
 		          </div>
 		        </div>
 		        <div className="col-12 text-center">
-		          <a href="#" className="btn filled-btn">View More Food <i className="far fa-long-arrow-right" /></a>
+		          <a href="#" className="btn filled-btn">View More Food <i className="fas fa-long-arrow-alt-right" /></a>
 		        </div>
 		      </div>
 		    </div>

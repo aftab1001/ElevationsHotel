@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-
 class Brand extends Component {
 
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
         let Customclass = this.props.Customclass ? this.props.Customclass : ''
-
+return(<div></div>);
     return <section className={"brands-section "+Customclass}>
 		  <div className="container">
 		    <div id="brandsSlideActive" className="row">

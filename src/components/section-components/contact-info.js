@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-
 class ContactInfo extends Component {
 
     render() {
-
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
     return <section className="contact-info-section">
 			  <div className="container">
@@ -35,7 +29,7 @@ class ContactInfo extends Component {
 			        <div className="col-lg-4 col-md-6">
 			          <div className="contact-info-box">
 			            <div className="contact-icon">
-			              <i className="far fa-map-marker-alt" />
+			              <i className="fas fa-map-marker-alt" />
 			            </div>
 			            <h4>Address</h4>
 			            <p>GymVast, 18 East 50th Street,</p>
@@ -55,7 +49,7 @@ class ContactInfo extends Component {
 			        <div className="col-lg-4 col-md-6 mx-auto">
 			          <div className="contact-info-box">
 			            <div className="contact-icon">
-			              <i className="far fa-phone" />
+			              <i className="fas fa-phone" />
 			            </div>
 			            <h4>Phone Us</h4>
 			            <p>+0123 (456) 7899</p>

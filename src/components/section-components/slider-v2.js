@@ -21,7 +21,7 @@ class SliderV2 extends Component {
 		              because it is pain, but because occacu stances
 		              occur in which toil and pain can procure him some here ways. </p>
 		            <Link className="btn filled-btn" to="/service" data-animation="fadeInUp" data-delay=".8s">get
-		              started <i className="far fa-long-arrow-right" /></Link>
+		              started <i className="fas fa-long-arrow-alt-right" /></Link>
 		          </div>
 		        </div>
 		      </div>
@@ -38,7 +38,7 @@ class SliderV2 extends Component {
 		              because it is pain, but because occacu stances
 		              occur in which toil and pain can procure him some here ways. </p>
 		            <Link className="btn filled-btn" to="/service" data-animation="fadeInUp" data-delay=".8s">get
-		              started <i className="far fa-long-arrow-right" /></Link>
+		              started <i className="fas fa-long-arrow-alt-right" /></Link>
 		          </div>
 		        </div>
 		      </div>
@@ -55,7 +55,7 @@ class SliderV2 extends Component {
 		              because it is pain, but because occacu stances
 		              occur in which toil and pain can procure him some here ways. </p>
 		            <Link className="btn filled-btn" to="/service" data-animation="fadeInUp" data-delay=".8s">get
-		              started <i className="far fa-long-arrow-right" /></Link>
+		              started <i className="fas fa-long-arrow-alt-right" /></Link>
 		          </div>
 		        </div>
 		      </div>
@@ -72,7 +72,7 @@ class SliderV2 extends Component {
 		              because it is pain, but because occacu stances
 		              occur in which toil and pain can procure him some here ways. </p>
 		            <Link className="btn filled-btn" to="/service" data-animation="fadeInUp" data-delay=".8s">get
-		              started <i className="far fa-long-arrow-right" /></Link>
+		              started <i className="fas fa-long-arrow-alt-right" /></Link>
 		          </div>
 		        </div>
 		      </div>
