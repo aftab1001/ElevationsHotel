@@ -13,15 +13,16 @@ var HotelModal = (props) => {
           </Modal.Header>
           <Modal.Body>
             {children}
-            Woohoo, you're reading this text in a modal!
+           
             </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button  onClick={handleSave}>
+          <Button size="sm" variant="secondary" onClick={handleSave}>
               Save Changes
             </Button>
+            <Button size="sm" variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            
           </Modal.Footer>
         </Modal>
      

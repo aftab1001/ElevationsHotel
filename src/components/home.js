@@ -18,19 +18,26 @@ import BookingFormHtml from "./form-components/BookingFormHtml";
 
 const Home = () => {
   const [showModel, setShowModel] = useState(false);
-  const handleClose = () => {    
+  const handleClose = () => {
     setShowModel(false);
-  }
+  };
   const handleSave = (status) => {
     alert("save");
     setShowModel(true);
-  }
+  };
   return (
-    <div>
-      {/*<Button variant="primary" onClick={() => setShowModel(true)}>
+    <div>      
+      <Button size="sm" variant="secondary" class="btn-hotel" onClick={() => setShowModel(true)}>
         Open Modal
-  </Button>*/}
-      <HotelModal title="booking form" showModal={showModel} handleClose={handleClose} handleSave={handleSave}><BookingFormHtml/></HotelModal>
+      </Button>
+      <HotelModal
+        title="booking form"
+        showModal={showModel}
+        handleClose={handleClose}
+        handleSave={handleSave}
+      >
+        <BookingFormHtml />
+      </HotelModal>
       <Navbar />
       <Slider />
       <BookingForm />
