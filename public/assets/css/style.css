@@ -5254,4 +5254,12 @@ nav.main-menu{
 .btn.btn-secondary:hover,.btn.btn-secondary:active,.btn.btn-secondary:focus{
   background-color: #0f172b;
     color: #fff;
+    
+}
+#slider-container .awssld__bullets{
+  bottom:40px;
+  z-index: 999;
+}
+#slider-container .awssld__bullets button{
+  background:#fff;
 }

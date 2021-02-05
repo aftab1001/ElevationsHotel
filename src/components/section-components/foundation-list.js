@@ -85,8 +85,7 @@ class FoundationList extends Component {
 
 
 			<div id="slider-container">
-				<AwesomeSlider className="clsSliderStyles"
-					organicArrows={false}
+				<AwesomeSlider className="clsSliderStyles"					
 					startupScreen={startupScreen}
 					selected={this.state.slideActive}
 					onTransitionEnd={(e) => this.timer(e)}>
