@@ -119,7 +119,7 @@ color:#ffffff;
 	text-transform: uppercase;
 	border: none;
 	letter-spacing: 1px;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 .container-section-3
 {
@@ -168,6 +168,7 @@ margin-top: 10px;
 margin-bottom: 35px;
 	padding-right: 5px;
 	margin-top: 5px;
+	text-align:center;
 }
 .project-image
 {
@@ -203,7 +204,6 @@ color: #b0b0b0;
 text-align: justify;
 margin: 14px 20px 0px 0px;
 color: #808080;	
-font-family: "Lato";
 }
 .body
 {

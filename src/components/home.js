@@ -27,9 +27,9 @@ const Home = () => {
   };
   return (
     <div>      
-      <Button size="sm" variant="secondary" class="btn-hotel" onClick={() => setShowModel(true)}>
+      {/*<Button size="sm" variant="secondary" class="btn-hotel" onClick={() => setShowModel(true)}>
         Open Modal
-      </Button>
+  </Button>*/}
       <HotelModal
         title="booking form"
         showModal={showModel}

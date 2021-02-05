@@ -65,7 +65,7 @@ class FoundationList extends Component {
 						<ul className="navbar-nav mr-auto col-md-auto col-lg-auto">
 							
 								<a 	className="nav-link" href="#">
-									<img src={publicUrl + "assets/img/logo.jpg"} 
+									<img src={publicUrl + "assets/img/logo.svg"} 
 									className="mainAppLogo" alt="Elevations" />
 								</a>
 							

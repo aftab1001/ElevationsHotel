@@ -160,7 +160,9 @@ class Navbar extends Component {
                   </nav>{" "}
                  
                   <div className="quote-btn">
-                    <Link to="/contact" className="btn filled-btn">
+
+
+                    <Link  className="btn filled-btn">
                       {" "}
                       get a quote <i className="fas fa-long-arrow-alt-right" />{" "}
                     </Link>{" "}

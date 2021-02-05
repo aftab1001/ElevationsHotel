@@ -266,7 +266,7 @@ textarea {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  border-radius: 0;
+  border-radius: 4px;
   border: none;
   padding: 0;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -843,7 +843,14 @@ ul.list-inline li {
 
 .menu-right-area .quote-btn {
   margin-right: -70px;
+  opacity: 0;
+  cursor: default;
 }
+.menu-right-area .quote-btn a {
+  
+  cursor: default;
+}
+
 
 .menu-right-area .lag-select .nice-select {
   border: none;
@@ -5147,7 +5154,7 @@ footer .footer-bottom ul.social-icons {
   font-weight: 500;
   line-height: 48px;
   border: 1px solid #60bc0f;
-  border-radius: 0px;
+  border-radius: 4px;
   outline: none !important;
   box-shadow: none !important;
   text-align: center;
@@ -5162,7 +5169,8 @@ footer .footer-bottom ul.social-icons {
   margin-top: 3%;
   background: #fdbb00 !important;
   border: 1px solid #fdbb00 !important;
-  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
 }
 .mainAppLogo {
   height: 80px;
@@ -5206,7 +5214,7 @@ footer .footer-bottom ul.social-icons {
 
 .payment-other-amount {
   background-color: #ffffff !important;
-  font-family: lato;
+  
   display: inline-block;
   height: 43px;
   font-weight: bold;
@@ -5228,7 +5236,7 @@ footer .footer-bottom ul.social-icons {
   margin-right: 10px;
   display: inline-block;
   vertical-align: top;
-  font-family: "Lato";
+  
 }
 .greennature-paypal-attribute .greennature-subhead {
   margin-right: 10px;
