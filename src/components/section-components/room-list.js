@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import BookNow from './../global-components/BookNow';
 
 class RoomList extends Component {
 
@@ -34,6 +35,7 @@ class RoomList extends Component {
 		                <div className="room-price">
 		                  <p>$180.00</p>
 		                </div>
+						<BookNow type="room" dataId=""/>
 		              </div>
 		            </div>
 		          </div>
@@ -60,6 +62,7 @@ class RoomList extends Component {
 		                <div className="room-price">
 		                  <p>$180.00</p>
 		                </div>
+						<BookNow type="room" dataId=""/>
 		              </div>
 		            </div>
 		          </div>
@@ -86,6 +89,7 @@ class RoomList extends Component {
 		                <div className="room-price">
 		                  <p>$180.00</p>
 		                </div>
+						<BookNow type="room" dataId=""/>
 		              </div>
 		            </div>
 		          </div>
@@ -112,6 +116,7 @@ class RoomList extends Component {
 		                <div className="room-price">
 		                  <p>$180.00</p>
 		                </div>
+						<BookNow type="room" dataId=""/>
 		              </div>
 		            </div>
 		          </div>
@@ -138,6 +143,7 @@ class RoomList extends Component {
 		                <div className="room-price">
 		                  <p>$180.00</p>
 		                </div>
+						<BookNow type="room" dataId=""/>
 		              </div>
 		            </div>
 		          </div>
