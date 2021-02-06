@@ -23,7 +23,7 @@ class RoomGrid extends Component {
 			                <div className="room-cat">
 			                  <p>Guest House</p>
 			                </div>
-			                <h4><Link to="/room-details">Modern Guest Rooms</Link></h4>
+			                <h4><Link to="/moredetails">Modern Guest Rooms</Link></h4>
 			                <p>
 			                  Avoids pleasure itself, because pleasure,
 			                  but because those who do not know how
@@ -50,7 +50,7 @@ class RoomGrid extends Component {
 			                <div className="room-cat">
 			                  <p>Meeting Room</p>
 			                </div>
-			                <h4><Link to="/room-details">Conference Room</Link></h4>
+			                <h4><Link to="/moredetails">Conference Room</Link></h4>
 			                <p>
 			                  Great explorer of the truth, the master-
 			                  builder of human happiness one rejects,
@@ -77,7 +77,7 @@ class RoomGrid extends Component {
 			                <div className="room-cat">
 			                  <p>Guest Room</p>
 			                </div>
-			                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+			                <h4><Link to="/moredetails">Deluxe Couple Room</Link></h4>
 			                <p>
 			                  Provident, similique sunt in culpa qui
 			                  officia deserunt mollitia animi laborum
@@ -104,7 +104,7 @@ class RoomGrid extends Component {
 			                <div className="room-cat">
 			                  <p>Guest House</p>
 			                </div>
-			                <h4><Link to="/room-details">Study &amp; Library Rooms</Link></h4>
+			                <h4><Link to="/moredetails">Study &amp; Library Rooms</Link></h4>
 			                <p>
 			                  Avoids pleasure itself, because pleasure,
 			                  but because those who do not know how
@@ -131,7 +131,7 @@ class RoomGrid extends Component {
 			                <div className="room-cat">
 			                  <p>Meeting Room</p>
 			                </div>
-			                <h4><Link to="/room-details">Conference Room</Link></h4>
+			                <h4><Link to="/moredetails">Conference Room</Link></h4>
 			                <p>
 			                  Great explorer of the truth, the master-
 			                  builder of human happiness one rejects,
@@ -158,7 +158,7 @@ class RoomGrid extends Component {
 			                <div className="room-cat">
 			                  <p>Guest Room</p>
 			                </div>
-			                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+			                <h4><Link to="/moredetails">Deluxe Couple Room</Link></h4>
 			                <p>
 			                  Provident, similique sunt in culpa qui
 			                  officia deserunt mollitia animi laborum

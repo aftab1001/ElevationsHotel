@@ -7,11 +7,11 @@ import {
   Switch,
 } from "react-router-dom";
 import Home from "./components/home";
-import RoomList from "./components/room-list";
+import RoomsPage from "./components/RoomsPage";
 import RoomGrid from "./components/room-grid";
-import RoomDetails from "./components/room-details";
+import MoreDetails from "./components/MoreDetails";
 import Service from "./components/service";
-import BlogGrid from "./components/blog-grid";
+import NewsPage from "./components/NewsPage";
 import BlogList from "./components/blog-list";
 import BlogDetails from "./components/blog-details";
 import Gallery from "./components/gallery";
@@ -21,7 +21,7 @@ import Resturent from "./components/resturent";
 import Reservation from "./components/reservation";
 import About from "./components/about";
 import ScrollToTop from "react-router-scroll-top";
-import ApartmentList from "./components/apartment-list";
+import ApartmentsPage from "./components/apartmentsPage";
 import ApartmentDetails from "./components/apartment-details";
 
 import FoundationList from "./components/foundation-list";
@@ -34,13 +34,13 @@ class Root extends Component {
           <ScrollToTop>
             <Switch>
               <Route exact path="/" component={Home} />              
-              <Route path="/room-list" component={RoomList} />
-              <Route path="/apartment-list" component={ApartmentList} />
+              <Route path="/rooms" component={RoomsPage} />
+              <Route path="/apartments" component={ApartmentsPage} />
               <Route path="/room-grid" component={RoomGrid} />
-              <Route path="/room-details" component={RoomDetails} />
+              <Route path="/moredetails" component={MoreDetails} />
               <Route path="/apartment-details" component={ApartmentDetails} />
               <Route path="/service" component={Service} />
-              <Route path="/blog-grid" component={BlogGrid} />
+              <Route path="/news" component={NewsPage} />
               <Route path="/blog-list" component={BlogList} />
               <Route path="/blog-details" component={BlogDetails} />
               <Route path="/gallery" component={Gallery} />

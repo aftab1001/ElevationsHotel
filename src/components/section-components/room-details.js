@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import BookNow from './../global-components/BookNow';
 class RoomDetails extends Component {
 
     render() {
@@ -387,10 +387,8 @@ class RoomDetails extends Component {
 		                  <option value="Guests">Guests</option>
 		                </select>
 		              </div>
-		              <div className="input-wrap">
-		                <button type="submit" className="btn filled-btn btn-block">
-		                  book now <i className="fas fa-long-arrow-alt-right" />
-		                </button>
+		              <div className="input-wrap">		               
+						<BookNow type="room" dataId="1" btnExtraClass="filled-btn btn-block"/>
 		              </div>
 		            </form>
 		          </div>
@@ -407,20 +405,12 @@ class RoomDetails extends Component {
 		            </div>
 		          </div>
 		          
-				
-
-				  
 			        <div className="widget banner-widget Elevations-go-top">
 			          <h2>Booking Your Latest apartment</h2>
 			          <p>BLorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor
 		              incididunt ut labore </p>
-			          <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
+					  <BookNow type="room" dataId="1" btnExtraClass="filled-btn"/>			          
 			        </div>
-			    
-
-
-
-
 		        </div>
 		      </div>
 		    </div>

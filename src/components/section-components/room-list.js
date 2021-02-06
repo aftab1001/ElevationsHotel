@@ -25,7 +25,7 @@ class RoomList extends Component {
 		                <div className="room-cat">
 		                  <p>Guest House</p>
 		                </div>
-		                <h4><Link to="/room-details">Modern Guest Rooms</Link></h4>
+		                <h4><Link to="/moredetails">Modern Guest Rooms</Link></h4>
 		                <ul className="room-info list-inline">
 		                  <li><i className="fas fa-bed" />3 Bed</li>
 		                  <li><i className="fas fa-bath" />2 Baths</li>
@@ -51,7 +51,7 @@ class RoomList extends Component {
 		                <div className="room-cat">
 		                  <p>Meeting Room</p>
 		                </div>
-		                <h4><Link to="/room-details">Conference Room</Link></h4>
+		                <h4><Link to="/moredetails">Conference Room</Link></h4>
 		                <ul className="room-info list-inline">
 		                  <li><i className="fas fa-bed" />3 Bed</li>
 		                  <li><i className="fas fa-bath" />2 Baths</li>
@@ -77,7 +77,7 @@ class RoomList extends Component {
 		                <div className="room-cat">
 		                  <p>Guest House</p>
 		                </div>
-		                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+		                <h4><Link to="/moredetails">Deluxe Couple Room</Link></h4>
 		                <ul className="room-info list-inline">
 		                  <li><i className="fas fa-bed" />3 Bed</li>
 		                  <li><i className="fas fa-bath" />2 Baths</li>
@@ -103,7 +103,7 @@ class RoomList extends Component {
 		                <div className="room-cat">
 		                  <p>Meeting Room</p>
 		                </div>
-		                <h4><Link to="/room-details">Conference Room</Link></h4>
+		                <h4><Link to="/moredetails">Conference Room</Link></h4>
 		                <ul className="room-info list-inline">
 		                  <li><i className="fas fa-bed" />3 Bed</li>
 		                  <li><i className="fas fa-bath" />2 Baths</li>
@@ -129,7 +129,7 @@ class RoomList extends Component {
 		                <div className="room-cat">
 		                  <p>Guest House</p>
 		                </div>
-		                <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+		                <h4><Link to="/moredetails">Deluxe Couple Room</Link></h4>
 		                <ul className="room-info list-inline">
 		                  <li><i className="fas fa-bed" />3 Bed</li>
 		                  <li><i className="fas fa-bath" />2 Baths</li>

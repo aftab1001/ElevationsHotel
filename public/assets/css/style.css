@@ -5249,7 +5249,7 @@ nav.main-menu{
 .btn.btn-secondary{
   padding: .25rem .5rem;
   border-color: #fea116;
-  border-radius:.2rem;
+  border-radius:.2rem;  
 }
 .btn.btn-secondary:hover,.btn.btn-secondary:active,.btn.btn-secondary:focus{
   background-color: #0f172b;
@@ -5262,4 +5262,9 @@ nav.main-menu{
 }
 #slider-container .awssld__bullets button{
   background:#fff;
+}
+.btn.btn-secondary.btn-hotel{
+  margin-left:10px;
+  padding:8px 15px;
+  margin-bottom: 3px;
 }

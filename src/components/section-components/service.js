@@ -30,7 +30,7 @@ class Service extends Component {
 									</div>
 									<h4>Rooms &amp; Appartment</h4>
 									<p>Great explorer of the truth the ter-blde human happiness one reject</p>
-									<Link to="/room-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
+									<Link to="/moredetails" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 							</div>
 						 </div>
 			
@@ -44,7 +44,7 @@ class Service extends Component {
 							</div>
 							<h4>Food &amp; Restaurant</h4>
 							<p>Great explorer of the truth the ter-blde human happiness one reject</p>
-							 <Link to="/room-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
+							 <Link to="/moredetails" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 						 </div>
 					</div>
 						 
@@ -60,7 +60,7 @@ class Service extends Component {
 								</div>
 								<h4>Spa &amp; Fitness</h4>
 								<p>Great explorer of the truth the ter-blde human happiness one reject</p>
-								<a to="/room-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></a>
+								<a to="/moredetails" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></a>
 							</div>
 						</div>
 				</div>	
@@ -76,7 +76,7 @@ class Service extends Component {
 								</div>
 								<h4>Sports &amp; Gaming</h4>
 								<p>Great explorer of the truth the ter-blde human happiness one reject</p>
-								<Link to="/room-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
+								<Link to="/moredetails" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 							</div>
 						</div>
 						
@@ -91,7 +91,7 @@ class Service extends Component {
 								</div>
 								<h4>Event &amp; Party</h4>
 								<p>Great explorer of the truth the ter-blde human happiness one reject</p>
-								<Link to="/room-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
+								<Link to="/moredetails" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 							</div>
 						</div>
 			
@@ -105,7 +105,7 @@ class Service extends Component {
 								</div>
 								<h4>GYM &amp; Yoga</h4>
 								<p>Great explorer of the truth the ter-blde human happiness one reject</p>
-								<Link to="/room-details" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
+								<Link to="/moredetails" className="read-more">raed more <i className="fas fa-long-arrow-alt-right" /></Link>
 							</div>
 						</div>
 					</div>

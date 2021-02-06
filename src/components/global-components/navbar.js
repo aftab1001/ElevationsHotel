@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";  
+    let publicUrl = process.env.PUBLIC_URL + "/";
     return (
       <header>
         <div className="header-top-area section-bg">
@@ -77,11 +77,12 @@ class Navbar extends Component {
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-md-3 col-7">
-                <div >
+                <div>
                   <Link to="/">
                     {" "}
-                    <img 
-                      src={publicUrl + "assets/img/logo.svg"} className="mainAppLogo"
+                    <img
+                      src={publicUrl + "assets/img/logo.svg"}
+                      className="mainAppLogo"
                       alt="Elevations"
                     />{" "}
                   </Link>{" "}
@@ -98,71 +99,63 @@ class Navbar extends Component {
                     </div>{" "}
                     <div className="lag-option">
                       <select>
-                        <option value="English"> English </option>{" "}                      
+                        <option value="English"> English </option>{" "}
                         <option value="Spanish"> Spanish </option>{" "}
                       </select>{" "}
                     </div>{" "}
                   </div>{" "}
                   <nav className="main-menu">
                     <ul className="list-inline">
-                      <li >
+                      <li>
                         <Link to="/"> Home </Link>{" "}
-                       
                       </li>{" "}
                       <li className="have-submenu">
-                        <Link to="/room-list"> Hotel </Link>{" "}
+                        <Link to="/rooms"> Hotel </Link>{" "}
                         <ul className="submenu">
                           <li>
                             {" "}
-                            <Link to="/room-list"> Rooms </Link>
+                            <Link to="/rooms"> Rooms </Link>
+                          </li>
+
+                          <li>
+                            {" "}
+                            <Link to="/reservation">Reservation</Link>
                           </li>
                           <li>
                             {" "}
-                            <Link to="/room-details"> Room Details </Link>
+                            <Link to="/our-staff">Our Staff</Link>
                           </li>
-                             
-                              <li>
-                                {" "}
-                                <Link to="/reservation">Reservation</Link>
-                              </li>
-                              <li>
-                                {" "}
-                                <Link to="/our-staff">Our Staff</Link>
-                              </li>
-                            
                         </ul>{" "}
                       </li>{" "}
                       <li>
-                        <Link to="/apartment-list"> Apartments </Link>{" "}                        
+                        <Link to="/apartments"> Apartments </Link>{" "}
                       </li>{" "}
                       <li>
                         {" "}
-                        <Link to="/reservation"> Restaurant </Link>
+                        <Link to="/resturent"> Restaurant </Link>
                       </li>
                       <li>
                         {" "}
                         <Link to="/service"> Services </Link>
                       </li>
                       <li>
-                        <Link to="/blog-grid"> News </Link>{" "}
-                     
+                        <Link to="/news"> News </Link>{" "}
                       </li>{" "}
-                  
                       <li>
                         {" "}
                         <Link to="/gallery"> Gallery </Link>
                       </li>
                       <li>
                         {" "}
-                        <Link target="_blank" to="/foundation"> Foundation </Link>
+                        <Link target="_blank" to="/foundation">
+                          {" "}
+                          Foundation{" "}
+                        </Link>
                       </li>
                     </ul>{" "}
                   </nav>{" "}
-                 
                   <div className="quote-btn">
-
-
-                    <Link  className="btn filled-btn">
+                    <Link className="btn filled-btn">
                       {" "}
                       get a quote <i className="fas fa-long-arrow-alt-right" />{" "}
                     </Link>{" "}

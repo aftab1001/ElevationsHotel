@@ -15,14 +15,9 @@ var HotelModal = (props) => {
             {children}
            
             </Modal.Body>
-          <Modal.Footer>
-          <Button size="sm" variant="secondary" onClick={handleSave}>
-              Save Changes
-            </Button>
-            <Button size="sm" variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            
+          <Modal.Footer>         
+            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleSave}>Save Changes</button>   
+            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleClose}>Close</button>            
           </Modal.Footer>
         </Modal>
      

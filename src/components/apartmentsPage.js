@@ -6,7 +6,7 @@ import PageHeader from './global-components/page-header';
 import Brand from './section-components/brand';
 import Footer from './global-components/footer';
 
-const ApartmentListPage = () => {
+const ApartmentsPage = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Our Apartments" subheader="Apartment List" />
@@ -16,5 +16,5 @@ const ApartmentListPage = () => {
     </div>
 }
 
-export default ApartmentListPage
+export default ApartmentsPage
 

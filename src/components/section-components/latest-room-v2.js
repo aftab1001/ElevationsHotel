@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
+import BookNow from './../global-components/BookNow';
 
 class LatestRoomV2 extends Component {
 
@@ -27,7 +27,7 @@ class LatestRoomV2 extends Component {
 			            <div className="room-cat">
 			              <p>Guest House</p>
 			            </div>
-			            <h4><Link to="/room-details">Modern Guest Rooms</Link></h4>
+			            <h4><Link to="/moredetails">Modern Guest Rooms</Link></h4>
 			            <p>
 			              Avoids pleasure itself, because pleasure,
 			              but because those who do not know how
@@ -41,6 +41,7 @@ class LatestRoomV2 extends Component {
 			            <div className="room-price">
 			              <p>$180.00</p>
 			            </div>
+						<BookNow type="room" dataId="1" />
 			          </div>
 			        </div>
 			      </div>
@@ -54,7 +55,7 @@ class LatestRoomV2 extends Component {
 			            <div className="room-cat">
 			              <p>Meeting Room</p>
 			            </div>
-			            <h4><Link to="/room-details">Conference Room</Link></h4>
+			            <h4><Link to="/moredetails">Conference Room</Link></h4>
 			            <p>
 			              Great explorer of the truth, the master-
 			              builder of human happiness one rejects,
@@ -68,6 +69,7 @@ class LatestRoomV2 extends Component {
 			            <div className="room-price">
 			              <p>$205.00</p>
 			            </div>
+						<BookNow type="room" dataId="1" />
 			          </div>
 			        </div>
 			      </div>
@@ -81,7 +83,7 @@ class LatestRoomV2 extends Component {
 			            <div className="room-cat">
 			              <p>Guest Room</p>
 			            </div>
-			            <h4><Link to="/room-details">Deluxe Couple Room</Link></h4>
+			            <h4><Link to="/moredetails">Deluxe Couple Room</Link></h4>
 			            <p>
 			              Provident, similique sunt in culpa qui
 			              officia deserunt mollitia animi laborum
@@ -95,6 +97,7 @@ class LatestRoomV2 extends Component {
 			            <div className="room-price">
 			              <p>$199.00</p>
 			            </div>
+						<BookNow type="room" dataId="1" />
 			          </div>
 			        </div>
 			      </div>

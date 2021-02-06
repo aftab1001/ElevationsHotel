@@ -20,7 +20,7 @@ class Gallery extends Component {
 		        {/* SingleBox */}
 		        <div className="gallery-box bg-img-center big wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="0ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/01.jpg)'}}>
 		          <div className="gallery-box-content">
-		            <Link to="/room-details" className="view-more">
+		            <Link to="/moredetails" className="view-more">
 		              <i className="far fa-plus" />
 		            </Link>
 		            <h3>Deluxe Rooms</h3>
@@ -34,7 +34,7 @@ class Gallery extends Component {
 		            {/* SingleBox */}
 		            <div className="gallery-box bg-img-center semi-big wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="400ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/02.jpg)'}}>
 		              <div className="gallery-box-content">
-		                <Link to="/room-details" className="view-more">
+		                <Link to="/moredetails" className="view-more">
 		                  <i className="far fa-plus" />
 		                </Link>
 		                <h3>Deluxe Rooms</h3>
@@ -46,7 +46,7 @@ class Gallery extends Component {
 		            {/* SingleBox */}
 		            <div className="gallery-box bg-img-center small wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="800ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/03.jpg)'}}>
 		              <div className="gallery-box-content">
-		                <Link to="/room-details" className="view-more">
+		                <Link to="/moredetails" className="view-more">
 		                  <i className="far fa-plus" />
 		                </Link>
 		                <h3>Deluxe Rooms</h3>
@@ -58,7 +58,7 @@ class Gallery extends Component {
 		            {/* SingleBox */}
 		            <div className="gallery-box bg-img-center medium wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="1200ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/04.jpg)'}}>
 		              <div className="gallery-box-content">
-		                <Link to="/room-details" className="view-more">
+		                <Link to="/moredetails" className="view-more">
 		                  <i className="far fa-plus" />
 		                </Link>
 		                <h3>Deluxe Rooms</h3>
@@ -70,7 +70,7 @@ class Gallery extends Component {
 		            {/* SingleBox */}
 		            <div className="gallery-box bg-img-center medium wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="1600ms" style={{backgroundImage: 'url('+publicUrl+'assets/img/home-gallery/05.jpg)'}}>
 		              <div className="gallery-box-content">
-		                <Link to="/room-details" className="view-more">
+		                <Link to="/moredetails" className="view-more">
 		                  <i className="far fa-plus" />
 		                </Link>
 		                <h3>Deluxe Rooms</h3>

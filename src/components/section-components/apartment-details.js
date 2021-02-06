@@ -396,7 +396,7 @@ class ApartmentDetail extends Component {
 		          <div className="widget banner-widget Elevations-go-top" style={{backgroundImage: 'url(assets/img/apartment/27.jpg)'}}>
 		            <h2>Booking Your Latest apartment</h2>
 		            <p>Give us a chance and you will be happy with the Elevations hotel services. </p>
-		            <Link to="/room-details" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
+		            <Link to="/moredetails" className="btn filled-btn">BOOK NOW <i className="fas fa-long-arrow-alt-right" /></Link>
 		          </div>
 		        </div>
 		      </div>

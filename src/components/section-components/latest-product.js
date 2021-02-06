@@ -25,7 +25,7 @@ class LatestProduct extends Component {
 			          </div>
 			          <div className="product-content">
 			            <i className="far fa-stars" />
-			            <h5><Link to="/room-details">Modern Guest Rooms</Link></h5>
+			            <h5><Link to="/moredetails">Modern Guest Rooms</Link></h5>
 			            <p className="price">$180.00</p>
 			          </div>
 			        </div>
@@ -38,7 +38,7 @@ class LatestProduct extends Component {
 			          </div>
 			          <div className="product-content">
 			            <i className="far fa-stars" />
-			            <h5><Link to="/room-details">Luxury Couple Rooms</Link></h5>
+			            <h5><Link to="/moredetails">Luxury Couple Rooms</Link></h5>
 			            <p className="price">$230.00</p>
 			          </div>
 			        </div>
@@ -51,7 +51,7 @@ class LatestProduct extends Component {
 			          </div>
 			          <div className="product-content">
 			            <i className="far fa-stars" />
-			            <h5><Link to="/room-details">Swimming Pool &amp; Hotel</Link></h5>
+			            <h5><Link to="/moredetails">Swimming Pool &amp; Hotel</Link></h5>
 			            <p className="price">$360.00</p>
 			          </div>
 			        </div>
@@ -64,7 +64,7 @@ class LatestProduct extends Component {
 			          </div>
 			          <div className="product-content">
 			            <i className="far fa-stars" />
-			            <h5><Link to="/room-details">Family Luxury Ronoms</Link></h5>
+			            <h5><Link to="/moredetails">Family Luxury Ronoms</Link></h5>
 			            <p className="price">$180.00</p>
 			          </div>
 			        </div>
@@ -77,7 +77,7 @@ class LatestProduct extends Component {
 			          </div>
 			          <div className="product-content">
 			            <i className="far fa-stars" />
-			            <h5><Link to="/room-details">Luxury Single Rooms</Link></h5>
+			            <h5><Link to="/moredetails">Luxury Single Rooms</Link></h5>
 			            <p className="price">$230.00</p>
 			          </div>
 			        </div>
@@ -90,7 +90,7 @@ class LatestProduct extends Component {
 			          </div>
 			          <div className="product-content">
 			            <i className="far fa-stars" />
-			            <h5><Link to="/room-details">Twieen Couple Rooms</Link></h5>
+			            <h5><Link to="/moredetails">Twieen Couple Rooms</Link></h5>
 			            <p className="price">$360.00</p>
 			          </div>
 			        </div>

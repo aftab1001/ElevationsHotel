@@ -6,7 +6,7 @@ import LatestRoom from './section-components/latest-room-v2';
 import Brand from './section-components/brand';
 import Footer from './global-components/footer';
 
-const RoomDetails = () => {
+const MoreDetails = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Our Details" Img="blog/blog-breadcrumb.jpg" />
@@ -17,5 +17,5 @@ const RoomDetails = () => {
     </div>
 }
 
-export default RoomDetails
+export default MoreDetails
 

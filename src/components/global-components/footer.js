@@ -39,10 +39,10 @@ class Footer_v1 extends Component {
 			          <div className="widget footer-widget">
 			            <h4 className="widget-title">Quick Links</h4>
 			            <ul className="nav-widget clearfix">
-			              <li><Link to="/room-list">Hoel Rooms</Link></li>
-			              <li><Link to="/room-details">Restaurants</Link></li>
-						  <li><Link to="/room-details">Rooms Detail</Link></li>
-			              <li><Link to="/room-details">Restaurants Detail</Link></li>
+			              <li><Link to="/rooms">Hoel Rooms</Link></li>
+			              <li><Link to="/moredetails">Restaurants</Link></li>
+						  <li><Link to="/moredetails">Rooms Detail</Link></li>
+			              <li><Link to="/moredetails">Restaurants Detail</Link></li>
 			              <li><Link to="/apartment-list">Apartments</Link></li>
 			              <li><Link to="/apartment-details">Apartments Details</Link></li>
 			              <li><Link to="/blog-grid">News</Link></li>

@@ -14,7 +14,7 @@ class Calltoacton extends Component {
 			        <div className="cta-left-content Elevations-go-top">
 			          <span>Looking For Luxury Hotel</span>
 			          <h1>Booking Now</h1>
-			          <Link to="/room-details" className="btn filled-btn">Booking now <i className="fas fa-long-arrow-alt-right" /></Link>
+			          <Link to="/moredetails" className="btn filled-btn">Booking now <i className="fas fa-long-arrow-alt-right" /></Link>
 			        </div>
 			      </div>
 			      <div className="col-md-2">

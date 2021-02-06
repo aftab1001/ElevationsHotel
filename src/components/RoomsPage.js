@@ -1,19 +1,19 @@
 import React from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
-import BlogGrid from './blog-components/blog-grid';
+import RoomList from './section-components/room-list';
 import Brand from './section-components/brand';
 import Footer from './global-components/footer';
 
-const BlogGridPage = () => {
+const RoomsPage = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="News" subheader="News" Img="blog/blog-breadcrumb.jpg" />
-        <BlogGrid />
+        <PageHeader headertitle="Our Rooms" subheader="Rooms" />
+        <RoomList />
         <Brand Customclass="primary-bg"/>
         <Footer />
     </div>
 }
 
-export default BlogGridPage
+export default RoomsPage
 
