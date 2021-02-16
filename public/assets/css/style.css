@@ -334,7 +334,7 @@ textarea {
 
 .slick-slide img {
   display: inline-block;
-  min-height: 250px;
+  
 }
 
 .slick-slide:focus {
@@ -885,6 +885,7 @@ ul.list-inline li {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  width:50px;
 }
 
 .menu-right-area .lag-select .lag-option {
@@ -2617,6 +2618,7 @@ a.read-more:hover {
   border-radius: 50%;
   height: 80px;
   width: 80px;
+  min-height: auto;
 }
 
 .feedback-slider-two .client-name {
@@ -2638,7 +2640,7 @@ a.read-more:hover {
 }
 
 .feedback-slider-two .feedback-client-desc {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .feedback-slider-two .feedback-desc {
@@ -2648,13 +2650,13 @@ a.read-more:hover {
 }
 
 .feedback-slider-two .feedback-desc p {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .feedback-slider-two ul.slick-dots {
   position: absolute;
   left: 63%;
-  bottom: 30px;
+  bottom: -20px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }

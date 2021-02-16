@@ -6,73 +6,7 @@ class Navbar extends Component {
     let publicUrl = process.env.PUBLIC_URL + "/";
     return (
       <header>
-        <div className="header-top-area section-bg">
-          <div className="container-fluid">
-            <div className="row align-items-center">
-              <div className="col-xl-4 col-lg-7 offset-xl-3 col-md-6">
-                <ul className="top-contact-info list-inline">
-                  <li>
-                    {" "}
-                    <i className="fas fa-map-marker-alt" /> 205 Main Rood, New
-                    York{" "}
-                  </li>{" "}
-                  <li>
-                    {" "}
-                    <i className="fas fa-phone" /> +89(456) 789 999{" "}
-                  </li>{" "}
-                </ul>{" "}
-              </div>{" "}
-              <div className="col-xl-5 col-lg-5 col-md-6">
-                <div className="top-right text-right">
-                  <ul className="top-menu list-inline d-inline">
-                    <li>
-                      {" "}
-                      <Link to="/"> Home </Link>
-                    </li>
-                    <li>
-                      {" "}
-                      <Link to="/contact"> Contact Us </Link>
-                    </li>
-                    <li>
-                      {" "}
-                      <Link to="/about"> About Us </Link>
-                    </li>
-                  </ul>{" "}
-                  <ul className="top-social-icon list-inline d-inline">
-                    <li>
-                      {" "}
-                      <a href="https://www.facebook.com/webtend/">
-                        {" "}
-                        <i className="fab fa-facebook-f" />{" "}
-                      </a>
-                    </li>
-                    <li>
-                      {" "}
-                      <a href="https://twitter.com/webtend">
-                        {" "}
-                        <i className="fab fa-twitter" />{" "}
-                      </a>
-                    </li>
-                    <li>
-                      {" "}
-                      <a href="https://instagram.com/webtend">
-                        {" "}
-                        <i className="fab fa-instagram" />{" "}
-                      </a>
-                    </li>
-                    <li>
-                      {" "}
-                      <a href="https://google.com/webtend">
-                        {" "}
-                        <i className="fab fa-google" />{" "}
-                      </a>
-                    </li>
-                  </ul>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+        
         <div className="header-menu-area">
           <div className="container-fluid">
             <div className="row align-items-center">
@@ -93,11 +27,12 @@ class Navbar extends Component {
                   <div className="lag-select">
                     <div className="lag-img">
                       <img
-                        src={publicUrl + "assets/img/icons/flag.png"}
+                        src={publicUrl + "assets/img/icons/flag1.jpg"}
                         alt="Flug"
                       />
                     </div>{" "}
                     <div className="lag-option">
+                     
                       <select>
                         <option value="English"> English </option>{" "}
                         <option value="Spanish"> Spanish </option>{" "}
@@ -155,7 +90,7 @@ class Navbar extends Component {
                     </ul>{" "}
                   </nav>{" "}
                   <div className="quote-btn">
-                    <Link className="btn filled-btn">
+                    <Link to="/" className="btn filled-btn">
                       {" "}
                       get a quote <i className="fas fa-long-arrow-alt-right" />{" "}
                     </Link>{" "}

@@ -25,7 +25,7 @@ var HotelModal = (props) => {
 };
 
 HotelModal.propTypes ={
-  title:PropTypes.element.isRequired
+  title:PropTypes.string.isRequired
 
 }
 export default HotelModal;

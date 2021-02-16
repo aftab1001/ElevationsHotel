@@ -9,8 +9,7 @@ const RoomsPage = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Our Rooms" subheader="Rooms" />
-        <RoomList />
-        <Brand Customclass="primary-bg"/>
+        <RoomList />        
         <Footer />
     </div>
 }
