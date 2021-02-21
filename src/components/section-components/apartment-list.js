@@ -44,7 +44,7 @@ const ApartmentList=(props)=> {
                         <div className="room-price">
                           <p>$180.00</p>
                         </div>
-                        <BookNow type="room" dataId="" />                        
+                        <BookNow type="room" dataId="" btnText="Book Tour"/>                        
                       </div>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ const ApartmentList=(props)=> {
                         <div className="room-price">
                           <p>$220.00</p>
                         </div>
-                        <BookNow type="room" dataId=""/>
+                        <BookNow type="room" dataId="" btnText="Book Tour"/>
                       </div>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ const ApartmentList=(props)=> {
                         <div className="room-price">
                           <p>$240.00</p>
                         </div>
-                        <BookNow type="room" dataId=""/>
+                        <BookNow type="room" dataId="" btnText="Book Tour"/>
                       </div>
                     </div>
                   </div>
@@ -165,7 +165,7 @@ const ApartmentList=(props)=> {
                         <div className="room-price">
                           <p>$180.00</p>
                         </div>
-                        <BookNow type="room" dataId=""/>
+                        <BookNow type="room" dataId="" btnText="Book Tour"/>
                       </div>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ const ApartmentList=(props)=> {
                         <div className="room-price">
                           <p>$150.00</p>
                         </div>
-                        <BookNow type="room" dataId=""/>
+                        <BookNow type="room" dataId="" btnText="Book Tour"/>
                       </div>
                     </div>
                   </div>

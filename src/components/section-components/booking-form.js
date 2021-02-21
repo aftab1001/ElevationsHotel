@@ -61,15 +61,7 @@ class BookingForm extends Component {
 		          </div>
 		        </div>
 		      </form>
-		      <div className="booking-shape-1">
-		        <img src={publicUrl+"assets/img/shape/01.png"} alt="shape" />
-		      </div>
-		      <div className="booking-shape-2">
-		        <img src={publicUrl+"assets/img/shape/02.png"} alt="shape" />
-		      </div>
-		      <div className="booking-shape-3">
-		        <img src={publicUrl+"assets/img/shape/03.png"} alt="shape" />
-		      </div>
+		      
 		    </div>
 		  </div>
 		</section>

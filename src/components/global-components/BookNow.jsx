@@ -4,7 +4,7 @@ import BookingFormHtml from "./../form-components/BookingFormHtml";
 import Button from "react-bootstrap/Button";
 
 var BookNow = (props) => {
-  const { type, dataId, btnExtraClass } = props;
+  const { type, dataId, btnExtraClass, btnText } = props;
 
   const [showModel, setShowModel] = useState(false);
   const handleClose = () => {
@@ -18,10 +18,11 @@ var BookNow = (props) => {
   const btnClass = btnExtraClass
     ? "btn " + btnExtraClass
     : "btn btn-secondary btn-sm btn-hotel";
+  const btnNText = btnText ? btnText : "Book Now";
   return (
     <>
       <button className={btnClass} onClick={() => setShowModel(true)}>
-        Book Now <i className="fas fa-long-arrow-alt-right" />
+        {btnNText} <i className="fas fa-long-arrow-alt-right" />
       </button>
 
       <HotelModal
