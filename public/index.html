@@ -52,8 +52,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-		
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <!-- preloader area start -->
@@ -63,8 +62,8 @@
       <span></span>
     </div>
     <!-- preloader area end -->
+    <div id="google_translate_element"></div>
     <div id="Elevations"></div>
-
     <!-- all plugins here -->
     <script src="%PUBLIC_URL%/assets/js/modernizr-3.6.0.min.js"></script>
     <!-- jQuery Version 1.12.4 -->
@@ -111,5 +110,46 @@
       src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
       crossorigin
     ></script>
+    <script>
+      /*
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            includedLanguages: "en,es",
+            layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT,
+          },
+          "google_translate_element"
+        );
+      }
+      // WORK IN PROGRESS BELOW
+
+      $("document").ready(function () {
+        $("#").on("change", function () {
+          console.log("language");
+          const $selectOption = $("#languageSelect option:selected");
+          $(".goog-te-combo").val($selectOption.data("lang"));
+          //window.location.href = $selectOption.data("href");
+          //location.reload();
+        });
+        $(".translation-links a").click(function () {
+          var lang = $(this).data("lang");
+          var $frame = $(".goog-te-menu-frame:first");
+          if (!$frame.size()) {
+            alert("Error: Could not find Google translate frame.");
+            return false;
+          }
+          $frame
+            .contents()
+            .find(".goog-te-menu2-item span.text:contains(" + lang + ")")
+            .get(0)
+            .click();
+          return false;
+        });
+      });*/
+    </script>
+    <!--<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
   </body>
 </html>
