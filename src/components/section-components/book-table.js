@@ -36,6 +36,11 @@ class BookTable extends Component {
 			                <input type="text" placeholder="Your Full Name" name="name" id="name" />
 			                <i className="fas fa-user-alt" />
 			              </div>
+						  <label htmlFor="name">Number of Guests</label>
+			              <div className="input-wrap">
+			                <input type="text" placeholder="Number of Guests" name="name" id="name" />
+			                <i className="fas fa-users" />
+			              </div>
 			              <label htmlFor="email">Your Email Address</label>
 			              <div className="input-wrap">
 			                <input type="text" placeholder="Your Email" name="email" id="email" />

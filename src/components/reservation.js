@@ -9,8 +9,7 @@ import Footer from './global-components/footer';
 const ReservationPage = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Our Reservation" subheader="Reservation" />
-        
+        <PageHeader headertitle="Our Reservation" subheader="Reservation" />        
         <BookTable />
         <Brand Customclass="primary-bg"/>
         <Footer />

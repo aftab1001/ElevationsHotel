@@ -4,7 +4,6 @@ import Slider from "./section-components/slider";
 import BookingForm from "./section-components/booking-form";
 import Welcome from "./section-components/welcome";
 import LatestRoom from "./section-components/latest-room";
-import Service from "./section-components/service";
 import CallToActoin from "./section-components/call-to-action";
 import Gallery from "./section-components/gallery";
 import Features from "./section-components/features";
@@ -19,8 +18,7 @@ const Home = () => {
       <Slider />
       <BookingForm />
       <Welcome />
-      <LatestRoom />
-      <Service />
+      <LatestRoom />      
       <CallToActoin />
       <Gallery />
       <Features />

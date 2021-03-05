@@ -10,29 +10,24 @@ class BookingForm extends Component {
 		    <div className="booking-form-wrap bg-img-center section-bg">
 		      <form id="bookIng-form">
 		        <div className="row">
+		          
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
-		              <input type="text" name="location" placeholder="Location" id="location" />
-		              <i className="fas fa-search" />
-		            </div>
-		          </div>
-		          <div className="col-lg-4 col-md-6">
-		            <div className="input-wrap">
-		              <input type="text" name="arrive-date" placeholder="Arrive Date" id="arrive-date" />
+		              <input type="text" name="arrive-date" placeholder="Check In" id="arrive-date" />
 		              <i className="far fa-calendar-alt" />
 		            </div>
 		          </div>
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
-		              <input type="text" name="depart-date" placeholder="Depart Date" id="depart-date" />
+		              <input type="text" name="depart-date" placeholder="Check Out" id="depart-date" />
 		              <i className="far fa-calendar-alt" />
 		            </div>
 		          </div>
 		          <div className="col-lg-4 col-md-6">
 		            <div className="input-wrap">
 		              <select name="guests" id="guests">
-		                <option value="Guests">Guests</option>
-		                <option value="Guests">Others</option>
+		                <option value="Children">Children</option>
+		                <option value="Children">Others</option>
 		              
 		              </select>
 		            </div>

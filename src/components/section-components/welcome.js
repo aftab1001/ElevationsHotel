@@ -37,33 +37,7 @@ class Welcome extends Component {
 			            human happiness. No ways
 			            one rejdislikes, or avoids pleasure itself, because</p>
 			        </div>
-			        {/* counter up */}
-			        <div className="counter">
-			          <div className="row">
-			            <div className="col-4">
-			              <div className="counter-box wow fadeInLeft animated" data-wow-duration="1500ms" data-wow-delay="400ms">
-			                <img src={publicUrl+"assets/img/icons/building.png"} alt="" />
-			                <span className="counter-number">506</span>
-			                <p>Luxury Appartment</p>
-			              </div>
-			            </div>
-			            <div className="col-4">
-			              <div className="counter-box wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="600ms">
-			                <img src={publicUrl+"assets/img/icons/hostel.png"} alt="" />
-			                <span className="counter-number">252</span>
-			                <p>Modern Bedroom</p>
-			              </div>
-			            </div>
-			            <div className="col-4">
-			              <div className="counter-box wow fadeInRight animated" data-wow-duration="1500ms" data-wow-delay="800ms">
-			                <img src={publicUrl+"assets/img/icons/trophy.png"} alt="" />
-			                <span className="counter-number">420</span>
-			                <p>Win Int Awards</p>
-			              </div>
-			            </div>
-			          </div>
-			        </div>
-			        {/* End counter */}
+			        
 			      </div>
 			    </div>
 			  </div>

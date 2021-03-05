@@ -34,7 +34,7 @@ class Navbar extends Component {
                     <div className="lag-option">
                       <select id="languageSelect">
                         <option value="English" data-href="#googtrans(en|en)" data-lang="en"> English </option>{" "}
-                        <option value="Spanish" data-href="#googtrans(es|es)" data-lang="es"> Spanish </option>{" "}
+                        <option value="French" data-href="#googtrans(es|es)" data-lang="es"> French </option>{" "}
                       </select>{" "}
                     </div>{" "}
                   </div>{" "}
