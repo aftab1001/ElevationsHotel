@@ -13,15 +13,7 @@ class Welcome extends Component {
 			      <div className="col-lg-6">
 			        <div className="tile-gallery">
 			          <img src={publicUrl+"assets/img/tile-gallery/01.jpg"} alt="Tile Gallery" />
-			          <div className="tile-gallery-content">
-			            <div className="tile-icon">
-			              <img src={publicUrl+"assets/img/icons/hostel-hover.png"} alt="" />
-			            </div>
-			            <h3>Luxury Interior</h3>
-			            <p>Builder of human happiness. No one rejects dislikes or apleasure itself cause it is
-			              pleasure, but
-			              because</p>
-			          </div>
+			          
 			        </div>
 			      </div>
 			      {/* End tile Gallery */}
