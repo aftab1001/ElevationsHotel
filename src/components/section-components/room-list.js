@@ -1,4 +1,4 @@
-import React, { Component, Comp } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import getRoomsData from "./../Services/RoomsDataService";
 import BookNow from "./../global-components/BookNow";
