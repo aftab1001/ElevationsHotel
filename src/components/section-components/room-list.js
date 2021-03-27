@@ -7,19 +7,22 @@ class RoomList extends Component {
   state = {
     rooms: [],
   };
-  componentDidMount = async () => {    
-    const { data } = await getRoomsData();    
+  componentDidMount = async () => {
+    const response = await getRoomsData();
+    const { data } = response;
     this.setState({ rooms: data.result.items });
   };
-  render() {    
-    
+  render() {
     return (
       <section className="rooms-warp list-view section-bg section-padding ">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               {this.state.rooms.map((room) => (
-                <div className="single-room list-style Elevations-go-top" key={"roomId"+room.id}>
+                <div
+                  className="single-room list-style Elevations-go-top"
+                  key={"roomId" + room.id}
+                >
                   <div className="row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="room-thumb">
@@ -36,14 +39,16 @@ class RoomList extends Component {
                         </h4>
                         <ul className="room-info list-inline">
                           <li>
-                            <i className="fas fa-bed" />{JSON.parse(room.description).Bed} Bed
+                            <i className="fas fa-bed" />
+                            {room.bed} Bed
                           </li>
                           <li>
-                            <i className="fas fa-bath" />{JSON.parse(room.description).Bath} Baths
+                            <i className="fas fa-bath" />
+                            {room.bath} Baths
                           </li>
                           <li>
                             <i className="fas fa-ruler-combined" />
-                            {JSON.parse(room.description).Length}
+                            {room.length}
                           </li>
                         </ul>
                         <div className="room-price">
@@ -55,7 +60,6 @@ class RoomList extends Component {
                   </div>
                 </div>
               ))}
-
             </div>
           </div>
           <div className="row">

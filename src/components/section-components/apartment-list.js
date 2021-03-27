@@ -7,9 +7,9 @@ class ApartmentList extends Component {
   state = {
     apartments: [],
   };
-  componentDidMount = async () => {
-    const { data } = await getApartmentsData();
-    console.log("apartments",data.result.items);
+  componentDidMount = async () => {    
+    const response = await getApartmentsData();
+    const { data } = response;
     this.setState({ apartments: data.result.items });
   };
   render() {
@@ -39,15 +39,15 @@ class ApartmentList extends Component {
                         <ul className="room-info list-inline">
                           <li>
                             <i className="fas fa-bed" />
-                            {JSON.parse(apartment.description).Bed} Bed
+                            {apartment.bed} Bed
                           </li>
                           <li>
                             <i className="fas fa-bath" />
-                            {JSON.parse(apartment.description).Bath} Baths
+                            {apartment.bath} Baths
                           </li>
                           <li>
                             <i className="fas fa-ruler-combined" />
-                            {JSON.parse(apartment.description).Length} 
+                            {apartment.length} 
                           </li>
                         </ul>
                         <div className="room-price">
