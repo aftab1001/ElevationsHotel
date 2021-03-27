@@ -34,7 +34,7 @@ class ApartmentList extends Component {
                           <p>{apartment.name}</p>
                         </div>
                         <h4>
-                          <Link to="/moredetails">02 Bed Apartments</Link>
+                          <Link to="/moredetails">{apartment.name}</Link>
                         </h4>
                         <ul className="room-info list-inline">
                           <li>
