@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import getNewsData from "./../Services/NewsDataService";
+import {getNewsData} from "./../Services/NewsDataService";
 class BlogGrid extends Component {
   state = {
     news: [],
@@ -32,17 +32,17 @@ class BlogGrid extends Component {
                     <div className="post-desc">
                       <ul className="blog-meta list-inline">
                         <li>
-                          <Link to={"/blog-details/" + news.id}>
+                          <Link to={"/new-details/" + news.id}>
                             <i className="far fa-calendar-alt" />
                             {this.getDate(news.date)}
                           </Link>
                         </li>
                       </ul>
                       <h3>
-                        <Link to={"/blog-details/" + news.id}>{news.name}</Link>
+                        <Link to={"/new-details/" + news.id}>{news.name}</Link>
                       </h3>
                       <Link
-                        to={"/blog-details/" + news.id}
+                        to={"/new-details/" + news.id}
                         className="read-more"
                       >
                         Read More <i className="fas fa-long-arrow-alt-right" />
@@ -54,7 +54,7 @@ class BlogGrid extends Component {
             </div>
           </div>
           {/* Pagination Wrap */}
-          <div className="pagination-wrap">
+          <div className="pagination-wrap hidden">
             <ul className="list-inline">
               <li>
                 <a href="#">

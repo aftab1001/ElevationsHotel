@@ -5,6 +5,7 @@ import {
   HashRouter,
   Route,
   Switch,
+  Redirect
 } from "react-router-dom";
 import Home from "./components/home";
 import RoomsPage from "./components/RoomsPage";
@@ -14,6 +15,7 @@ import Service from "./components/service";
 import NewsPage from "./components/NewsPage";
 import BlogList from "./components/blog-list";
 import BlogDetails from "./components/blog-details";
+import NewsDetails from "./components/news-details";
 import Gallery from "./components/gallery";
 import Contact from "./components/contact";
 import OurStaff from "./components/our-staff";
@@ -33,16 +35,20 @@ class Root extends Component {
         <div>
           <ScrollToTop>
             <Switch>
-              <Route exact path="/" component={Home} />              
+              <Route exact path="/" component={Home} />
               <Route path="/rooms" component={RoomsPage} />
               <Route path="/apartments" component={ApartmentsPage} />
               <Route path="/room-grid" component={RoomGrid} />
               <Route path="/moredetails" component={MoreDetails} />
               <Route path="/apartment-details" component={ApartmentDetails} />
               <Route path="/service" component={Service} />
-              <Route path="/news" component={NewsPage} />
               <Route path="/blog-list" component={BlogList} />
               <Route path="/blog-details" component={BlogDetails} />
+              <Route path="/news" component={NewsPage} />
+              <Switch>
+                <Route path="/new-details/:newsId" component={NewsDetails} />
+                <Redirect from="/new-details/" to="/news" exact />
+              </Switch>
               <Route path="/gallery" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/our-staff" component={OurStaff} />

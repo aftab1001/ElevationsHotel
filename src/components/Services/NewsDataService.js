@@ -1,8 +1,11 @@
 import http from "./RestService";
-import { apiUrl} from "../../config.json";
+import { apiUrl } from "../../config.json";
 
-let getApartmentsData = () => {
+const getNewsData = () => {
   return http.get(apiUrl + "News/GetAll");
 };
+const getNewsById = (newsId) => {
+  return http.get(apiUrl + "News/Get/?id=" + newsId);
+};
 
-export default getApartmentsData;
+export { getNewsData, getNewsById };
