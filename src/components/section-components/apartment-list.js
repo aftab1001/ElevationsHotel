@@ -25,7 +25,7 @@ class ApartmentList extends Component {
                   <div className="row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="room-thumb">
-                        <img src={apartment.image} alt="Apartment" />
+                        <img src={apartment.image1} alt="Apartment" />
                       </div>
                     </div>
                     <div className="col-lg-6">

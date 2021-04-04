@@ -26,7 +26,7 @@ class RoomList extends Component {
                   <div className="row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="room-thumb">
-                        <img src={room.image} alt="Room" />
+                        <img src={room.image1} alt="Room" />
                       </div>
                     </div>
                     <div className="col-lg-6">
