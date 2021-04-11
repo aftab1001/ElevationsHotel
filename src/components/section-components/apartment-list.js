@@ -10,6 +10,7 @@ class ApartmentList extends Component {
   componentDidMount = async () => {    
     const response = await getApartmentsData();
     const { data } = response;
+    console.log("apt",data.result.items)
     this.setState({ apartments: data.result.items });
   };
   render() {
@@ -31,7 +32,7 @@ class ApartmentList extends Component {
                     <div className="col-lg-6">
                       <div className="room-desc">
                         <div className="room-cat">
-                          <p>{apartment.name}</p>
+                          <p>{apartment.categoryName}</p>
                         </div>
                         <h4>
                           <Link to="/moredetails">{apartment.name}</Link>
