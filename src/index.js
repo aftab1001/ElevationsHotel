@@ -5,7 +5,7 @@ import {
   HashRouter,
   Route,
   Switch,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 import Home from "./components/home";
 import RoomsPage from "./components/RoomsPage";
@@ -20,7 +20,7 @@ import Gallery from "./components/gallery";
 import Contact from "./components/contact";
 import OurStaff from "./components/our-staff";
 import Resturent from "./components/resturent";
-import Reservation from "./components/reservation";
+import ReservationPage from "./components/reservation";
 import About from "./components/about";
 import ScrollToTop from "react-router-scroll-top";
 import ApartmentsPage from "./components/apartmentsPage";
@@ -45,17 +45,17 @@ class Root extends Component {
               <Route path="/blog-list" component={BlogList} />
               <Route path="/blog-details" component={BlogDetails} />
               <Route path="/news" component={NewsPage} />
-              <Switch>
-                <Route path="/new-details/:newsId" component={NewsDetails} />
-                <Redirect from="/new-details/" to="/news" exact />
-              </Switch>
               <Route path="/gallery" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/our-staff" component={OurStaff} />
               <Route path="/resturent" component={Resturent} />
-              <Route path="/reservation" component={Reservation} />
+              <Route path="/reservation" component={ReservationPage} />
               <Route path="/about" component={About} />
               <Route path="/foundation" component={FoundationList} />
+              <Switch>
+                <Route path="/new-details/:newsId" component={NewsDetails} />
+                <Redirect from="/new-details/" to="/news" exact />
+              </Switch>
             </Switch>
           </ScrollToTop>
         </div>
