@@ -10,7 +10,7 @@ import {
 import Home from "./components/home";
 import RoomsPage from "./components/RoomsPage";
 import RoomGrid from "./components/room-grid";
-import MoreDetails from "./components/MoreDetails";
+import RoomDetails from "./components/RoomDetails";
 import Service from "./components/service";
 import NewsPage from "./components/NewsPage";
 import BlogList from "./components/blog-list";
@@ -39,7 +39,6 @@ class Root extends Component {
               <Route path="/rooms" component={RoomsPage} />
               <Route path="/apartments" component={ApartmentsPage} />
               <Route path="/room-grid" component={RoomGrid} />
-              <Route path="/moredetails" component={MoreDetails} />
               <Route path="/apartment-details" component={ApartmentDetails} />
               <Route path="/service" component={Service} />
               <Route path="/blog-list" component={BlogList} />
@@ -52,6 +51,18 @@ class Root extends Component {
               <Route path="/reservation" component={ReservationPage} />
               <Route path="/about" component={About} />
               <Route path="/foundation" component={FoundationList} />
+              <Switch>
+                <Route path="/roomdetails/:roomId" component={RoomDetails} />
+                <Route path="/apartmentdetails/:apartmentId" component={ApartmentDetails} />
+                <Route path="/new-details/:newsId" component={NewsDetails} />
+                <Redirect  exact to="/" component={Home} />
+              </Switch>
+              
+              <Switch>
+              <Route path="/apartmentdetails/:apartmentId" component={ApartmentDetails} />
+                <Redirect from="/apartmentdetails/" to="/apartments" exact />
+              </Switch>              
+              
               <Switch>
                 <Route path="/new-details/:newsId" component={NewsDetails} />
                 <Redirect from="/new-details/" to="/news" exact />

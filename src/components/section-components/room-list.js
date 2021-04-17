@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import getRoomsData from "./../Services/RoomsDataService";
+import {getRoomsData} from "./../Services/RoomsDataService";
 import BookNow from "./../global-components/BookNow";
 
 class RoomList extends Component {
@@ -35,7 +35,9 @@ class RoomList extends Component {
                           <p>Guest House</p>
                         </div>
                         <h4>
-                          <Link to="/moredetails">{room.name}</Link>
+                          <Link to={"/roomdetails/" + room.id}>
+                            {room.name}
+                          </Link>
                         </h4>
                         <ul className="room-info list-inline">
                           <li>

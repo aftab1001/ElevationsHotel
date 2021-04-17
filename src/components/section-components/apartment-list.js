@@ -1,71 +1,72 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import BookNow from "./../global-components/BookNow";
-import getApartmentsData from "./../Services/ApartmentsDataService";
+import { getApartmentsData } from "./../Services/ApartmentsDataService";
 
 class ApartmentList extends Component {
   state = {
     apartments: [],
   };
-  componentDidMount = async () => {    
+  componentDidMount = async () => {
     const response = await getApartmentsData();
-    const { data } = response;
-    console.log("apt",data.result.items)
+    const { data } = response;   
     this.setState({ apartments: data.result.items });
   };
   render() {
-  
-
     return (
       <section className="rooms-warp list-view section-bg section-padding ">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              {this.state.apartments.map((apartment) => (
-                <div className="single-room list-style Elevations-go-top" key={"apartmentkey"+apartment.id}>
-                  <div className="row align-items-center no-gutters">
-                    <div className="col-lg-6">
-                      <div className="room-thumb">
-                        <img src={apartment.image1} alt="Apartment" />
+              {this.state.apartments &&
+                this.state.apartments.map((apartment) => (
+                  <div
+                    className="single-room list-style Elevations-go-top"
+                    key={"apartmentkey" + apartment.id}
+                  >
+                    <div className="row align-items-center no-gutters">
+                      <div className="col-lg-6">
+                        <div className="room-thumb">
+                          <img src={apartment.image1} alt="Apartment" />
+                        </div>
                       </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="room-desc">
-                        <div className="room-cat">
-                          <p>{apartment.categoryName}</p>
+                      <div className="col-lg-6">
+                        <div className="room-desc">
+                          <div className="room-cat">
+                            <p>{apartment.categoryName}</p>
+                          </div>
+                          <h4>
+                            <Link to={"/apartmentdetails/" + apartment.id}>
+                              {apartment.name}
+                            </Link>
+                          </h4>
+                          <ul className="room-info list-inline">
+                            <li>
+                              <i className="fas fa-bed" />
+                              {apartment.bed} Bed
+                            </li>
+                            <li>
+                              <i className="fas fa-bath" />
+                              {apartment.bath} Baths
+                            </li>
+                            <li>
+                              <i className="fas fa-ruler-combined" />
+                              {apartment.length}
+                            </li>
+                          </ul>
+                          <div className="room-price">
+                            <p>${apartment.price}</p>
+                          </div>
+                          <BookNow
+                            type="room"
+                            dataId={apartment.id}
+                            btnText="Book Tour"
+                          />
                         </div>
-                        <h4>
-                          <Link to="/moredetails">{apartment.name}</Link>
-                        </h4>
-                        <ul className="room-info list-inline">
-                          <li>
-                            <i className="fas fa-bed" />
-                            {apartment.bed} Bed
-                          </li>
-                          <li>
-                            <i className="fas fa-bath" />
-                            {apartment.bath} Baths
-                          </li>
-                          <li>
-                            <i className="fas fa-ruler-combined" />
-                            {apartment.length} 
-                          </li>
-                        </ul>
-                        <div className="room-price">
-                          <p>${apartment.price}</p>
-                        </div>
-                        <BookNow
-                          type="room"
-                          dataId={apartment.id}
-                          btnText="Book Tour"
-                        />
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-
-             
+                ))}
             </div>
             <div className="col-lg-4 d-none">
               <div className="sidebar-wrap">

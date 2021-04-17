@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.getApartmentById = exports.getApartmentsData = void 0;
 
 var _RestService = _interopRequireDefault(require("./RestService"));
 
@@ -15,5 +15,10 @@ var getApartmentsData = function getApartmentsData() {
   return _RestService["default"].get(_config.apiUrl + "Apartment/GetAllApartment");
 };
 
-var _default = getApartmentsData;
-exports["default"] = _default;
+exports.getApartmentsData = getApartmentsData;
+
+var getApartmentById = function getApartmentById(apartmentId) {
+  return _RestService["default"].get(_config.apiUrl + "Apartment/Get/?id=" + apartmentId);
+};
+
+exports.getApartmentById = getApartmentById;
