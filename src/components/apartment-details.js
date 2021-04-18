@@ -11,7 +11,7 @@ const ApartmentDetails = (props) => {
         <Navbar />
         <PageHeader headertitle="Apartment Details" Img="apartment/20.jpg" />
         <ApartmentDetailSection />
-        <LatestRoom />
+        
         <Brand Customclass="primary-bg"/>
         <Footer />
     </div>

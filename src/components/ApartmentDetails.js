@@ -10,8 +10,7 @@ const ApartmentDetails = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Apartment Details" Img="blog/blog-breadcrumb.jpg" />
-        <ApartmentDetailSection />
-        <LatestRoom />
+        <ApartmentDetailSection />        
         <Brand Customclass="primary-bg"/>
         <Footer />
     </div>

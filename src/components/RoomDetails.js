@@ -10,8 +10,7 @@ const RoomDetails = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Room Details" Img="blog/blog-breadcrumb.jpg" />
-        <RoomDetailsSection />
-        <LatestRoom />
+        <RoomDetailsSection />        
         <Brand Customclass="primary-bg"/>
         <Footer />
     </div>
