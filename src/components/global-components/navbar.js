@@ -24,7 +24,7 @@ class Navbar extends Component {
               </div>{" "}
               <div className="col-xl-10 col-lg-10 col-md-9 col-5">
                 <div className="menu-right-area text-right">
-                  <div className="lag-select">
+                  <div className="lag-select hidden">
                     <div className="lag-img">
                       <img
                         src={publicUrl + "assets/img/icons/flag1.jpg"}
