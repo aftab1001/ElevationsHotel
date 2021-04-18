@@ -29,10 +29,13 @@ const NewsDetails = (props) => {
     var date = new Date(inputDate);
     return new Date(date).toDateString("yyyy-MM-dd");
   };
-  useEffect(async () => {
-    const response = await getNewsById(newsId);
-    const { data } = response;
-    setNews(data.result);
+  useEffect(() => {
+    const getData = async () => {
+      const response = await getNewsById(newsId);
+      const { data } = response;
+      setNews(data.result);
+    };
+    getData();
   }, [newsId]);
 
   return (

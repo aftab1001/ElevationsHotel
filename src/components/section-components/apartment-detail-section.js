@@ -36,16 +36,17 @@ const ApartmentDetailSection = (props) => {
     minNumberOfDays: "",
   };
 
-  
   const { apartmentId } = useParams();
   const [apartment, setApartment] = useState(defaultApartmentData);
-  
-  useEffect(async () => {
-    const response = await getApartmentById(apartmentId);
-    const { data } = response;
-    setApartment(data.result);
+  useEffect(() => {
+    const getData = async () => {
+      const response = await getApartmentById(apartmentId);
+      const { data } = response;
+      setApartment(data.result);
+    };
+    getData();
   }, [apartmentId]);
-  
+
   const getFeaturesList = (features) => {
     if (features && features != "" && features.indexOf(",") != -1) {
       return features.split(",").map((feature) => {
@@ -55,7 +56,7 @@ const ApartmentDetailSection = (props) => {
       return <li>{features}</li>;
     }
   };
-  
+
   return (
     <section className="room-details-wrapper section-padding">
       <div className="container">

@@ -34,14 +34,17 @@ const RoomDetailSection = (props) => {
   const { roomId } = useParams();
   const [room, setroom] = useState(defaultRoomData);
 
-  useEffect(async () => {
-   
+  useEffect(() => {
+    const getData=async ()=>{
       const response = await getRoomById(roomId);
       const { data } = response;
-
+  
       setroom(data.result);
-    
+    }
+    getData();
   }, [roomId]);
+
+  
 
   const getFeaturesList = (features) => {
     if (features && features != "" && features.indexOf(",") != -1) {
