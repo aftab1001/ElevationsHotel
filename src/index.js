@@ -51,22 +51,22 @@ class Root extends Component {
               <Route path="/reservation" component={ReservationPage} />
               <Route path="/about" component={About} />
               <Route path="/foundation" component={FoundationList} />
-              <Switch>
-                <Route path="/roomdetails/:roomId" component={RoomDetails} />
-                <Route path="/apartmentdetails/:apartmentId" component={ApartmentDetails} />
-                <Route path="/new-details/:newsId" component={NewsDetails} />
-                <Redirect  exact to="/" component={Home} />
-              </Switch>
-              
-              <Switch>
-              <Route path="/apartmentdetails/:apartmentId" component={ApartmentDetails} />
-                <Redirect from="/apartmentdetails/" to="/apartments" exact />
-              </Switch>              
-              
-              <Switch>
-                <Route path="/new-details/:newsId" component={NewsDetails} />
-                <Redirect from="/new-details/" to="/news" exact />
-              </Switch>
+              <Route
+                exact
+                path="/roomdetails/:roomId"
+                component={RoomDetails}
+              />
+              <Route
+                exact
+                path="/apartmentdetails/:apartmentId"
+                component={ApartmentDetails}
+              />
+              <Route
+                exact
+                path="/new-details/:newsId"
+                component={NewsDetails}
+              />
+              <Redirect to="/" component={Home} />
             </Switch>
           </ScrollToTop>
         </div>
