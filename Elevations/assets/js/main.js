@@ -223,7 +223,9 @@ $(function () {
     });
   });
   $(window).load(function () {
-    $(".gallery-filter-items").isotope();
+    setTimeout(function () {
+      $(".gallery-filter-items").isotope();
+    }, 1000);
   });
   // Back to Top
   $(".back-to-top").on("click", function (e) {
