@@ -1,10 +1,21 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import getGalleryData from "./../Services/GalleryDataService";
 
 class GalleryPage extends Component {
+
+  state={
+    galleries:[]
+  }
+
+  componentDidMount=()=>{
+    const response = await getGalleryData();
+    const { data } = response;
+    this.setState({ galleries: data.result.items });
+    //console.log("news", data.result.items);
+  }
   render() {
     let publicUrl = process.env.PUBLIC_URL + "/";
-
+    const {galleries}=this.state;
     return (
       <section className="gallery-warp section-padding">
         <div className="container">

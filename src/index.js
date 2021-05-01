@@ -16,7 +16,7 @@ import NewsPage from "./components/NewsPage";
 import BlogList from "./components/blog-list";
 import BlogDetails from "./components/blog-details";
 import NewsDetails from "./components/news-details";
-import Gallery from "./components/gallery";
+import GalleryPage from "./components/galleryPage";
 import Contact from "./components/contact";
 import OurStaff from "./components/our-staff";
 import Resturent from "./components/resturent";
@@ -44,7 +44,7 @@ class Root extends Component {
               <Route path="/blog-list" component={BlogList} />
               <Route path="/blog-details" component={BlogDetails} />
               <Route path="/news" component={NewsPage} />
-              <Route path="/gallery" component={Gallery} />
+              <Route path="/gallery" component={GalleryPage} />
               <Route path="/contact" component={Contact} />
               <Route path="/our-staff" component={OurStaff} />
               <Route path="/resturent" component={Resturent} />
