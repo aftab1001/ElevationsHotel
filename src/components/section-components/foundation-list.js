@@ -208,7 +208,7 @@ class FoundationList extends Component {
 					<br />
 					<div className="item-title-head">
 						<h3 className="item-title"><img src="assets/images/icon-5.png" className="projecctLogo" />Our Recent Projects</h3>
-						<a className="item-title-link" href="#">More Projects</a>
+						{/*}<a className="item-title-link" href="#">More Projects</a>{*/}
 						<div className="clear" />
 					</div>
 					<div className="bg-separter-2" />

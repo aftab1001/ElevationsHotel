@@ -10,7 +10,7 @@ class GalleryPage extends Component {
     const response = await getGalleryData();
     const { data } = response;
     this.setState({ galleries: data.result.items });
-    console.log("galleries ", data.result.items);
+    //console.log("galleries ", data.result.items);
   };
   render() {
     let publicUrl = process.env.PUBLIC_URL + "/";

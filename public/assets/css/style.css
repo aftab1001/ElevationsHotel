@@ -1987,6 +1987,10 @@ span.counter-number,
   margin-bottom: 30px;
   z-index: 1;
 }
+.gallery-items .gallery-item a{
+  display: block;
+  height: 100%;
+}
 
 .gallery-items .gallery-item::before {
   position: absolute;
