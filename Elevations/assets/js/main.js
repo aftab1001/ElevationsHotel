@@ -283,16 +283,7 @@ $(function () {
       mainClass: "mfp-fade",
     });
   });
-  // Gallary Page Image
-  $(".gallery-items").each(function () {
-    $(".gallery-item a").magnificPopup({
-      type: "image",
-      gallery: {
-        enabled: true,
-      },
-      mainClass: "mfp-fade",
-    });
-  });
+ 
 
   // Review bars
   $(".reviews-bars").bind(

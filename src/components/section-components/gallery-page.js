@@ -34,7 +34,7 @@ class GalleryPage extends Component {
             <div className="row gallery-filter-items">
               {/* Single Item */}
               {galleries.map((gallery) => (
-                <div className={"col-lg-4 col-md-6 col-sm-6 "+gallery.type.toLowerCase()}>
+                <div className={"col-lg-4 col-md-6 col-sm-6 "+gallery.imageType.toLowerCase()}>
                   <div
                     className="gallery-item"
                     style={{
@@ -42,11 +42,10 @@ class GalleryPage extends Component {
                         "url(" + gallery.image + ")",
                     }}
                   >
-                    <a href={gallery.image}>
+                    <a href={gallery.image} className="popup" title={gallery.imageTitle}>
+                      
                       <div className="gallery-content">
-                        <h3>
-                          <a>{gallery.imageTitle}</a>
-                        </h3>
+                        <h3><a>{gallery.imageTitle}</a></h3>
                       </div>
                     </a>
                   </div>
