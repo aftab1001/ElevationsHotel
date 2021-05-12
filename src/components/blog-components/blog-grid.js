@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {getNewsData} from "./../Services/NewsDataService";
+import Loader from "react-loader-spinner";
 class BlogGrid extends Component {
   state = {
     news: [],
+    Loading:true
   };
   componentDidMount = async () => {
     const response = await getNewsData();
     const { data } = response;
-    this.setState({ news: data.result.items });
+    this.setState({ Loading:false,news: data.result.items });
     //console.log("news", data.result.items);
   };
 
@@ -18,7 +20,7 @@ class BlogGrid extends Component {
   };
   render() {
     
-    return (
+    return (this.state.Loading?<div style={{textAlign:"center"}}><Loader type="ThreeDots" color="#0f172b" height="100" width="100" /></div>:
       <section className="blog-wrapper blog-gird-view section-padding section-bg">
         <div className="container">
           <div className="post-loop Elevations-go-top">

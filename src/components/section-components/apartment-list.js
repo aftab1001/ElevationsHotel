@@ -2,18 +2,21 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import BookNow from "./../global-components/BookNow";
 import { getApartmentsData } from "./../Services/ApartmentsDataService";
+import Loader from "react-loader-spinner";
 
 class ApartmentList extends Component {
   state = {
     apartments: [],
+    Loading:true
   };
   componentDidMount = async () => {
+    
     const response = await getApartmentsData();
     const { data } = response;   
-    this.setState({ apartments: data.result.items });
+    this.setState({ Loading:false,apartments: data.result.items });
   };
   render() {
-    return (
+    return ( this.state.Loading?<div style={{textAlign:"center"}}><Loader type="ThreeDots" color="#0f172b" height="100" width="100" /></div>:
       <section className="rooms-warp list-view section-bg section-padding ">
         <div className="container">
           <div className="row">
@@ -236,34 +239,7 @@ class ApartmentList extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="pagination-wrap">
-                <ul className="list-inline">
-                  <li>
-                    <a href="">
-                      <i className="fas fa-angle-left" />
-                    </a>
-                  </li>
-                  <li className="active">
-                    <a href="">01</a>
-                  </li>
-                  <li>
-                    <a href="">02</a>
-                  </li>
-                  <li>
-                    <a href="">03</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
-        </div>
       </section>
     );
   }

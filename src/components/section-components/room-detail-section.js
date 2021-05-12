@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import BookNow from "../global-components/BookNow";
 import { getRoomById } from "../Services/RoomsDataService";
+import Loader from "react-loader-spinner";
 const RoomDetailSection = (props) => {
   const defaultRoomData = {
     description: "",
@@ -33,12 +34,12 @@ const RoomDetailSection = (props) => {
 
   const { roomId } = useParams();
   const [room, setroom] = useState(defaultRoomData);
-
+  const [loader, setLoader] = useState(true);
   useEffect(() => {
     const getData=async ()=>{
       const response = await getRoomById(roomId);
       const { data } = response;
-  
+      setLoader(false);
       setroom(data.result);
     }
     getData();
@@ -56,7 +57,7 @@ const RoomDetailSection = (props) => {
     }
   };
 
-  return (
+  return (loader?<div style={{textAlign:"center"}}><Loader type="ThreeDots" color="#0f172b" height="100" width="100" /></div>:
     <section className="room-details-wrapper section-padding">
       <div className="container">
         <div className="row">
