@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "react-awesome-slider/dist/styles.css";
 
-class FoundationDonate extends Component {
+class FoundationDonate extends React.Component {
   state = {};
 
   handleModalShowHide() {

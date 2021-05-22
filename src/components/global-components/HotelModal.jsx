@@ -12,12 +12,10 @@ var HotelModal = (props) => {
             <Modal.Title>{title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            {children}
-           
+            {children}           
             </Modal.Body>
           <Modal.Footer>         
-            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleSave}>Save Changes</button>   
-            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleClose}>Close</button>            
+            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleSave}>Apply</button>                        
           </Modal.Footer>
         </Modal>
      

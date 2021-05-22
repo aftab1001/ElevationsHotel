@@ -5,12 +5,13 @@ import Button from "react-bootstrap/Button";
 
 var BookNow = (props) => {
   const { type, dataId, btnExtraClass, btnText } = props;
-
+  const formRef=null;
   const [showModel, setShowModel] = useState(false);
   const handleClose = () => {
     setShowModel(false);
   };
   const handleSave = (status) => {
+
     alert("save");
     setShowModel(true);
   };
@@ -26,12 +27,13 @@ var BookNow = (props) => {
       </button>
 
       <HotelModal
-        title="booking form"
+        title="Book Now"
         showModal={showModel}
         handleClose={handleClose}
         handleSave={handleSave}
+        
       >
-        <BookingFormHtml />
+        <BookingFormHtml formRef={formRef}/>
       </HotelModal>
     </>
   );
