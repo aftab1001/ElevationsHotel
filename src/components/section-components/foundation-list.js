@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import FoundationDonate from "./foundationDonate";
 import { getFoundationsData } from "./../Services/FoundationDataService";
 import Loader from "react-loader-spinner";
@@ -11,11 +11,7 @@ class FoundationList extends Component {
     this.timer = this.timer.bind(this);
   }
 
-  state = {
-    slideActive: 0,
-    nextSlide: 1,
-    interval: 5000,
-    totalSlides: 3,
+  state = {   
     foundationsData: [],
     Loading: true,
   };
@@ -98,18 +94,13 @@ class FoundationList extends Component {
         </div>
 
         <div id="slider-container">
-          <AwesomeSlider
-            className="clsSliderStyles"
-            startupScreen={startupScreen}
-            selected={this.state.slideActive}
-            onTransitionEnd={(e) => this.timer(e)}
-			startupDelay={1000}
-          >
+          <Carousel autoPlay={true} infiniteLoop={true} interval="2000" showStatus={false}>
             {this.state.foundationsData.length > 0 &&
               this.state.foundationsData
                 .filter((fd) => fd.type == "Slider")
                 .map((item) => (
-                  <div source={item.image} key={item.id}>
+                  <div  key={item.id} className="slider-item">
+                     <img src={item.image} />
                     <div className="banner_content">
                       <p className="upper_text slider-upper-text-1">
                         {item.upperText}
@@ -123,7 +114,7 @@ class FoundationList extends Component {
                     </div>
                   </div>
                 ))}
-             </AwesomeSlider>
+             </Carousel>
         </div>
 
         <div className="bg-separter" />
@@ -292,7 +283,8 @@ class FoundationList extends Component {
 			{this.state.foundationsData.length > 0 &&
               this.state.foundationsData
                 .filter((fd) => fd.type == "Project")
-                .map((item) => (
+                .map((item,index) => (
+                  index<4&&
 					<div className="col-md-3 section-3-col" key={item.id}>
 					<img
 					  src={item.image}

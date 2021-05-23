@@ -5,17 +5,19 @@ import Button from "react-bootstrap/Button";
 
 var BookNow = (props) => {
   const { type, dataId, btnExtraClass, btnText } = props;
-  const formRef=null;
+  const formRef = React.createRef();
   const [showModel, setShowModel] = useState(false);
   const handleClose = () => {
     setShowModel(false);
   };
   const handleSave = (status) => {
-
-    alert("save");
-    setShowModel(true);
+   
+    console.log("elements", formRef.current.elements);
+    //setShowModel(true);
   };
-  console.log("extra", btnExtraClass);
+
+ 
+  //console.log("extra", btnExtraClass);
   const btnClass = btnExtraClass
     ? "btn " + btnExtraClass
     : "btn btn-secondary btn-sm btn-hotel";
@@ -31,9 +33,8 @@ var BookNow = (props) => {
         showModal={showModel}
         handleClose={handleClose}
         handleSave={handleSave}
-        
       >
-        <BookingFormHtml formRef={formRef}/>
+        <BookingFormHtml formRef={formRef}  />
       </HotelModal>
     </>
   );

@@ -5274,3 +5274,15 @@ nav.main-menu {
 .align-center {
   text-align: center;
 }
+.carousel .slide .slider-item{
+  position:relative;
+}
+.carousel .slide .slider-item .banner_content{
+  position:absolute;
+  width:70%;
+  top:30%;
+  left:15%;
+}
+.carousel .slide .slider-item img{
+  height:700px;
+}
