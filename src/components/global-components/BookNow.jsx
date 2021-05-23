@@ -13,7 +13,7 @@ var BookNow = (props) => {
   const handleSave = (status) => {
    
     console.log("elements", formRef.current.elements);
-    //setShowModel(true);
+    setShowModel(true);
   };
 
  
