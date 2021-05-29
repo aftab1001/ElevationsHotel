@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import HotelModal from "./../global-components/HotelModal";
 import BookingFormHtml from "./../form-components/BookingFormHtml";
-import Button from "react-bootstrap/Button";
+
 
 var BookNow = (props) => {
   const { type, dataId, btnExtraClass, btnText } = props;
   const formRef = React.createRef();
   const [showModel, setShowModel] = useState(false);
+
   const handleClose = () => {
     setShowModel(false);
   };
