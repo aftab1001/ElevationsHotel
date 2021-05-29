@@ -7,7 +7,7 @@ var HotelModal = (props) => {
     const {showModal,handleClose,handleSave,children,title} = props;
    
     return ( 
-        <Modal show={showModal} onHide={handleClose}>
+        <Modal show={showModal} onHide={handleClose} size={800}>
           <Modal.Header closeButton>
             <Modal.Title>{title}</Modal.Title>
           </Modal.Header>
