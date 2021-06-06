@@ -13,7 +13,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
     if (startDate != undefined && endDate != undefined) {
       const days = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
       const form = document.getElementById("bookingForm");
-      form.elements["calculatedPrice"].value =
+      form.elements["pricePaid"].value =
         days * form.elements["price"].value;
 
       console.log(
@@ -88,7 +88,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
         value="customer"
       />
       <Form.Control type="hidden" name="price" value={data.price} />{" "}
-      {/* calculatedPrice*/}
+      {/* pricePaid*/}
       <div className="field-holder">
         <Form.Group >
           <Form.Label>First Name</Form.Label>
@@ -131,7 +131,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
           <Form.Control
             type="text"
             readOnly={true}
-            name="calculatedPrice"            
+            name="pricePaid"            
             value={0}
           />
         </Form.Group>
