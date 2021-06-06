@@ -61,7 +61,7 @@ class ApartmentList extends Component {
                             <p>${apartment.price}</p>
                           </div>
                           <BookNow
-                            type="room"
+                            type="apartment"
                             data={apartment}
                             btnText="Book Tour"
                           />

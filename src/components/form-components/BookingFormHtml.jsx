@@ -14,12 +14,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
       const days = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
       const form = document.getElementById("bookingForm");
       form.elements["pricePaid"].value =
-        days * form.elements["price"].value;
-
-      console.log(
-        "days",
-        Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24))
-      );
+        days * form.elements["price"].value;      
     }
   }, [startDate, endDate]);
   return (

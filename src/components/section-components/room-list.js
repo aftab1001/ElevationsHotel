@@ -58,7 +58,7 @@ class RoomList extends Component {
                         <div className="room-price">
                           <p>${room.price}</p>
                         </div>
-                        <BookNow type="room" data={room} />
+                        <BookNow type="room" data={room} btnText="Book Tour"/>
                       </div>
                     </div>
                   </div>
