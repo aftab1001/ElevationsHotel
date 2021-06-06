@@ -34,7 +34,7 @@ class RoomList extends Component {
                     <div className="col-lg-6">
                       <div className="room-desc">
                         <div className="room-cat">
-                          <p>Guest House</p>
+                          <p>{room.categoryName}</p>
                         </div>
                         <h4>
                           <Link to={"/roomdetails/" + room.id}>
@@ -58,7 +58,7 @@ class RoomList extends Component {
                         <div className="room-price">
                           <p>${room.price}</p>
                         </div>
-                        <BookNow type="room" dataId={room.id} />
+                        <BookNow type="room" data={room} />
                       </div>
                     </div>
                   </div>

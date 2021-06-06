@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import HotelModal from "./../global-components/HotelModal";
 import BookingFormHtml from "./../form-components/BookingFormHtml";
-
+import "./BookNow.css";
 
 var BookNow = (props) => {
-  const { type, dataId, btnExtraClass, btnText } = props;
+  const { type, data, btnExtraClass, btnText } = props;
   const formRef = React.createRef();
   const [showModel, setShowModel] = useState(false);
 
@@ -35,7 +35,7 @@ var BookNow = (props) => {
         handleClose={handleClose}
         handleSave={handleSave}
       >
-        <BookingFormHtml formRef={formRef}  />
+        <BookingFormHtml formRef={formRef} data={data} type={type} />
       </HotelModal>
     </>
   );

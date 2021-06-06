@@ -1,0 +1,28 @@
+.modal-70w{
+    width: 700px;
+    max-width: 700px;
+}
+
+.nice-dates{
+    width: 100%;
+}
+
+.nice-dates .form-group input{
+    width: 49%;
+    float: left;   
+}
+
+.nice-dates .form-group input:first-child{
+    margin-right: 5px;    
+}
+.field-holder .form-group{
+    width: 49%;
+    float: left;
+    
+}
+.field-holder .form-group:first-child{
+    margin-right: 5px;
+}
+.form-group{
+    width: 99%;
+}

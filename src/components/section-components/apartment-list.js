@@ -62,7 +62,7 @@ class ApartmentList extends Component {
                           </div>
                           <BookNow
                             type="room"
-                            dataId={apartment.id}
+                            data={apartment}
                             btnText="Book Tour"
                           />
                         </div>
