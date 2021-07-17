@@ -10,11 +10,10 @@ const BookingFormHtml = ({ formRef, data, type }) => {
   const [endDate, setEndDate] = useState();
 
   useEffect(() => {
-    if (startDate != undefined && endDate != undefined) {
+    if (startDate !== undefined && endDate !== undefined) {
       const days = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
       const form = document.getElementById("bookingForm");
-      form.elements["pricePaid"].value =
-        days * form.elements["price"].value;      
+      form.elements["pricePaid"].value = days * form.elements["price"].value;
     }
   }, [startDate, endDate]);
   return (
@@ -28,8 +27,8 @@ const BookingFormHtml = ({ formRef, data, type }) => {
         />
         <Figure.Caption>
           {data.name}
-          <br/>
-          <label>Per Day Price: ${data.price}</label>   
+          <br />
+          <label>Per Day Price: ${data.price}</label>
         </Figure.Caption>
       </Figure>
       <DateRangePicker
@@ -44,7 +43,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
       >
         {({ startDateInputProps, endDateInputProps, focus }) => (
           <div className="form-group">
-            <label class="form-label" for="formGroupDate">
+            <label className="form-label" for="formGroupDate">
               Booking Date
             </label>
             <div>
@@ -69,68 +68,43 @@ const BookingFormHtml = ({ formRef, data, type }) => {
           </div>
         )}
       </DateRangePicker>
-      <Form.Control type="hidden"  name="itemId" />{" "}
-      {/* roomId/ApartmentId*/}
-      <Form.Control
-        type="hidden"        
-        name="itemType"
-        value={type}
-      />{" "}
+      <Form.Control type="hidden" name="itemId" value={data.id}/> 
+      <Form.Control type="hidden" name="itemType" value={type} />{" "}
       {/* room/Apartment*/}
-      <Form.Control
-        type="hidden"        
-        name="bookingType"
-        value="customer"
-      />
+      <Form.Control type="hidden" name="bookingType" value="customer" />
       <Form.Control type="hidden" name="price" value={data.price} />{" "}
       {/* pricePaid*/}
       <div className="field-holder">
-        <Form.Group >
+        <Form.Group>
           <Form.Label>First Name</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="First Name"
-            name="FName"            
-          />
+          <Form.Control type="text" placeholder="First Name" name="FName" />
         </Form.Group>
-        <Form.Group >
+        <Form.Group>
           <Form.Label>Last Name</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Last Name"
-            name="LName"            
-          />
+          <Form.Control type="text" placeholder="Last Name" name="LName" />
         </Form.Group>
       </div>
       <div className="field-holder">
-        <Form.Group >
+        <Form.Group>
           <Form.Label>Email</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Email"
-            name="Email"            
-          />
+          <Form.Control type="email" placeholder="Email" name="Email" />
         </Form.Group>
-        <Form.Group >
+        <Form.Group>
           <Form.Label>Contact</Form.Label>
-          <Form.Control
-            type="number"
-            placeholder="Contact"
-            name="Contact"            
-          />
+          <Form.Control type="number" placeholder="Contact" name="Contact" />
         </Form.Group>
       </div>
       <div className="field-holder">
-        <Form.Group >
+        <Form.Group>
           <Form.Label>Calculated Price</Form.Label>
           <Form.Control
             type="text"
             readOnly={true}
-            name="pricePaid"            
+            name="pricePaid"
             value={0}
           />
         </Form.Group>
-        <Form.Group >
+        <Form.Group>
           <Form.Label>Adults</Form.Label>
           <Form.Control as="select" name="adults">
             <option>1</option>
@@ -141,13 +115,9 @@ const BookingFormHtml = ({ formRef, data, type }) => {
           </Form.Control>
         </Form.Group>
       </div>
-      <Form.Group >
+      <Form.Group>
         <Form.Label>Special Request</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={3}          
-          name="specialRequest"
-        />
+        <Form.Control as="textarea" rows={3} name="specialRequest" />
       </Form.Group>
     </Form>
   );

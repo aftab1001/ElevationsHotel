@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import PropTypes from 'prop-types'
 
 var HotelModal = (props) => {
-    const {showModal,handleClose,handleSave,children,title} = props;
+    const {showModal,handleClose,handleSave,children,title,buttonText} = props;
    
     return ( 
         <Modal show={showModal} onHide={handleClose}  dialogClassName="modal-70w" centered={true} >
@@ -14,7 +14,7 @@ var HotelModal = (props) => {
             {children}           
             </Modal.Body>
           <Modal.Footer>         
-            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleSave}>Continue</button>                        
+            <button className="btn btn-secondary btn-sm btn-hotel" onClick={handleSave}>{buttonText}</button>                        
           </Modal.Footer>
         </Modal>
      
