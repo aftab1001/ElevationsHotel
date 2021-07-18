@@ -5,10 +5,21 @@ import { DateRangePicker, START_DATE, END_DATE } from "react-nice-dates";
 import Figure from "react-bootstrap/Figure";
 import "react-nice-dates/build/style.css";
 
-const BookingFormHtml = ({ formRef, data, type }) => {
+const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
+  const [validated, setValidated] = useState(false);
 
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+    handleAfterSave();
+  };
   useEffect(() => {
     if (startDate !== undefined && endDate !== undefined) {
       const days = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
@@ -17,7 +28,13 @@ const BookingFormHtml = ({ formRef, data, type }) => {
     }
   }, [startDate, endDate]);
   return (
-    <Form ref={formRef} id="bookingForm">
+    <Form
+      ref={formRef}
+      id="bookingForm"
+      noValidate
+      validated={validated}
+      onSubmit={handleSubmit}
+    >
       <Figure>
         <Figure.Image
           width={171}
@@ -68,7 +85,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
           </div>
         )}
       </DateRangePicker>
-      <Form.Control type="hidden" name="itemId" value={data.id}/> 
+      <Form.Control type="hidden" name="itemId" value={data.id} />
       <Form.Control type="hidden" name="itemType" value={type} />{" "}
       {/* room/Apartment*/}
       <Form.Control type="hidden" name="bookingType" value="customer" />
@@ -77,7 +94,15 @@ const BookingFormHtml = ({ formRef, data, type }) => {
       <div className="field-holder">
         <Form.Group>
           <Form.Label>First Name</Form.Label>
-          <Form.Control type="text" placeholder="First Name" name="FName" />
+          <Form.Control
+            type="text"
+            placeholder="First Name"
+            name="FName"
+            required
+          />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid First Name.
+          </Form.Control.Feedback>
         </Form.Group>
         <Form.Group>
           <Form.Label>Last Name</Form.Label>
