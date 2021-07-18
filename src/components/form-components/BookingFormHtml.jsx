@@ -43,7 +43,7 @@ const BookingFormHtml = ({ formRef, data, type }) => {
       >
         {({ startDateInputProps, endDateInputProps, focus }) => (
           <div className="form-group">
-            <label className="form-label" for="formGroupDate">
+            <label className="form-label" htmlFor="formGroupDate">
               Booking Date
             </label>
             <div>
