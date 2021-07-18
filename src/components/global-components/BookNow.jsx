@@ -16,7 +16,7 @@ var BookNow = (props) => {
     setShowModel(false);
   };
   const handleSave = (status) => {
-   
+
     console.log("elements", formRef.current.elements);
     const productInfo={};
     for (const key in formRef.current.elements){
@@ -31,7 +31,7 @@ var BookNow = (props) => {
     console.log(productInfo);
     setproductInfo(productInfo)
     setShowModel(true);
-    //setShowPaymentModel(true);
+    setShowPaymentModel(true);
   };
   const handlePayNow=()=>{
     formRef1.current.submit();
