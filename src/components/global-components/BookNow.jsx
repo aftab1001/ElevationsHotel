@@ -6,8 +6,7 @@ import "./BookNow.css";
 
 var BookNow = (props) => {
   const { type, data, btnExtraClass, btnText } = props;
-  const formRef = React.createRef();
-  const formRef1 = React.createRef();
+  const formRef = React.createRef();  
   const [showModel, setShowModel] = useState(false);
   const [productInfo, setproductInfo] = useState({});
   const [showPaymentModel, setShowPaymentModel] = useState(false);
@@ -15,33 +14,29 @@ var BookNow = (props) => {
   const handleClose = () => {
     setShowModel(false);
   };
-  const handleSave = (status) => {
-   
-    console.log("elements", formRef.current.elements);
-    const productInfo={};
-    for (const key in formRef.current.elements){
-      if (formRef.current.elements.hasOwnProperty(key)) {
-        const ele=formRef.current.elements[key];
-        productInfo[ele.name]=ele.value;        
-    }
-    }
-    
-    
-    
-    console.log(productInfo);
-    setproductInfo(productInfo)
-    setShowModel(true);
-    //setShowPaymentModel(true);
+  const handlePayModalClose = () => {
+    setShowPaymentModel(false);
   };
-  const handlePayNow=()=>{
-    formRef1.current.submit();
-    
-  }
-  const handlePaySuccess=()=>{
-    showPaymentModel(false);
-  }
+  const handleSave = (status) => {
+    console.log("elements", formRef.current.elements);
+    const productInfo = {};
+    for (const key in formRef.current.elements) {
+      if (formRef.current.elements.hasOwnProperty(key)) {
+        const ele = formRef.current.elements[key];
+        productInfo[ele.name] = ele.value;
+      }
+    }
 
+    console.log(productInfo);
+    setproductInfo(productInfo);
+    setShowModel(false);
+    setShowPaymentModel(true);
+  };
  
+  const handlePaySuccess = () => {
+    showPaymentModel(false);
+  };
+
   //console.log("extra", btnExtraClass);
   const btnClass = btnExtraClass
     ? "btn " + btnExtraClass
@@ -58,21 +53,21 @@ var BookNow = (props) => {
         showModal={showModel}
         handleClose={handleClose}
         handleSave={handleSave}
-        buttonText={"Continue"}
-      >
+        buttonText={"Continue"}      >
         <BookingFormHtml formRef={formRef} data={data} type={type} />
-        
       </HotelModal>
 
       <HotelModal
         title="Pay Now"
         showModal={showPaymentModel}
-        handleClose={handleClose}
-        handleSave={handlePayNow}
-        buttonText={"Pay Now"}
+        handleClose={handlePayModalClose}        
+        dlgClassName="modal-55w"
       >
-        
-        <StripePayment productDetails={productInfo} formRef={formRef1} onSuccess={handlePaySuccess}/>
+        <StripePayment
+          productDetails={productInfo}          
+          onSuccess={handlePaySuccess}
+          price={productInfo.pricePaid}
+        />
       </HotelModal>
     </>
   );

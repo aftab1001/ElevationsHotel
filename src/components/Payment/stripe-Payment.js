@@ -76,6 +76,7 @@ const SubmitButton = ({ processing, error, children, disabled }) => (
     className={`SubmitButton ${error ? "SubmitButton--error" : ""}`}
     type="submit"
     disabled={processing || disabled}
+    name="payBtn"    
   >
     {processing ? "Processing..." : children}
   </button>
@@ -108,7 +109,7 @@ const ResetButton = ({ onClick }) => (
   </button>
 );
 
-const CheckoutForm = ({ price, productDetails,formRef,onSuccess }) => {
+const CheckoutForm = ({ price, productDetails,onSuccess }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [error, setError] = useState(null);
@@ -204,7 +205,7 @@ const CheckoutForm = ({ price, productDetails,formRef,onSuccess }) => {
       <ResetButton onClick={reset} />
     </div>
   ) : (
-    <form className="Form" onSubmit={handleSubmit} ref={formRef}>
+    <form className="Form" onSubmit={handleSubmit} >
       <fieldset className="FormGroup">
         <Field
           label="Name"
@@ -252,7 +253,7 @@ const CheckoutForm = ({ price, productDetails,formRef,onSuccess }) => {
         />
       </fieldset>
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
-      <SubmitButton processing={processing} error={error} disabled={!stripe}>
+      <SubmitButton processing={processing} error={error} disabled={!stripe}  >
         Pay ${price}
       </SubmitButton>
     </form>
@@ -271,11 +272,11 @@ const ELEMENTS_OPTIONS = {
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe("pk_test_6pRNASCoBOKtIshFeQd4XMUh");
 
-const StripePayment = ({ price, productDetails,formRef,onSuccess }) => {
+const StripePayment = ({ price, productDetails,onSuccess }) => {
   return (
     <div className="AppWrapper">
       <Elements stripe={stripePromise} options={ELEMENTS_OPTIONS}>
-        <CheckoutForm price={price} productDetails={productDetails} formRef={formRef} onSuccess={onSuccess}/>
+        <CheckoutForm price={price} productDetails={productDetails}  onSuccess={onSuccess}/>
       </Elements>
     </div>
   );
