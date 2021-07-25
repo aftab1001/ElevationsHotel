@@ -14,7 +14,7 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
     const form = event.currentTarget;
     event.preventDefault();
       event.stopPropagation();
-    if (form.checkValidity() === false) {
+    if (form.checkValidity()) {
       setValidated(true);
       handleAfterSave();  
     }
@@ -73,6 +73,7 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
                 {...startDateInputProps}
                 placeholder="Start date"
                 name="startDate"
+                required
               />
               <input
                 className={
@@ -81,6 +82,7 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
                 {...endDateInputProps}
                 placeholder="End date"
                 name="lastDate"
+                required
               />
             </div>
           </div>
