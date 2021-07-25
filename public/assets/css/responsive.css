@@ -930,6 +930,12 @@
     padding-left: 0;
     margin-top: 20px;
   }
+  .single-regular-food .food-img {
+    height: 85px;
+    width: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
   .slider-two .single-hero-slide .slider-text h1 {
     font-size: 40px;
     line-height: 50px;

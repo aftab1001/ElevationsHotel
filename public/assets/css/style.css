@@ -3318,7 +3318,12 @@ a.read-more:hover {
   color: #fea116;
   margin-top: 20px;
 }
-
+.single-regular-food .food-img {
+  height: 85px;
+  width: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+}
 /* Resturent End
 ============================================================================================ */
 .video-section {
