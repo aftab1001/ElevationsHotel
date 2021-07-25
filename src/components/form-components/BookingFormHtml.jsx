@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Form from "react-bootstrap/Form";
+import {Form,Button} from "react-bootstrap";
 import { enGB } from "date-fns/locale";
 import { DateRangePicker, START_DATE, END_DATE } from "react-nice-dates";
 import Figure from "react-bootstrap/Figure";
@@ -12,13 +12,14 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
+    event.preventDefault();
       event.stopPropagation();
+    if (form.checkValidity() === false) {
+      setValidated(true);
+      handleAfterSave();  
     }
 
-    setValidated(true);
-    handleAfterSave();
+    
   };
   useEffect(() => {
     if (startDate !== undefined && endDate !== undefined) {
@@ -106,17 +107,26 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
         </Form.Group>
         <Form.Group>
           <Form.Label>Last Name</Form.Label>
-          <Form.Control type="text" placeholder="Last Name" name="LName" />
+          <Form.Control type="text" placeholder="Last Name" name="LName" required/>
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid Last Name.
+          </Form.Control.Feedback>
         </Form.Group>
       </div>
       <div className="field-holder">
         <Form.Group>
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Email" name="Email" />
+          <Form.Control type="email" placeholder="Email" name="Email" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid Email.
+          </Form.Control.Feedback>
         </Form.Group>
         <Form.Group>
           <Form.Label>Contact</Form.Label>
-          <Form.Control type="number" placeholder="Contact" name="Contact" />
+          <Form.Control type="number" placeholder="Contact" name="Contact" required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid Contact Number.
+          </Form.Control.Feedback>
         </Form.Group>
       </div>
       <div className="field-holder">
@@ -131,19 +141,23 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
         </Form.Group>
         <Form.Group>
           <Form.Label>Adults</Form.Label>
-          <Form.Control as="select" name="adults">
+          <Form.Control as="select" name="adults" required>
             <option>1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
             <option>5</option>
           </Form.Control>
+          <Form.Control.Feedback type="invalid">
+            Please Select Number of Adults.
+          </Form.Control.Feedback>
         </Form.Group>
       </div>
       <Form.Group>
         <Form.Label>Special Request</Form.Label>
         <Form.Control as="textarea" rows={3} name="specialRequest" />
       </Form.Group>
+      <Button type="submit" className="hidden" name="btnSubmitBookingForm">Submit form</Button>
     </Form>
   );
 };

@@ -18,7 +18,7 @@ var BookNow = (props) => {
     setShowPaymentModel(false);
   };
   const handleSave = () => {
-    formRef.current.submit();
+    formRef.current.elements["btnSubmitBookingForm"].click();
   };
   const handleAfterSave = (status) => {
     if (formRef.current.checkValidity() === false) {
