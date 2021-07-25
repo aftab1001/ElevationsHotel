@@ -13,15 +13,15 @@ const ResturentPage = () => {
   const [poster, setPoster] = useState({});
   const [latestFood, setLatestFood] = useState([]);
   const [loading, setLoading] = useState(false);
-  
+
   const loadData = async () => {
     setLoading(true);
     const response = await getResturantData();
     const { data } = response;
 
-    setResturant(data.result.items.filter((rt) => rt.isPoster === false));
-    setLatestFood(data.result.items.filter((rt) => rt.isPopular === true));
-    setPoster(data.result.items.filter((rt) => rt.isPoster === true)[0]);
+    setResturant(data.result.items.filter((rt) => rt.category === 0));
+    setLatestFood(data.result.items.filter((rt) => rt.category === 1));
+    setPoster(data.result.items.filter((rt) => rt.category === 2)[0]);
     setLoading(false);
   };
 
