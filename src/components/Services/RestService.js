@@ -1,6 +1,11 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
+axios.interceptors.request.use(function (request) {
+  request.headers['Content-Type'] = 'application/json; charset=utf-8';
+     return request;
+  });
+
 axios.interceptors.response.use(null, (error) => {
   const expectedError =
     error.response &&
