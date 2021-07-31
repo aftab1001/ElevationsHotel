@@ -3,7 +3,9 @@ import HotelModal from "./../global-components/HotelModal";
 import BookingFormHtml from "./../form-components/BookingFormHtml";
 import StripePayment from "./../Payment/stripe-Payment";
 import "./BookNow.css";
-
+import {GetBookingStatus} from "./../Services/BookingService"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 var BookNow = (props) => {
   const { type, data, btnExtraClass, btnText } = props;
   const formRef = React.createRef();
@@ -15,12 +17,13 @@ var BookNow = (props) => {
     setShowModel(false);
   };
   const handlePayModalClose = () => {
-    setShowPaymentModel(false);
+    setShowModel(true);
+    setShowPaymentModel(true);
   };
   const handleSave = () => {
     formRef.current.elements["btnSubmitBookingForm"].click();
   };
-  const handleAfterSave = (status) => {
+  const handleAfterSave = async (status) => {
     if (formRef.current.checkValidity() === false) {
       return;
     }
@@ -36,12 +39,26 @@ var BookNow = (props) => {
 
     console.log(productInfo);
     setproductInfo(productInfo);
-    setShowModel(false);
-    setShowPaymentModel(true);
+    debugger;
+    //Check Booking Status
+    const BookingStatus = await GetBookingStatus(
+      productInfo.itemId,
+      productInfo.startDate,
+      productInfo.lastDate
+    );
+
+    if (BookingStatus.data.result.length === 0) {
+      setShowModel(false);
+      setShowPaymentModel(true);
+    }
+    else
+    { toast.error("Bookings for the selected date are already in place. Please try again in a different room or apartment.");
+
+    }
   };
 
   const handlePaySuccess = () => {
-    showPaymentModel(false);
+    setShowPaymentModel(false);
   };
 
   //console.log("extra", btnExtraClass);
@@ -51,6 +68,7 @@ var BookNow = (props) => {
   const btnNText = btnText ? btnText : "Book Now";
   return (
     <>
+    
       <button className={btnClass} onClick={() => setShowModel(true)}>
         {btnNText} <i className="fas fa-long-arrow-alt-right" />
       </button>
@@ -82,6 +100,7 @@ var BookNow = (props) => {
           price={productInfo.pricePaid}
         />
       </HotelModal>
+      <ToastContainer />
     </>
   );
 };

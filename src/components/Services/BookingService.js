@@ -7,4 +7,8 @@ let processBookingPaymentData = (data) => {
 const createBooking = (data) => {
   return http.post(apiUrl + "Apartment/Create" , data);
 };
-export { processBookingPaymentData, createBooking };
+const GetBookingStatus = (itemId,fromDate,toDate) => {
+  return http.get(apiUrl + "Booking/GetBookingStatus?itemId="+itemId+"&bookingType=0&fromDate="+fromDate+"&toDate="+toDate+"");
+
+};
+export { processBookingPaymentData, createBooking, GetBookingStatus };

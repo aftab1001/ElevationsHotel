@@ -4,13 +4,15 @@
 
 import React, { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   CardElement,
   Elements,
   useElements,
   useStripe,
 } from "@stripe/react-stripe-js";
-import { processBookingPaymentData } from "./../Services/BookingService";
+import { processBookingPaymentData,GetBookingStatus } from "./../Services/BookingService";
 import "./stripe-style.css";
 
 const CARD_OPTIONS = {
@@ -162,24 +164,32 @@ const CheckoutForm = ({ price, productDetails,onSuccess }) => {
       // Use fetch to send the token ID and any other payment data to your server.
       // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
-      const payload = await processBookingPaymentData(
-        JSON.stringify({
-          customerName: billingDetails.name,
-          email: billingDetails.email,
-          contact: billingDetails.phone,
-          amount: price,
-          paymentData: paymentData,
-          productInfo: productDetails,
-        })
-      );
-      if (payload.error) {
-        setError(payload.error);
-      } else {
-        setPaymentMethod(payload.paymentMethod);
-        onSuccess();
-      }
+      debugger;
+    const payload = await processBookingPaymentData(
+      JSON.stringify({
+        customerName: billingDetails.name,
+        email: billingDetails.email,
+        contact: billingDetails.phone,
+        amount: price,
+        paymentData: paymentData,
+        productInfo: productDetails,
+      })
+    );
+   
+    if (payload.error) {
+      setError(payload.error);
+      toast.error("An error occurred while accepting a payment. Please contact Elevations Administrator");
+    } else {
+      setPaymentMethod(payload.paymentMethod);
+      onSuccess();
+      toast.success("Bookings have been completed successfully. Thank you very much");
     }
     setProcessing(false);
+  }
+  
+ 
+  
+      
   };
 
   const reset = () => {
@@ -256,7 +266,9 @@ const CheckoutForm = ({ price, productDetails,onSuccess }) => {
       <SubmitButton processing={processing} error={error} disabled={!stripe}  >
         Pay ${price}
       </SubmitButton>
+      <ToastContainer />
     </form>
+    
   );
 };
 
