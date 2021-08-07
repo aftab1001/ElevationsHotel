@@ -212,17 +212,18 @@ $(function () {
     type: "iframe",
   });
   // Isotop Active
-  $(".gallery-filter li").on("click", function () {
-    $(".gallery-filter li").removeClass("active");
-    $(this).addClass("active");
-
-    var selector = $(this).attr("data-filter");
-    $(".gallery-filter-items").isotope({
-      filter: selector,
-    });
-  });
+  
   $(window).load(function () {
     setTimeout(function () {
+      $(".gallery-filter li").on("click", function () {
+        $(".gallery-filter li").removeClass("active");
+        $(this).addClass("active");
+    
+        var selector = $(this).attr("data-filter");
+        $(".gallery-filter-items").isotope({
+          filter: selector,
+        });
+      });
       $(".gallery-filter-items").isotope();
       $(".gallery-filter-items a.popup").magnificPopup({
         type: "image",    
@@ -232,7 +233,7 @@ $(function () {
         mainClass: "mfp-fade"    
       });
       
-    }, 1200);
+    }, 2000);
   });
   // Back to Top
   $(".back-to-top").on("click", function (e) {

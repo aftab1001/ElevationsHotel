@@ -388,6 +388,7 @@ input[type="text"].greennature-payment-price-fill {
   vertical-align: bottom;
   padding: 0px 17px;
   color: #808080;
+  width: 70px;
 }
 .greennature-paypal-attribute {
   font-size: 12px;

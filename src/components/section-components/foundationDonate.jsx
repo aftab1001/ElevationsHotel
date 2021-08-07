@@ -128,8 +128,9 @@ const FoundationDonate = ({ btnClass }) => {
                     id="paymentAmount"
                     name="paymentAmount"
                     value={20}
-                    required
+                    readOnly                    
                   />
+                  <label>Amount(USD)</label>
                 </div>
               </div>
             </div>
