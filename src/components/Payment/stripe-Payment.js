@@ -12,7 +12,7 @@ import {
   useElements,
   useStripe,
 } from "@stripe/react-stripe-js";
-import { processBookingPaymentData,GetBookingStatus } from "./../Services/BookingService";
+import { processBookingPaymentData } from "./../Services/BookingService";
 import "./stripe-style.css";
 
 const CARD_OPTIONS = {

@@ -17,10 +17,9 @@ const BookingFormHtml = ({ formRef, data, type,handleAfterSave }) => {
     if (form.checkValidity()) {
       setValidated(true);
       handleAfterSave();  
-    }
-
-    
+    }    
   };
+  
   useEffect(() => {
     if (startDate !== undefined && endDate !== undefined) {
       const days = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));

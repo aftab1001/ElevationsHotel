@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import HotelModal from "./../global-components/HotelModal";
 import BookingFormHtml from "./../form-components/BookingFormHtml";
 import StripePayment from "./../Payment/stripe-Payment";
-import "./BookNow.css";
 import {GetBookingStatus} from "./../Services/BookingService"
 import { ToastContainer, toast } from 'react-toastify';
+import "./BookNow.css";
 import 'react-toastify/dist/ReactToastify.css';
+
 var BookNow = (props) => {
   const { type, data, btnExtraClass, btnText } = props;
   const formRef = React.createRef();

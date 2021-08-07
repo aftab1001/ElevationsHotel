@@ -88,7 +88,7 @@ class FoundationList extends Component {
                 </h1>
               </ul>
 
-              <FoundationDonate />
+              <ul className="col-md-3 col-lg-3"><FoundationDonate /></ul>
             </div>
           </nav>
         </div>
@@ -224,13 +224,7 @@ class FoundationList extends Component {
                     our children. Each one of us can make small changes in our
                     lives, but together we can change the world.
                   </p>
-                  <a
-                    className="action-ads-button"
-                    href="#"
-                    style={{ backgroundColor: "#fec428" }}
-                  >
-                    Donate Now
-                  </a>
+                  <FoundationDonate />
                 </div>
               </div>
               <div className="col-md-6 action-ads-item-2">
@@ -430,9 +424,8 @@ class FoundationList extends Component {
               <p>Praesent commodo cursus magna, vel scelerisque nislet.</p>
             </div>
             <br />
-            <a className="action-ads-button stunning-item-button-1" href="#">
-              Donate Now
-            </a>
+            <FoundationDonate  btnClass={"action-ads-button stunning-item-button-1"}/>
+            
             <a className="action-ads-button stunning-item-button-2" href="#">
               Act Now!
             </a>
