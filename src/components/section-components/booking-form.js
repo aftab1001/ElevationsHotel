@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class BookingForm extends Component {
 
     render() {
-
+return ("");
         let publicUrl = process.env.PUBLIC_URL+'/'
     
     return <section className="booking-section">

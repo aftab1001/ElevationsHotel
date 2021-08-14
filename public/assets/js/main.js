@@ -215,6 +215,7 @@ $(function () {
   
   $(window).load(function () {
     setTimeout(function () {
+      
       $(".gallery-filter li").on("click", function () {
         $(".gallery-filter li").removeClass("active");
         $(this).addClass("active");
@@ -233,7 +234,7 @@ $(function () {
         mainClass: "mfp-fade"    
       });
       
-    }, 2000);
+    }, 20000);
   });
   // Back to Top
   $(".back-to-top").on("click", function (e) {
