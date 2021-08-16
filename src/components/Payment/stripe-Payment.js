@@ -180,9 +180,9 @@ const CheckoutForm = ({ price, productDetails,onSuccess }) => {
       setError(payload.error);
       toast.error("An error occurred while accepting a payment. Please contact Elevations Administrator");
     } else {
+      toast.success("Bookings have been completed successfully. Thank you very much");
       setPaymentMethod(payload.paymentMethod);
       onSuccess();
-      toast.success("Bookings have been completed successfully. Thank you very much");
     }
     setProcessing(false);
   }
