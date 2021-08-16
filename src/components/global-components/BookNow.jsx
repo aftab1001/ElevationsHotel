@@ -18,8 +18,8 @@ var BookNow = (props) => {
     setShowModel(false);
   };
   const handlePayModalClose = () => {
-    setShowModel(true);
-    setShowPaymentModel(true);
+    
+    setShowPaymentModel(false);
   };
   const handleSave = () => {
     formRef.current.elements["btnSubmitBookingForm"].click();
@@ -29,7 +29,7 @@ var BookNow = (props) => {
       return;
     }
 
-    console.log("elements", formRef.current.elements);
+    
     const productInfo = {};
     for (const key in formRef.current.elements) {
       if (formRef.current.elements.hasOwnProperty(key)) {
@@ -38,9 +38,9 @@ var BookNow = (props) => {
       }
     }
 
-    console.log(productInfo);
+    
     setproductInfo(productInfo);
-    debugger;
+    
     //Check Booking Status
     const BookingStatus = await GetBookingStatus(
       productInfo.itemId,
