@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  HashRouter,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Home from "./components/home";
 import RoomsPage from "./components/RoomsPage";
 import RoomGrid from "./components/room-grid";
@@ -27,6 +21,8 @@ import ApartmentsPage from "./components/apartmentsPage";
 import ApartmentDetails from "./components/apartment-details";
 
 import FoundationList from "./components/foundation-list";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 class Root extends Component {
   render() {
@@ -70,6 +66,7 @@ class Root extends Component {
             </Switch>
           </ScrollToTop>
         </div>
+        <ToastContainer />
       </HashRouter>
     );
   }

@@ -13,7 +13,7 @@ class BlogList extends Component {
 		        <div className="post-loop Elevations-go-top">
 		          <div className="single-blog-wrap">
 		            <div className="post-thumbnail">
-		              <img src={publicUrl+"assets/img/blog/01.jpg"} alt="Image" />
+		              <img src={publicUrl+"assets/img/blog/01.jpg"} alt="Blog Image" />
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
@@ -29,7 +29,7 @@ class BlogList extends Component {
 		          </div>
 		          <div className="single-blog-wrap video-post">
 		            <div className="post-thumbnail">
-		              <img src="assets/img/blog/02.jpg" alt="Image" />
+		              <img src="assets/img/blog/02.jpg" alt="Blog Image" />
 		              <Link to="/blog-detailsube.com/watch?v=NpEaa2P7qZI" className="video-popup"> <i className="fas fa-play" /></Link>
 		            </div>
 		            <div className="post-desc">
@@ -53,7 +53,7 @@ class BlogList extends Component {
 		          </div>
 		          <div className="single-blog-wrap">
 		            <div className="post-thumbnail">
-		              <img src={publicUrl+"assets/img/blog/03.jpg"} alt="Image" />
+		              <img src={publicUrl+"assets/img/blog/03.jpg"} alt="Blog Image" />
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">
@@ -69,7 +69,7 @@ class BlogList extends Component {
 		          </div>
 		          <div className="single-blog-wrap">
 		            <div className="post-thumbnail">
-		              <img src={publicUrl+"assets/img/blog/04.jpg"} alt="Image" />
+		              <img src={publicUrl+"assets/img/blog/04.jpg"} alt="Blog Image" />
 		            </div>
 		            <div className="post-desc">
 		              <ul className="blog-meta list-inline">

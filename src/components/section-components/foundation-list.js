@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import FoundationDonate from "./foundationDonate";
 import { getFoundationsData } from "./../Services/FoundationDataService";
 import Loader from "react-loader-spinner";
-const startupScreen = <div className="test"></div>;
+
 class FoundationList extends Component {
   constructor(props) {
     super(props);
@@ -97,10 +97,10 @@ class FoundationList extends Component {
           <Carousel autoPlay={true} infiniteLoop={true} interval="2000" showStatus={false}>
             {this.state.foundationsData.length > 0 &&
               this.state.foundationsData
-                .filter((fd) => fd.type == "Slider")
+                .filter((fd) => fd.type === "Slider")
                 .map((item) => (
                   <div  key={item.id} className="slider-item">
-                     <img src={item.image} />
+                     <img src={item.image} alt="fiundation image"/>
                     <div className="banner_content">
                       <p className="upper_text slider-upper-text-1">
                         {item.upperText}
@@ -245,13 +245,7 @@ class FoundationList extends Component {
                     isn’t over. The President knows what’s at stake: his climate
                     legacy.
                   </p>
-                  <a
-                    className="action-ads-button"
-                    href="#"
-                    style={{ backgroundColor: "#5dc269" }}
-                  >
-                    Act Now!
-                  </a>
+                 
                 </div>
               </div>
             </div>
@@ -426,9 +420,7 @@ class FoundationList extends Component {
             <br />
             <FoundationDonate  btnClass={"action-ads-button stunning-item-button-1"}/>
             
-            <a className="action-ads-button stunning-item-button-2" href="#">
-              Act Now!
-            </a>
+          
           </div>
         </div>
         <div className="section-6">

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import BookNow from "../global-components/BookNow";
 import { getRoomById } from "../Services/RoomsDataService";
 import Loader from "react-loader-spinner";
 const RoomDetailSection = (props) => {
@@ -48,7 +47,7 @@ const RoomDetailSection = (props) => {
   
 
   const getFeaturesList = (features) => {
-    if (features && features != "" && features.indexOf(",") != -1) {
+    if (features && features !== "" && features.indexOf(",") !== -1) {
       return features.split(",").map((feature) => {
         return <li>{feature}</li>;
       });

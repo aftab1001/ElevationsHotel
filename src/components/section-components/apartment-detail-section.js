@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import BookNow from "../global-components/BookNow";
+import {  useParams } from "react-router-dom";
+
 import { getApartmentById } from "../Services/ApartmentsDataService";
 import Loader from "react-loader-spinner";
 const ApartmentDetailSection = (props) => {
@@ -51,7 +51,7 @@ const ApartmentDetailSection = (props) => {
   }, [apartmentId]);
 
   const getFeaturesList = (features) => {
-    if (features && features != "" && features.indexOf(",") != -1) {
+    if (features && features !== "" && features.indexOf(",") !== -1) {
       return features.split(",").map((feature) => {
         return <li>{feature}</li>;
       });
@@ -74,7 +74,7 @@ const ApartmentDetailSection = (props) => {
                     <div className="main-slider">
                       <div className="single-img">
                         <a href={apartment.image1} className="main-img">
-                          <img src={apartment.image1} alt="Image" />
+                          <img src={apartment.image1} alt="Image apartment" />
                         </a>
                       </div>
                     </div>

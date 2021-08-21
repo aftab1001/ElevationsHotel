@@ -76,7 +76,7 @@ class WhyCooseUsSingle extends Component {
       </div>
       <div className="col-lg-6">
         <div className="feature-accordion-img text-right">
-          <img src={publicUrl+"assets/img/tile-gallery/03.jpg"} alt="Image" />
+          <img src={publicUrl+"assets/img/tile-gallery/03.jpg"} alt="Image single" />
           <div className="degin-shape">
             <div className="shape-one">
               <img src={publicUrl+"assets/img/shape/11.png"} alt="Shape" />

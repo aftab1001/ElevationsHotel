@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 
 class Comments extends Component {
   render() {
-   let anchor = '#'
-   let imagealt = 'image'
+ 
    let publicUrl = process.env.PUBLIC_URL+'/'
     return (
       <div className="comment-area">

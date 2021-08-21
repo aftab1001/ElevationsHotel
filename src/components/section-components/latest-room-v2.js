@@ -7,7 +7,7 @@ class LatestRoomV2 extends Component {
     render() {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
+        
 
     return <section className="latest-room-d section-bg section-padding">
 			  <div className="container">

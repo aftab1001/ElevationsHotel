@@ -14,7 +14,7 @@ class GalleryPage extends Component {
     //console.log("galleries ", data.result.items);
   };
   render() {
-    let publicUrl = process.env.PUBLIC_URL + "/";
+    
     const { galleries, Loading } = this.state;
     return Loading ? (
       <div style={{ textAlign: "center" }}>
