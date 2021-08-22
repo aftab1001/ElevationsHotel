@@ -11,7 +11,8 @@ class GalleryPage extends Component {
     const response = await getGalleryData();
     const { data } = response;
     this.setState({ Loading: false, galleries: data.result.items });
-    //console.log("galleries ", data.result.items);
+    window.loadEvents();
+    
   };
   render() {
     
@@ -38,12 +39,13 @@ class GalleryPage extends Component {
           <div className="gallery-items">
             <div className="row gallery-filter-items">
               {/* Single Item */}
-              {galleries.map((gallery) => (
+              {galleries.map((gallery,index) => (
                 <div
                   className={
                     "col-lg-4 col-md-6 col-sm-6 " +
                     gallery.imageType.toLowerCase()
                   }
+                  key={index}
                 >
                   <div
                     className="gallery-item"

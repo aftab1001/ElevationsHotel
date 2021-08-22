@@ -213,29 +213,6 @@ $(function () {
   });
   // Isotop Active
   
-  $(window).load(function () {
-    setTimeout(function () {
-      
-      $(".gallery-filter li").on("click", function () {
-        $(".gallery-filter li").removeClass("active");
-        $(this).addClass("active");
-    
-        var selector = $(this).attr("data-filter");
-        $(".gallery-filter-items").isotope({
-          filter: selector,
-        });
-      });
-      $(".gallery-filter-items").isotope();
-      $(".gallery-filter-items a.popup").magnificPopup({
-        type: "image",    
-        gallery: {
-          enabled: true,
-        },
-        mainClass: "mfp-fade"    
-      });
-      
-    }, 20000);
-  });
   // Back to Top
   $(".back-to-top").on("click", function (e) {
     e.preventDefault();
@@ -293,8 +270,6 @@ $(function () {
     });
   });
   // Gallary Page Image
-
-  
 
   // Review bars
   $(".reviews-bars").bind(
